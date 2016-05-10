@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PerfectoLab</name>
+    </assembly>
+    <members>
+        <member name="M:OpenQA.Selenium.Remote.PerfectoLabUtils.DownloadReport(OpenQA.Selenium.Remote.RemoteWebDriver,OpenQA.Selenium.Remote.DownloadReportTypes,System.String)">
+            <summary>
+            DownloadReport is a function for downloading your report. 
+            types that you can use: pdf, html, csv, xml.
+            </summary>
+            <param name="driver">RemoteWebDriver instance</param>
+            <param name="type">DownloadReportTypes:pdf, html, csv, xml </param>
+            <param name="fileFullPath">Destination path</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.PerfectoLabUtils.DownloadAttachment(OpenQA.Selenium.Remote.RemoteWebDriver,OpenQA.Selenium.Remote.DownloadAttachmentTypes,System.String,System.String)">
+            <summary>
+            DownloadAttachment is a function for downloading all the report attachments. 
+             types that you can use: video, image, vital, network(PCAP file).
+            </summary>
+            <param name="driver">RemoteWebDriver instance</param>
+            <param name="type">DownloadAttachmentTypes: video, image, vital, network</param>
+            <param name="directoryPath">Destination folder path</param>
+            <param name="suffix">File type suffix</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.PerfectoLabUtils.UploadMedia(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Uploads a file to the media repository.
+            </summary>
+            <param name="host">The cloud host name</param>
+            <param name="user">The cloud username</param>
+            <param name="password">The cloud password</param>
+            <param name="path">Local file path</param>
+            <param name="repositoryKey">Repository destination</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.PerfectoLabUtils.UploadMedia(System.String,System.String,System.String,System.Byte[],System.String)">
+            <summary>
+            Uploads a file to the media repository.
+            </summary>
+            <param name="host">The cloud host name</param>
+            <param name="user">The cloud username</param>
+            <param name="password">The cloud password</param>
+            <param name="content">File content in bytes</param>
+            <param name="repositoryKey">Repository destination</param>
+        </member>
+    </members>
+</doc>

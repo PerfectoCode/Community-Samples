@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PerfectoLab.Extended</name>
+    </assembly>
+    <members>
+        <member name="T:OpenQA.Selenium.Remote.HttpAuthenticatedCommandExecutor">
+            <summary>
+            Provides a way of executing Commands over HTTP
+            </summary>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.HttpAuthenticatedCommandExecutor.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the HttpCommandExecutor class
+            </summary>
+            <param name="addressOfRemoteServer">Address of the WebDriver Server</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.HttpAuthenticatedCommandExecutor.#ctor(System.Uri,System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the HttpCommandExecutor class
+            </summary>
+            <param name="addressOfRemoteServer">Address of the WebDriver Server</param>
+            <param name="timeout">The timeout within which the server must respond.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.HttpAuthenticatedCommandExecutor.#ctor(System.Uri,System.TimeSpan,System.Boolean)">
+            <summary>
+            Initializes a new instance of the HttpCommandExecutor class
+            </summary>
+            <param name="addressOfRemoteServer">Address of the WebDriver Server</param>
+            <param name="timeout">The timeout within which the server must respond.</param>
+            <param name="enableKeepAlive"><see langword="true"/> if the KeepAlive header should be sent
+            with HTTP requests; otherwise, <see langword="false"/>.</param>
+        </member>
+        <member name="M:OpenQA.Selenium.Remote.HttpAuthenticatedCommandExecutor.Execute(OpenQA.Selenium.Remote.Command)">
+            <summary>
+            Executes a command
+            </summary>
+            <param name="commandToExecute">The command you wish to execute</param>
+            <returns>A response from the browser</returns>
+        </member>
+        <member name="P:OpenQA.Selenium.Remote.HttpAuthenticatedCommandExecutor.CommandInfoRepository">
+            <summary>
+            Gets the repository of objects containin information about commands.
+            </summary>
+        </member>
+    </members>
+</doc>
