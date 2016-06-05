@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+	<parameter name="cloud" value="mobilecloud.perfectomobile.com"/>
+	<parameter name="userN" value="yaacovw@perfectomobile.com"/>
+	<parameter name="userPw" value="sas17dec"/>
+
+   <test name="test1">
+ 	<parameter name="OperSys" value="Android"/>
+	<parameter name="OSver" value="6.0.*"/>
+	<parameter name="device" value="5A3A40BE"/>
+	<parameter name="pkgName" value="com.google.android.youtube"/>
+      <classes>
+         <class name="audioInterrupt.AudioTest" />
+      </classes>
+   </test>
+</suite>
