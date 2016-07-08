@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="Test Windows7 Chrome 50">
+		<parameter name="platformName" value="Windows" />
+		<parameter name="platformVersion" value="7" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="browserVersion" value="50" />
+		<parameter name="deviceId" value="" />
+		<classes>
+			<class name="com.perfecto.demo.webTests.amazon.LoginToAmazonWithInvalidCredentialsTest" />
+		</classes>
+	</test>
+		<test name="Test Windows8.1 Firefox 45">
+		<parameter name="platformName" value="Windows" />
+		<parameter name="platformVersion" value="8.1" />
+		<parameter name="browserName" value="Firefox" />
+		<parameter name="browserVersion" value="45" />
+		<parameter name="deviceId" value="" />
+		<classes>
+			<class name="com.perfecto.demo.webTests.amazon.LoginToAmazonWithInvalidCredentialsTest" />
+		</classes>
+	</test>
+		<test name="Test Windows7 IE11">
+		<parameter name="platformName" value="Windows" />
+		<parameter name="platformVersion" value="7" />
+		<parameter name="browserName" value="Internet Explorer" />
+		<parameter name="browserVersion" value="11" />
+		<parameter name="deviceId" value="" />
+		<classes>
+			<class name="com.perfecto.demo.webTests.amazon.LoginToAmazonWithInvalidCredentialsTest" />
+		</classes>
+	</test>
+	<test name="Test iPhone6 Plus">
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="browserName" value="Safari" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="deviceId" value="A7302271E86090808BEB998BA2639AB18C5773A4" />
+		<classes>
+			<class name="com.perfecto.demo.webTests.amazon.LoginToAmazonWithInvalidCredentialsTest" />
+		</classes>
+	</test>
+	<test name="Test Galaxy S6">
+		<parameter name="platformName" value="" />
+		<parameter name="platformVersion" value="" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="browserVersion" value="" />
+		<parameter name="deviceId" value="632E9899" />
+		<classes>
+			<class name="com.perfecto.demo.webTests.amazon.LoginToAmazonWithInvalidCredentialsTest" />
+		</classes>
+	</test>
+</suite>
