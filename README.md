@@ -12,6 +12,6 @@ The following examples are included:
 |DismissWebPopup |Show use of Visual Analysis to dismiss a desktop browser popup |[Visual Analysis to Dismiss Browser Popup](https://community.perfectomobile.com/groups/30292/posts/1195258) |
 |GetURL   |Highlights use of instrumentation and accessing proper WEBVIEW |[Retrieving the URL from a Webview](https://community.perfectomobile.com/posts/1177498) |
 |WebDemoDotNetC# | C# sample that demonstrate parallel desktop and mobile test runs |[C# Test Mobile and Web Browsers](https://community.perfectomobile.com/posts/1149050) |
-|AmazonWebAppProject | Cross Platform - Cross Browser Testing - Sample Project for Responsive Web Test |[Cross Platform - Cross Browser Testing](https://community.perfectomobile.com/posts/1197636) |
+|AmazonWebAppProject | Cross Platform - Cross Browser Testing - Sample Project in Java for Responsive Web Test |[Cross Platform - Cross Browser Testing](https://community.perfectomobile.com/posts/1197636) |
 
 
