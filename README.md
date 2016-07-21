@@ -1,7 +1,7 @@
 # Community-Samples
 ![Perfecto](http://www.perfectomobile.com/sites/all/themes/perfecto/img/logo.png)
 
-This project contains Perfecto product and code samples for consuming Perfecto services from different supported languages and frameworks.
+This project contains Perfecto product and code samples that are delivered by the large Perfecto community and users, while the projects and samples in this repository (Community-Samples) are not officially supported by Perfecto they can provide you with high value.
 We would be happy to accept your samples, contact asafs@perfectomobile.com to get write access.
 
 The following examples are included:
