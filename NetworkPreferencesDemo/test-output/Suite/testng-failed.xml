@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="androidAppPackage" value=""/>
+  <parameter name="networkProfile" value="4g_lte_advanced_good"/>
+  <parameter name="platformName" value="iOS"/>
+  <parameter name="iOSBundleID" value="com.kayak.travel"/>
+  <parameter name="deviceId" value="22DA473129BBF7735D0CB04F8E39C901F852FF77"/>
+  <test name="Test iPhone6">
+    <parameter name="androidAppPackage" value=""/>
+    <parameter name="networkProfile" value="2g_edge_average"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="iOSBundleID" value="com.kayak.travel"/>
+    <parameter name="deviceId" value="076164908B998B9944CE5E3A50E1028D5708AAEF"/>
+    <classes>
+      <class name="com.networkPreference.tests.NetworkPreferencesTest"/>
+    </classes>
+  </test> <!-- Test iPhone6 -->
+  <test name="Test iPhone6-Plus">
+    <parameter name="androidAppPackage" value=""/>
+    <parameter name="networkProfile" value="3g_umts_average"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="iOSBundleID" value="com.kayak.travel"/>
+    <parameter name="deviceId" value="178D3A398F2C6D562597E56DFC146851143B380A"/>
+    <classes>
+      <class name="com.networkPreference.tests.NetworkPreferencesTest"/>
+    </classes>
+  </test> <!-- Test iPhone6-Plus -->
+  <test name="Test iPhone6S">
+    <parameter name="androidAppPackage" value=""/>
+    <parameter name="networkProfile" value="4g_lte_advanced_good"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="iOSBundleID" value="com.kayak.travel"/>
+    <parameter name="deviceId" value="22DA473129BBF7735D0CB04F8E39C901F852FF77"/>
+    <classes>
+      <class name="com.networkPreference.tests.NetworkPreferencesTest"/>
+    </classes>
+  </test> <!-- Test iPhone6S -->
+</suite> <!-- Failed suite [Suite] -->
