@@ -14,5 +14,6 @@ The following examples are included:
 |GetURL   |Highlights use of instrumentation and accessing proper WEBVIEW |[Retrieving the URL from a Webview](https://community.perfectomobile.com/posts/1177498) |
 |WebDemoDotNetC# | C# sample that demonstrate parallel desktop and mobile test runs |[C# Test Mobile and Web Browsers](https://community.perfectomobile.com/posts/1149050) |
 |AmazonWebAppProject | Cross Platform - Cross Browser Testing - Sample Project in Java for Responsive Web Test |[Cross Platform - Cross Browser Testing](https://community.perfectomobile.com/posts/1197636) |
-
+|HybridAppProject | Demonstrate hybrid application testing | [Hybrid Application Testing](https://community.perfectomobile.com/posts/1201527-hybrid-apps-object-spy-support-for-multiple-webviews)|
+|NetworkPreferencesDemo| Network condition / preferences testing | [Network Preferences](https://community.perfectomobile.com/posts/1215302-network-virtualization-network-preferences-testing-testing-for-various-networks)|
 
