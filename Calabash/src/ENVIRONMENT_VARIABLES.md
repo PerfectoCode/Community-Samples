@@ -77,9 +77,9 @@ The device id of the device in the MobileCloud to connect to.
 Directory where to download the Perfecto Mobile reports. The default is the current working directory.
  
 ### 9. `CALABASH_PERFECTO_MOBILE_UPLOAD_LOCATION`
-MobileCloud repository directory where to upload the apk/ipa file. The default is the PRIVATE repository.
+Lab repository directory where to upload the apk/ipa file. The default is the PRIVATE repository.
 
-Click [here](http://help.perfectomobile.com/article/AA-00929) for more information on the MobileCloud repository.
+Click [here](https://community.perfectomobile.com/posts/941431) for more information on the Lab repository.
 
 ##### Example
 
