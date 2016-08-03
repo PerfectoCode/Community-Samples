@@ -1,0 +1,59 @@
+Feature: Calabash Testing for iPhone - use app : PMIOSDemo
+
+#Scenario: entering password into secure field by num on ios, validations, buttons - PMIOSDemo 
+#	When I enter "John" into input field number 1
+#	Then I enter "Perfecto1" into input field number 2
+#	Then I press the "Login" button
+#	Then I should see text starting with "Terms"
+#	Then I should see text containing "conditions"
+#	Then I press the "Logout" button
+
+#Scenario: more validations - PMIOSDemo 
+#	When I enter "John" into input field number 1
+#	Then I enter "Perfecto1" into input field number 2
+#	Then I press the "Login" button
+#	Then I wait
+#	Then I wait to see "Terms and conditions"
+#	Then I should not see "something else"
+#	Then I should see a "Logout" button
+#	Then I press the "Logout" button
+#	Then I don't see the text "something"
+
+#Scenario: find text field by name - negative+positive - success+fail - PMIOSDemo 
+#	When I should not see a "aaa" text field
+#	Then I should see a "bbb" input field
+
+#Scenario: find button by text - negative - success+fail - PMIOSDemo 
+#	When I should not see a "Loginx" button
+#	Then I should not see a "Login" button
+
+#Scenario: find button by text - success+fail - PMIOSDemo 
+#	When I should see a "Login" button
+#	Then I should see a "Loginx" button
+
+#Scenario: wait for button by text - success+fail - PMIOSDemo 
+#	When I wait for the "Login" button to appear
+#	Then I wait for the "Loginx" button to appear
+
+#Scenario: click button by text - fail - PMIOSDemo 
+#	When I press the "Loginx" button
+
+#Scenario: search field  - PMIOSDemo
+#	When I enter "abc" into search field number 2
+
+#Scenario: wait for text with timeout - PMIOSDemo app
+#   When I enter "myUser" into input field number 1
+#	Then I press the "Login" button
+#	Then I wait up to 5 seconds for "Invalid credentials" to appear   	
+#	Then I press the "Close" button
+
+# Scenario: wait for text with timeout (fail) - PMIOSDemo app
+#    When I enter "myUser" into input field number 1
+#	Then I press the "Login" button
+#	Then I wait up to 5 seconds for "Hello World" to appear   	
+   	 
+# Scenario: text input , buttons and going back - fail the "text contains" part - PMIOSDemo app
+#   When I enter "myUser" into input field number 1
+#   Then I clear input field number 1
+
+

@@ -1,0 +1,6 @@
+Feature: Calabash Testing for Android - use app : YP (Yellow Pages)
+ 
+#Scenario: Image button - YP
+#	When I press image button number 1
+#	Then I wait for 3 seconds
+#	Then I go back
