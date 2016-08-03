@@ -16,5 +16,5 @@ The following examples are included:
 |AmazonWebAppProject | Cross Platform - Cross Browser Testing - Sample Project in Java for Responsive Web Test |[Cross Platform - Cross Browser Testing](https://community.perfectomobile.com/posts/1197636) |
 |HybridAppProject | Demonstrate hybrid application testing | [Hybrid Application Testing](https://community.perfectomobile.com/posts/1201527-hybrid-apps-object-spy-support-for-multiple-webviews)|
 |NetworkPreferencesDemo| Network condition / preferences testing | [Network Preferences](https://community.perfectomobile.com/posts/1215302-network-virtualization-network-preferences-testing-testing-for-various-networks)|
-|Calabash| Perfecto Integration with Calabash | [Calabash](https://community.perfectomobile.com/)|
+|Calabash| Perfecto Integration with Calabash | [Calabash](https://community.perfectomobile.com/posts/1215991)|
 
