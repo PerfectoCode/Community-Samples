@@ -3,7 +3,7 @@ Perfecto Integration with Calabash
 
 [Calabash](http://calaba.sh/) is an automated testing technology for Android and iOS native applications; it is a free open source project.
 
-Calabash for Perfecto Mobile enables testing on real devices from anywhere in your organization, within the [Perfecto Continuous Quality Lab](http://www.perfectomobile.com/). This includes a large scale of devices located in various geographies, and capabilities such as device logs, device vitals, video, detailed reports and more.
+Calabash integration with Perfecto Mobile enables testing on real devices from anywhere in your organization, within the [Perfecto Continuous Quality Lab](http://www.perfectomobile.com/). This includes a large scale of devices located in various geographies, and capabilities such as device logs, device vitals, video, detailed reports and more.
 
 :information_source: **Notice**: this Perfecto integration with Calabash is not an official Perfecto version. This is a sample beta version demonstrating how to work with Perfecto and Calabash.
 
