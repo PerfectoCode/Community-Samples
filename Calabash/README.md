@@ -5,7 +5,7 @@ Perfecto Integration with Calabash
 
 Calabash for Perfecto Mobile enables testing on real devices from anywhere in your organization, within the [Perfecto Continuous Quality Lab](http://www.perfectomobile.com/). This includes a large scale of devices located in various geographies, and capabilities such as device logs, device vitals, video, detailed reports and more.
 
-**Notice**: this Perfecto integration with Calabash is not an official Perfecto version. This is a sample beta version demonstrating how to work with Perfecto and Calabash.
+:information_source: **Notice**: this Perfecto integration with Calabash is not an official Perfecto version. This is a sample beta version demonstrating how to work with Perfecto and Calabash.
 
 ### Documentation
 The documentation is split into the following sections:
