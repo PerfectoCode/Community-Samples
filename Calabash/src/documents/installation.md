@@ -34,7 +34,7 @@ Download & Install DevKit from [here](http://rubyinstaller.org/downloads/).
 
 ### Installation ####
 
-1. Create the calabash-perfectomobile gem by running `gem build calabash-perfectomobile.gemspec` in command line in the from within the folder containing the .gemspec file
+1. Create the calabash-perfectomobile gem by running `gem build calabash-perfectomobile.gemspec` in command line from within the folder containing the `.gemspec` file
 2. Install *calabash-perfectomobile* by running `gem install calabash-perfectomobile`
 3. Install the trust certificate 
 	- Copy PerfectoMobileCA.pem and install_cert.rb files located in `<RUBY_HOME directory>\lib\ruby\gems\<rubyVersion>\gems\calabash-perfectomobile-<version>\documents`	(also [here](https://github.com/calabash/calabash-perfectomobile/lib/ruby/gems/2.1.0/gems/calabash-perfectomobile-0.1.0))
