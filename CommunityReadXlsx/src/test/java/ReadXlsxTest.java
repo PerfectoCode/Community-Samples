@@ -87,6 +87,9 @@ public class ReadXlsxTest {
 					driver.findElement(By.xpath(xpath)).sendKeys(String.valueOf(cell.getNumericCellValue()));
 				}
 			}
+			
+			fileInput.close();
+			workBook.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();
