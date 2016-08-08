@@ -10,10 +10,10 @@
 			<artifactId>selenium-java</artifactId>
 			<version>2.50.1</version>
 		</dependency>
-		<dependency>
-			<groupId>au.com.bytecode</groupId>
+  		<dependency>
+			<groupId>com.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
-			<version>2.4</version>
+			<version>3.1</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -4,11 +4,10 @@
  * @date Aug 8, 2016
  */
 
-import java.io.FileReader;
+import java.io.FileReader; 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,7 +18,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import au.com.bytecode.opencsv.CSVReader;
+import com.opencsv.CSVReader;
+
 
 public class CommunityReadCsv {
 	public static void main(String[] args) throws MalformedURLException, IOException {
@@ -68,6 +68,7 @@ public class CommunityReadCsv {
 					driver.findElement(By.xpath(xpath)).sendKeys(nextLine[i]);
 				}
 			}
+			reader.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();
