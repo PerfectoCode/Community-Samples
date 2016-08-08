@@ -1,6 +1,6 @@
 
 /**
- * @author Lee Shoham
+ * @author Lee Shoham 
  * @date Aug 8, 2016
  */
 
@@ -45,7 +45,6 @@ public class ReadXlsxTest {
 
 		RemoteWebDriver driver = new RemoteWebDriver(new URL("https://" + host + "/nexperience/perfectomobile/wd/hub"),
 				capabilities);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		try {
 			// Navigating to website
