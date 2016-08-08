@@ -1,0 +1,78 @@
+Feature: Calabash Testing for Android - use app : CalabashTest
+ 
+#Scenario: text, click, drag, back - CalabashTest
+#  	When I enter "Something" into input field number 1
+# 	Then I press the "See details" button
+#  	Then I drag from 300:600 to 300:400 moving with 1 steps
+#  	Then I wait
+#  	Then I go back
+
+#Scenario: button click + text validation
+#    When I press the "Click me" button
+#  	Then I wait to see "Hello World"
+#	Then I wait up to 3 seconds for "Hello World" to appear
+
+#Scenario: button click + text validation (fail validation test)
+#    When I press the "Click me" button
+#  	Then I wait to see "Hello World"
+#  	Then I wait for "Hello World!" to appear
+  	 
+
+
+# Scenario: Button click, clear text, rotate
+    #When I press the "Click me" button     
+    #Then I enter text "lala" into field with id "editText1"
+	#Then I clear input field with id "editText1"
+ 	#Then I rotate the device to landscape
+ 	#Then I wait
+ 	#Then I rotate the device to portrait
+	#Then I wait for 1 second
+	#Then I wait for a second
+    
+	
+ #Scenario: Going to next screen and back
+  	#When I enter "Something" into input field number 1
+ 	#Then I press the "See details" button
+  	#Then I wait
+  	#Then I should see text containing "Something"
+  	#Then I go back
+ 
+ # Scenario: checkbox
+ # 	When I toggle checkbox number 1
+ # 	Then I should see text containing "checked now"
+ # 	Then I wait
+ # 	Then I toggle checkbox number 1
+ # 	Then I should see text containing "not checked"
+
+#Scenario: Menu and back buttons
+  	#When I press the enter button
+  	#When I press the menu key
+  	#Then I wait for 3 seconds
+  	#Then I go back
+ 
+ #Scenario: Radio button toggle
+ #   When I enter text "lala" into field with id "editText1"
+ # 	Then I wait for 3 seconds
+ #	Then I clear input field with id "editText1"
+ # 	Then I scroll down
+ # 	When I select "Africa" radio button
+ # 	Then I wait for 5 seconds
+ # 	Then I scroll up
+ # 	Then "Africa" radio button should be selected
+ # 	Then I select "America" radio button
+ # 	Then "America" radio button should be selected
+ # 	Then "Africa" radio button should not be selected
+
+#Scenario: Click button by id
+# 	When I press "button2"
+#  	Then I wait
+#  	Then I go back
+ 
+#Scenario: Swiping - PMTest app
+#	When I press the "Test Drag/Swipe" button
+#  	Then I wait
+#  	Then I swipe left
+#  	Then I wait for 3 seconds
+#  	Then I swipe right
+#    Then I wait for 3 seconds
+#	Then I press the "Back" button

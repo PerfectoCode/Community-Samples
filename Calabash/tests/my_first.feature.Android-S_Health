@@ -1,0 +1,6 @@
+Feature: Calabash Testing for Android - use app : "S Health"
+ 
+#Scenario: Click on text link -  S Health
+#	When I touch the "Next" text
+#	Then I wait for 3 seconds
+#	Then I go back

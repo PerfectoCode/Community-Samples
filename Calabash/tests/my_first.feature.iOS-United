@@ -1,0 +1,67 @@
+Feature: Calabash Testing for iPhone - use app : United
+
+#Scenario: toggle switch - United 
+#	When I press the "Boarding Passes" button
+#	Then I press the "Flight Check-in" button
+#	Then I toggle the switch
+#	Then I wait
+#	Then I press the "Back" button
+#	Then I press the "Home" button
+
+#Scenario: press on screen - United 
+#	When I press on screen 200 from the left and 300 from the top
+
+#Scenario: wait - United
+#    When I wait  
+#    Then I take a picture  
+ 
+# Scenario: drag (looks like swipe left) - United
+#  	When I wait
+#  	Then I drag from 300:600 to 50:600 moving with 1 steps
+
+#Scenario: click tap - United
+#	When I wait 
+#	Then I click on screen 50% from the left and 90% from the top
+
+#Scenario: wait for button with text with timeout - United
+#   When I wait for the "Book a flight" button to appear
+#	Then I wait for 3 seconds
+	
+
+#Scenario: scrolling up/down - United 
+#    When I press the "Book a flight" button
+#    Then I wait
+#    Then I scroll up 
+#    Then I wait
+#    Then I scroll down 
+    
+#Scenario: Click image button by its text - United 
+#   When I press the "icon wallet" button    
+# 	Then I wait
+ 
+#Scenario: Checking click image button - United 
+#    When I press image button number 1
+#    Then I wait
+
+#Scenario: Checking click (touch) button by num - United 
+#    When I touch button number 1
+#    Then I wait   
+
+#Scenario: Checking click text - United 
+#   When I touch the "Enroll in MileagePlus" text    
+# 	Then I wait
+
+#Scenario: Checking click button by text (fail) - United 
+#   When I press the "Sign In" button    
+# 	Then I wait
+# 	Then I should see text containing "PIN"
+# 	# fail last step on purpose for testing
+# 	Then I should see text containing "whatever"
+ 	
+#Scenario: Swiping left-right - United 
+#    When I swipe left
+# 	Then I wait   
+# 	Then I swipe right
+ 	
+
+ 	

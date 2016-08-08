@@ -1,0 +1,9 @@
+Feature: Calabash Testing for iPhone - use app : Compass
+ 	
+#Scenario: Checking rotate - Compass 
+#   When I rotate the device to landscape     
+# 	Then I wait
+# 	Then I rotate the device to portrait
+# 	Then I wait
+
+ 	

@@ -1,0 +1,10 @@
+Feature: Calabash Testing for Android - use app : PMTest
+ 
+#Scenario: Swiping - PMTest app
+#	When I press the "Test Drag/Swipe" button
+#  	Then I wait
+#  	Then I swipe left
+#  	Then I wait for 3 seconds
+#  	Then I swipe right
+#   Then I wait for 3 seconds
+#	Then I press the "Back" button

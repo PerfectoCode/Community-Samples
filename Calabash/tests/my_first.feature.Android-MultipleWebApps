@@ -1,0 +1,5 @@
+Feature: Calabash Testing for Android - use app : MultipleWebApps
+ 
+#Scenario: Checking if link click works - MultipleWebApps app
+#   When I touch the "Privacy Policy" text
+#   Then I should see text containing "Updated Privacy Statement"

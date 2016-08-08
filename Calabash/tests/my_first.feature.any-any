@@ -1,0 +1,5 @@
+Feature: Report Testing - run on any app 
+ 
+Scenario: Press 100 button (fail for report) - CalabashTest
+	When I press button number 100
+
