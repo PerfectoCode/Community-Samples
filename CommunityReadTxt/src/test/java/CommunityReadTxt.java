@@ -1,21 +1,15 @@
 
 /**
- * @author Lee Shoham 
+ * @author Lee Shoham
  * @date Aug 8, 2016
  */
 
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Iterator;
-import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Platform;
@@ -25,8 +19,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ReadXlsxTest {
-
+public class CommunityReadTxt {
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		System.out.println("Run started");
 
@@ -51,44 +44,37 @@ public class ReadXlsxTest {
 			driver.get("https://www.national-lottery.co.uk/games/lotto");
 
 			// Getting location of wanted element to scroll to and scrolling
+			// down
 			new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.linkText("Add lines")));
 			Point elem = driver.findElement(By.linkText("Add lines")).getLocation();
 			((JavascriptExecutor) driver).executeScript("window.scrollBy(0," + (elem.getY() - 300) + ");");
 
-			// Read file from file system in Java
-			File table = new File("lottery.xlsx");
-			FileInputStream fileInput = new FileInputStream(table);
+			// Creating new BufferrdReader object
+			BufferedReader reader = new BufferedReader(new FileReader("lottery.txt"));
 
-			// Finds the workbook instance for XLSX file
-			// In case of an xls file format, the correct workbook 
-			// and sheet implementation to use is HSSF instead of 
-			// XSSF. The rest is the same.
-			XSSFWorkbook workBook = new XSSFWorkbook(fileInput);
+			// Skipping first row of headers
+			String line = reader.readLine();
+			String[] lineStrArr = null;
+			int rowNumber = -1;
 
-			// Return first sheet from the XLSX workbook
-			XSSFSheet sheet = workBook.getSheetAt(0);
+			// Traversing through file's lines
+			while ((line = reader.readLine()) != null) {
 
-			// Get iterator to all the rows in current sheet
-			Iterator<Row> rowIterator = sheet.iterator();
+				// Storing row's number to use in the xpath
+				++rowNumber;
 
-			// Traversing over each row of XLSX file
-			// Moving 1 row forward to skip table headers
-			Row row = rowIterator.next();
-			while (rowIterator.hasNext()) {
-				row = rowIterator.next();
+				// Splitting String line into string array without whitespaces,
+				// using regular expression
+				lineStrArr = line.split("\\s+");
 
-				// For each row, iterate through each columns
-				Iterator<Cell> cellIterator = row.cellIterator();
-				while (cellIterator.hasNext()) {
-					Cell cell = cellIterator.next();
-					String xpath = "(//input[@id='lotto_playslip_line_" + (row.getRowNum() - 1) + "_pool_0_col_"
-							+ cell.getColumnIndex() + "'])[1]";
-					driver.findElement(By.xpath(xpath)).sendKeys(String.valueOf(cell.getNumericCellValue()));
+				// Traversing through row's 'columns' and inserting values to
+				// input fields
+				for (int i = 0; i < lineStrArr.length; ++i) {
+					String xpath = "(//input[@id='lotto_playslip_line_" + rowNumber + "_pool_0_col_" + i + "'])[1]";
+					driver.findElement(By.xpath(xpath)).sendKeys(lineStrArr[i]);
 				}
 			}
-			
-			fileInput.close();
-			workBook.close();
+			reader.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();

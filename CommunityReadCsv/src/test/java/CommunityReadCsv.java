@@ -45,12 +45,12 @@ public class CommunityReadCsv {
 			// Navigating to website
 			driver.get("https://www.national-lottery.co.uk/games/lotto");
 
-			// Getting location of wanted element to scroll to and scrolling
-			WebDriverWait wait = new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Add lines")));
+			// Getting location of wanted element to scroll to and scrolling down
+			new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.linkText("Add lines")));
 			Point elem = driver.findElement(By.linkText("Add lines")).getLocation();
 			((JavascriptExecutor) driver).executeScript("window.scrollBy(0," + (elem.getY() - 300) + ");");
 
+			// Creating a new CSVReader object
 			CSVReader reader = new CSVReader(new FileReader("lottery.csv"));
 			// nextLine[] is an array of values from the line
 			String[] nextLine;
