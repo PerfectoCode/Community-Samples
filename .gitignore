@@ -4,6 +4,8 @@
 #testng
 target/
 
+.settings/
+
 # User-specific files
 *.suo
 *.user
@@ -215,5 +217,3 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 .idea
-
-
