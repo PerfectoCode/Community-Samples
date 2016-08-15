@@ -1,4 +1,4 @@
-# Reading External xsl/xlsx File in Java #
+# Reading External txt File in Java #
 
 This is a sample code in java for reading external txt files.
 This is useful for when you have a lot of data to use in your script and instead of hard-coding it in the script, 
