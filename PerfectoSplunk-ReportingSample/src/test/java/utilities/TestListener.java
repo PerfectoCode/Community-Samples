@@ -149,7 +149,7 @@ public class TestListener implements ISuiteListener, ITestListener, IInvokedMeth
 			// Splunk
 			String value;
 			try {
-				value = splunkReport.commitSplunk("Perfecto", testResult.getMethod().getMethodName(), "test_index");
+				value = splunkReport.commitSplunk("Perfecto", testResult.getMethod().getMethodName(), classHelper.splunkIndex);
 				System.out.println(value);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

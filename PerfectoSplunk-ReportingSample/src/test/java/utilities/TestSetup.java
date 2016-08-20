@@ -21,11 +21,16 @@ public class TestSetup {
 	private DesiredCapabilities capabilities = new DesiredCapabilities();
 	private Library lib;
 	private String target;
-	public String host;
 	private URL gridURL;
+	public String perfectoHost;
+	private String perfectoUsername;
+	private String perfectoPassword;
 
-	public TestSetup(String targetEnvironment, RemoteWebDriverExtended driver) {
+	public TestSetup(String targetEnvironment,String perfectoHost, String perfectoUsername, String perfectoPassword, RemoteWebDriverExtended driver) {
 		this.target = targetEnvironment;
+		this.perfectoHost=perfectoHost;
+		this.perfectoUsername = perfectoUsername;
+		this.perfectoPassword=perfectoPassword;
 		this.driver = driver;
 	}
 
@@ -90,20 +95,16 @@ public class TestSetup {
 	// device connectivity to mobile cloud
 	public Library driverAndLibrarySetup()
 			throws UnsupportedEncodingException, MalformedURLException, InterruptedException {
-		if (device) {
-			host = "<yourHost>.perfectomobile.com";
-			String user = "<yourUserName>";
-			String password = "<yourPassword>";
-
+		if (device) {			
+			
 			capabilities.setCapability("outputVisibility", "public");
-			capabilities.setCapability("user", user);
-			capabilities.setCapability("password", password);
+			capabilities.setCapability("user", perfectoUsername);
+			capabilities.setCapability("password", perfectoPassword);
 			capabilities.setCapability("openDeviceTimeOut", 5);
 
-			gridURL = new URL("https://" + host + "/nexperience/perfectomobile/wd/hub");
+			gridURL = new URL("https://" + perfectoHost + "/nexperience/perfectomobile/wd/hub");
 		} else {
-			host = "<yourLocalGridHost>";
-			gridURL = new URL("http://" + host + "/wd/hub");
+			gridURL = new URL("http://" + perfectoHost + "/wd/hub");
 		}
 
 		try {

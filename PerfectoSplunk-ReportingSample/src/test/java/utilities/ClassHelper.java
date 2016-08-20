@@ -27,6 +27,14 @@ public abstract class ClassHelper {
 	private RemoteWebDriverExtended driver;
 	public Library lib;
 	private TestSetup tes;
+	private String splunkHost;
+	private String splunkPort;
+	private String splunkScheme;
+	private String splunkToken;
+	private String splunkSLA;
+	private String splunkUsername;
+	private String splunkPassword;
+	public String splunkIndex;
 
 	// Call this at the start of test to set the reporting class and
 	// define splunk details
@@ -40,8 +48,8 @@ public abstract class ClassHelper {
 	// @4Splunk username
 	// @5Splunk password
 	public void setSplunk() {
-		SplunkReporting reporting = ReportingFactory.createInstance(1000, "52.70.207.153", 8089, "https", "", "admin",
-				"splunkDemo1234");
+		SplunkReporting reporting = ReportingFactory.createInstance(Long.parseLong(splunkSLA), splunkHost, Integer.parseInt(splunkPort),
+				splunkScheme, splunkToken, splunkUsername, splunkPassword);
 		ReportingFactory.setReporting(reporting);
 	}
 
@@ -50,9 +58,10 @@ public abstract class ClassHelper {
 		return ReportingFactory.getReporting();
 	}
 
+	
 	@BeforeSuite
 	public void beforeSuite() {
-		setSplunk();
+		
 	}
 
 	@AfterSuite
@@ -65,13 +74,23 @@ public abstract class ClassHelper {
 
 	}
 
-	@Parameters({ "targetEnvironment" })
+	@Parameters({ "targetEnvironment","perfectoHost","perfectoUsername","perfectoPassword","splunkHost","splunkPort","splunkScheme","splunkToken","splunkSLA","splunkUsername","splunkPassword","splunkIndex" })
 	@BeforeMethod(alwaysRun = true)
-	public void beforeMethod(Method method, String targetEnvironment) {
+	public void beforeMethod(Method method, String targetEnvironment, String perfectoHost, String perfectoUsername, String perfectoPassword, String splunkHost, String splunkPort, String splunkScheme, String splunkToken, String splunkSLA, String splunkUsername, String splunkPassword, String splunkIndex) {
 
+		this.splunkHost = splunkHost;
+		this.splunkPort = splunkPort;
+		this.splunkScheme = splunkScheme;
+		this.splunkToken = splunkToken;
+		this.splunkSLA = splunkSLA;
+		this.splunkUsername = splunkUsername;
+		this.splunkPassword = splunkPassword;
+		this.splunkIndex=splunkIndex;
+		
 		setSplunk();
+
 		// initializes testSetup class
-		tes = new TestSetup(targetEnvironment, driver);
+		tes = new TestSetup(targetEnvironment,perfectoHost,perfectoUsername,perfectoPassword, driver);
 		// sets up the testNG flows based on testsuite.xml
 		tes.flowControl();
 
@@ -90,7 +109,7 @@ public abstract class ClassHelper {
 		// Params
 		// @1 parameter name
 		// @2 parameter value
-		getCollector().reporting.put("seleniumHost", tes.host);
+		getCollector().reporting.put("seleniumHost", tes.perfectoHost);
 		getCollector().reporting.put("threadNo",
 				Thread.currentThread().getName() + " " + Thread.currentThread().getId());
 
@@ -110,11 +129,11 @@ public abstract class ClassHelper {
 				getCollector().reporting.put("reportKey",
 						(String) lib.getDriver().getCapabilities().getCapability("reportKey"));
 				getCollector().reporting.put("perfectoReport",
-						"https://" + tes.host + "/nexperience/Report.html?reportId=SYSTEM%3Adesigns%2Freport&key="
+						"https://" + tes.perfectoHost + "/nexperience/Report.html?reportId=SYSTEM%3Adesigns%2Freport&key="
 								+ (String) lib.getDriver().getCapabilities().getCapability("reportKey").toString()
 										.replace(".xml", "")
-								+ "%2Exml&liveUrl=rtmp%3A%2F%2F" + tes.host.replace(".", "%2E")
-								+ "%2Fengine&appUrl=https%3A%2F%2F" + tes.host.replace(".", "%2E") + "%2Fnexperience");
+								+ "%2Exml&liveUrl=rtmp%3A%2F%2F" + tes.perfectoHost.replace(".", "%2E")
+								+ "%2Fengine&appUrl=https%3A%2F%2F" + tes.perfectoHost.replace(".", "%2E") + "%2Fnexperience");
 				getCollector().reporting.put("windTunnelReport",
 						(String) lib.getDriver().getCapabilities().getCapability("windTunnelReportUrl"));
 
@@ -136,7 +155,7 @@ public abstract class ClassHelper {
 		// @3 test case name
 		// return type is String and contains the Json which was written to
 		// Splunk
-		String value = getCollector().commitSplunk("Perfecto", testResult.getMethod().getMethodName(), "test_index");
+		String value = getCollector().commitSplunk("Perfecto", testResult.getMethod().getMethodName(), splunkIndex);
 		System.out.println(value);
 
 		try {
