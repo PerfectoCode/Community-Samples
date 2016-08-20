@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="2" verbose="1"
+<suite name="Suite" parallel="tests" thread-count="1" verbose="1"
 	configfailurepolicy="skip">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
@@ -8,23 +8,11 @@
 	</listeners>
 
 	<test name="NativeTestiOS">
-		<parameter name="host" value="demo.perfectomobile.com" />
-		<parameter name="username" value="jeremyp@perfectomobile.com" />
-		<parameter name="password" value="perfecto123" />
-		<parameter name="scriptKey" value="Public:/Jeremy/neweggsiteshort" />
-		<parameter name="deviceId" value="1C3B401545D2CDBEC9D323460D914AD7319F31D9" />
-		<classes>
-			<class name="tests.TestSystem">
-			</class>
-		</classes>
-	</test>
-
-	<test name="NativeTestAndroid">
-		<parameter name="host" value="demo.perfectomobile.com" />
-		<parameter name="username" value="jeremyp@perfectomobile.com" />
-		<parameter name="password" value="perfecto123" />
-		<parameter name="scriptKey" value="Public:/Jeremy/neweggsiteshort" />
-		<parameter name="deviceId" value="04157DF43A656B1A" />
+		<parameter name="host" value="yourHostname" />
+		<parameter name="username" value="yourUsername" />
+		<parameter name="password" value="yourPassword" />
+		<parameter name="scriptKey" value="yourRepositoryKey" />
+		<parameter name="deviceId" value="yourDeviceId" />
 		<classes>
 			<class name="tests.TestSystem">
 			</class>
