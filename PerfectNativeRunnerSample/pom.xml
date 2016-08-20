@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>amazontest</groupId>
+	<artifactId>amazontest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>	
+	  <repositories>
+        <repository>
+            <id>perfectomobile</id>
+            <name>Perfecto mobile</name>
+            <url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
+        </repository>
+        </repositories>
+	<dependencies>
+    		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+		</dependency>
+			<dependency>
+  		<groupId>velocity</groupId>
+  		<artifactId>velocity-dep</artifactId>
+  		<version>1.4</version>
+  	</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.10</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+						<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/testsuite.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<properties>
+                    	<property>
+                        	<name>usedefaultlisteners</name>
+                        	<value>false</value>
+                    	</property>
+                    	<property>
+                        	<name>listener</name>
+                        	<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+                    	</property>
+                	</properties>
+                	<workingDirectory>target/</workingDirectory>
+            	</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
