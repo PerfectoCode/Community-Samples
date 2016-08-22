@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite" parallel="tests" thread-count="1" verbose="1"
+	configfailurepolicy="skip">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="utilities.TestListener" />
+	</listeners>
+	<parameter name="splunkHost" value="yourHost" />
+	<parameter name="splunkPort" value="yourPort" />
+	<parameter name="splunkScheme" value="yourScheme" />
+	<parameter name="splunkToken" value="yourToken" />
+	<parameter name="splunkSLA" value="yourSLA" />
+	<parameter name="splunkUsername" value="yourUsername" />
+	<parameter name="splunkPassword" value="yourPassword" />
+	<parameter name="splunkIndex" value="yourIndex" />
+	<test name="Test Galaxy S6 4G">
+		<parameter name="targetEnvironment" value="Galaxy S6" />
+		<parameter name="perfectoHost" value="yourHost" />
+		<parameter name="perfectoUsername" value="yourUsername" />
+		<parameter name="perfectoPassword" value="yourPassword" />
+		<classes>
+			<class name="tests.TestSystem" />
+		</classes>
+	</test>
+
+</suite>
