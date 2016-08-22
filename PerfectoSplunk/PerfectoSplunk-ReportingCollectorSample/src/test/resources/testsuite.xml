@@ -17,8 +17,19 @@
 	<parameter name="splunkUsername" value="yourUsername" />
 	<parameter name="splunkPassword" value="yourPassword" />
 	<parameter name="splunkIndex" value="yourIndex" />
-	<test name="Test Galaxy S6 4G">
+	<test name="Test Galaxy S6">
 		<parameter name="targetEnvironment" value="Galaxy S6" />
+		<parameter name="perfectoHost" value="yourHost" />
+		<parameter name="perfectoUsername" value="yourUsername" />
+		<parameter name="perfectoPassword" value="yourPassword" />
+		<classes>
+			<class name="tests.TestSystem" />
+		</classes>
+	</test>
+	
+	
+	<test name="Test iPhone-6">
+		<parameter name="targetEnvironment" value="iPhone-6" />
 		<parameter name="perfectoHost" value="yourHost" />
 		<parameter name="perfectoUsername" value="yourUsername" />
 		<parameter name="perfectoPassword" value="yourPassword" />

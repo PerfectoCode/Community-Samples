@@ -24,14 +24,14 @@ public abstract class ClassHelper {
 	private RemoteWebDriverExtended driver;
 	public Library lib;
 	private TestSetup tes;
-	private String splunkHost;
-	private String splunkPort;
-	private String splunkScheme;
-	private String splunkToken;
-	private String splunkSLA;
-	private String splunkUsername;
-	private String splunkPassword;
-	public String splunkIndex;
+	private static String splunkHost;
+	private static String splunkPort;
+	private static String splunkScheme;
+	private static String splunkToken;
+	private static String splunkSLA;
+	private static String splunkUsername;
+	private static String splunkPassword;
+	public static String splunkIndex;
 
 	// Call this at the start of test to set the reporting class and
 	// define splunk details
