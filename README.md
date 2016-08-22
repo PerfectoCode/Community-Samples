@@ -18,4 +18,5 @@ The following examples are included:
 |NetworkPreferencesDemo| Network condition / preferences testing | [Network Preferences](https://community.perfectomobile.com/posts/1215302-network-virtualization-network-preferences-testing-testing-for-various-networks)|
 |Calabash| Perfecto Integration with Calabash | [Calabash](https://community.perfectomobile.com/posts/1215991)|
 |PerfectoNativeRunner | Execute Perfecto Native Automation Tests from Java | Link coming soon |
+|TimerToExcelExtractor | Shows how to extract timers of run results to excel | [TimerToExcelExtractor](https://community.perfectomobile.com/posts/1223970) |
 
