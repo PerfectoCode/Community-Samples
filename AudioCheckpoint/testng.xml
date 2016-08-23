@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1">
-	<parameter name="cloud" value="mobilecloud.perfectomobile.com"/>
-	<parameter name="userN" value="yaacovw@perfectomobile.com"/>
-	<parameter name="userPw" value="sas17dec"/>
+	<parameter name="cloud" value="YOUR_LAB.perfectomobile.com"/>
+	<parameter name="userN" value="YOUR USER"/>
+	<parameter name="userPw" value="YOUR PW"/>
 
    <test name="test1">
  	<parameter name="OperSys" value="Android"/>
