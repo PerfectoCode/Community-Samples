@@ -24,29 +24,24 @@ public abstract class ClassHelper {
 	private RemoteWebDriverExtended driver;
 	public Library lib;
 	private TestSetup tes;
+	private static String splunkScheme;
 	private static String splunkHost;
 	private static String splunkPort;
-	private static String splunkScheme;
 	private static String splunkToken;
 	private static String splunkSLA;
-	private static String splunkUsername;
-	private static String splunkPassword;
-	public static String splunkIndex;
 
 	// Call this at the start of test to set the reporting class and
-	// define splunk details
-	// Params
-	// @1SLA in milliseconds - this will define pass/fail threshold for steps
-	// //based on response time
-	// @2Splunk host
-	// @3Splunk port
-	// @4Splunk scheme http or https
-	// @5Splunk token if required
-	// @4Splunk username
-	// @5Splunk password
+		// define splunk details
+		// Params
+		// @1SLA in milliseconds - this will define pass/fail threshold for steps based on response time
+		// @2 Splunk scheme http or https
+		// @3 Splunk host
+		// @4 Splunk port
+		// @5 Splunk token if required
+		// @6 Proxy if desired
 	public void setSplunk() {
 		SplunkReportingCollector reporting = ReportingCollectorFactory.createInstance(Long.parseLong(splunkSLA),
-				splunkHost, Integer.parseInt(splunkPort), splunkScheme, splunkToken, splunkUsername, splunkPassword);
+				splunkScheme, splunkHost, splunkPort, splunkToken);
 		ReportingCollectorFactory.setReporting(reporting);
 	}
 
@@ -55,19 +50,15 @@ public abstract class ClassHelper {
 		return ReportingCollectorFactory.getCollector();
 	}
 
-	@Parameters({ "splunkHost",
-			"splunkPort", "splunkScheme", "splunkToken", "splunkSLA", "splunkUsername", "splunkPassword","splunkIndex" })
+	@Parameters({ "splunkScheme", "splunkHost", "splunkPort", "splunkToken", "splunkSLA" })
 	@BeforeSuite
-	public void beforeSuite(String splunkHost, String splunkPort, String splunkScheme, String splunkToken,
-			String splunkSLA, String splunkUsername, String splunkPassword, String splunkIndex) {
+	public void beforeSuite(String splunkScheme, String splunkHost, String splunkPort, String splunkToken,
+			String splunkSLA) {
+		this.splunkScheme = splunkScheme;
 		this.splunkHost = splunkHost;
 		this.splunkPort = splunkPort;
-		this.splunkScheme = splunkScheme;
 		this.splunkToken = splunkToken;
 		this.splunkSLA = splunkSLA;
-		this.splunkUsername = splunkUsername;
-		this.splunkPassword = splunkPassword;
-		this.splunkIndex=splunkIndex;
 
 		setSplunk();
 	}
@@ -76,11 +67,9 @@ public abstract class ClassHelper {
 	public void afterSuite() {
 		try {
 			// Submits the data to splunk
-			// Params
-			// @1 Splunk index name
 			// return type is String and contains the Json which was written to
 			// Splunk
-			String value = getCollector().commitSplunk(splunkIndex);
+			String value = getCollector().commitSplunk();
 			System.out.println(value);
 		} catch (Exception e) {
 			e.printStackTrace();

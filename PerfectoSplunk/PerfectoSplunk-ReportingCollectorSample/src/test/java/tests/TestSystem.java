@@ -27,7 +27,6 @@ import pages.*;
 import utilities.*;
 import utilities.Library.byFields;
 
-
 public class TestSystem extends ClassHelper {
 	private AmazonHome homePage;
 
@@ -40,35 +39,38 @@ public class TestSystem extends ClassHelper {
 	public void OrderBook() throws Exception {
 		// sets the RemoteWebDriver and initial library settings
 		setPagesAndHelpers(lib);
+		
 
 		String step = "Step_" + lib.getStep();
-		//sets the start of a transaction
-		//Params
-		//@1 short description of the step
-		//@2 a more detailed description of the step
+		// sets the start of a transaction
+		// Params
+		// @1 short description of the step
+		// @2 a more detailed description of the step
 		getCollector().startTransaction(step, "goto Amazon.com");
 		lib.goToPage("http://amazon.com", "Amazon.com");
 		lib.waitForElement(30, byFields.xpath, "//*[contains(text(),'Your Lists')]");
-		//sets the end of a transaction
-		//Params
-		//parameter 1 is the same short description as the start transaction
-		//parameter 2 is the Perfecto timer you retrieved to validate against the SLA
+		// sets the end of a transaction
+		// Params
+		// parameter 1 is the same short description as the start transaction
+		// parameter 2 is the Perfecto timer you retrieved to validate against
+		// the SLA
 		getCollector().endTransaction(step, lib.getUXTimer());
 
 		step = "Step_" + lib.getStep();
-		//sets the start of a transaction
-		//Params
-		//@1 short description of the step
-		//@2 a more detailed description of the step
+		// sets the start of a transaction
+		// Params
+		// @1 short description of the step
+		// @2 a more detailed description of the step
 		getCollector().startTransaction(step, "Enter book into search box");
 		homePage.searchForItem("Army of darkness volume one", 60);
 		Map<String, Object> params = new HashMap<>();
 		params.put("content", "Army of darkness volume one");
 		Object result = lib.getDriver().executeScript("mobile:text:find", params);
-		//sets the end of a transaction
-		//Params
-		//parameter 1 is the same short description as the start transaction
-		//parameter 2 is the Perfecto timer you retrieved to validate against the SLA
+		// sets the end of a transaction
+		// Params
+		// parameter 1 is the same short description as the start transaction
+		// parameter 2 is the Perfecto timer you retrieved to validate against
+		// the SLA
 		getCollector().endTransaction(step, lib.getUXTimer());
 
 	}

@@ -2,37 +2,33 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Suite" parallel="tests" thread-count="1" verbose="1"
+<suite name="Suite" parallel="tests" thread-count="2" verbose="1"
 	configfailurepolicy="skip">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="utilities.TestListener" />
 	</listeners>
-	<parameter name="splunkHost" value="yourHost" />
-	<parameter name="splunkPort" value="yourPort" />
-	<parameter name="splunkScheme" value="yourScheme" />
-	<parameter name="splunkToken" value="yourToken" />
-	<parameter name="splunkSLA" value="yourSLA" />
-	<parameter name="splunkUsername" value="yourUsername" />
-	<parameter name="splunkPassword" value="yourPassword" />
-	<parameter name="splunkIndex" value="yourIndex" />
+	<parameter name="splunkScheme" value="yourSplunkScheme" />
+	<parameter name="splunkHost" value="yourSplunkHost" />
+	<parameter name="splunkPort" value="yourSplunkPort" />
+	<parameter name="splunkToken" value="yourSplunkToken" />
+	<parameter name="splunkSLA" value="yourSLAinMiliseconds" />
+
 	<test name="Test Galaxy S6">
-		<parameter name="targetEnvironment" value="Galaxy S6" />
-		<parameter name="perfectoHost" value="yourHost" />
-		<parameter name="perfectoUsername" value="yourUsername" />
-		<parameter name="perfectoPassword" value="yourPassword" />
+		<parameter name="targetEnvironment" value="yourPerfectoModel" />
+		<parameter name="perfectoHost" value="yourPerfectoHost" />
+		<parameter name="perfectoUsername" value="yourPerfectoUsername" />
+		<parameter name="perfectoPassword" value="yourPerfectoPassword" />
 		<classes>
 			<class name="tests.TestSystem" />
 		</classes>
 	</test>
-	
-	
 	<test name="Test iPhone-6">
-		<parameter name="targetEnvironment" value="iPhone-6" />
-		<parameter name="perfectoHost" value="yourHost" />
-		<parameter name="perfectoUsername" value="yourUsername" />
-		<parameter name="perfectoPassword" value="yourPassword" />
+		<parameter name="targetEnvironment" value="yourPerfectoModel" />
+		<parameter name="perfectoHost" value="yourPerfectoHost" />
+		<parameter name="perfectoUsername" value="yourPerfectoUsername" />
+		<parameter name="perfectoPassword" value="yourPerfectoPassword" />
 		<classes>
 			<class name="tests.TestSystem" />
 		</classes>
