@@ -142,14 +142,13 @@ public class TestListener implements ISuiteListener, ITestListener, IInvokedMeth
 			// setting this here in case of skip
 			// Submits the data to splunk
 			// Params
-			// @1 Splunk index name
-			// @2 High level test name - first node in JSON
-			// @3 test case name
+			// @1 High level test name - first node in JSON
+			// @2 test case name
 			// return type is String and contains the Json which was written to
 			// Splunk
 			String value;
 			try {
-				value = splunkReport.commitSplunk("Perfecto", testResult.getMethod().getMethodName(), classHelper.splunkIndex);
+				value = splunkReport.commitSplunk("Perfecto", testResult.getMethod().getMethodName());
 				System.out.println(value);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

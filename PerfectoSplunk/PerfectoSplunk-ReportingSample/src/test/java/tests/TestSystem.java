@@ -40,7 +40,6 @@ public class TestSystem extends ClassHelper {
 	public void OrderBook() throws Exception {
 		// sets the RemoteWebDriver and initial library settings
 		setPagesAndHelpers(lib);
-
 		String step = "Step_" + lib.getStep();
 		//sets the start of a transaction
 		//Params
