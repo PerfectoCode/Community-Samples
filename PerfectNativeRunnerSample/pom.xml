@@ -3,34 +3,41 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>amazontest</groupId>
 	<artifactId>amazontest</artifactId>
-	<version>0.0.1-SNAPSHOT</version>	
-	  <repositories>
-        <repository>
-            <id>perfectomobile</id>
-            <name>Perfecto mobile</name>
-            <url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
-        </repository>
-        </repositories>
+	<version>0.0.1-SNAPSHOT</version>
+	<repositories>
+		<repository>
+			<id>perfectomobile</id>
+			<name>Perfecto mobile</name>
+			<url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
+		</repository>
+	</repositories>
 	<dependencies>
-    		<dependency>
+		<dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
 		</dependency>
-			<dependency>
-  		<groupId>velocity</groupId>
-  		<artifactId>velocity-dep</artifactId>
-  		<version>1.4</version>
-  	</dependency>
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity-dep</artifactId>
+			<version>1.4</version>
+		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
-						<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
@@ -39,17 +46,18 @@
 						<suiteXmlFile>src/test/resources/testsuite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<properties>
-                    	<property>
-                        	<name>usedefaultlisteners</name>
-                        	<value>false</value>
-                    	</property>
-                    	<property>
-                        	<name>listener</name>
-                        	<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
-                    	</property>
-                	</properties>
-                	<workingDirectory>target/</workingDirectory>
-            	</configuration>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+						<property>
+							<name>listener</name>
+							<value>org.uncommons.reportng.HTMLReporter,
+								org.uncommons.reportng.JUnitXMLReporter</value>
+						</property>
+					</properties>
+					<workingDirectory>target/</workingDirectory>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
