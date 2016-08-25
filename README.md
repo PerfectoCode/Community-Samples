@@ -17,6 +17,6 @@ The following examples are included:
 |HybridAppProject | Demonstrate hybrid application testing | [Hybrid Application Testing](https://community.perfectomobile.com/posts/1201527-hybrid-apps-object-spy-support-for-multiple-webviews)|
 |NetworkPreferencesDemo| Network condition / preferences testing | [Network Preferences](https://community.perfectomobile.com/posts/1215302-network-virtualization-network-preferences-testing-testing-for-various-networks)|
 |Calabash| Perfecto Integration with Calabash | [Calabash](https://community.perfectomobile.com/posts/1215991)|
-|PerfectoNativeRunner | Execute Perfecto Native Automation Tests from Java | Link coming soon |
+|PerfectoNativeRunner | Execute Perfecto Native Automation Tests from Java | [Perfecto Native Runner](https://community.perfectomobile.com/posts/1231466-perfecto-native-runner) |
 |TimerToExcelExtractor | Shows how to extract timers of run results to excel | [TimerToExcelExtractor](https://community.perfectomobile.com/posts/1223970) |
-
+|PerfectoSplunk | Samples for use with the Perfecto Connector for Splunk | [Perfecto Connector for Splunk](https://community.perfectomobile.com/series/32230/posts/1103159) |
