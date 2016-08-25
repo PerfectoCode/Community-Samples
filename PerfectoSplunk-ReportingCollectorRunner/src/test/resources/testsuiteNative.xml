@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1" verbose="1"
+	configfailurepolicy="skip">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="utilities.TestListener" />
+	</listeners>
+
+	<parameter name="splunkScheme" value="yourSplunkScheme" />
+	<parameter name="splunkHost" value="yourSplunkHost" />
+	<parameter name="splunkPort" value="yourSplunkPort" />
+	<parameter name="splunkToken" value="yourSplunkToken" />
+	<parameter name="splunkSLA" value="yourSLAinMiliseconds" />
+
+	<test name="NativeTestiOS">
+		<parameter name="host" value="yourHostname" />
+		<parameter name="username" value="yourUsername" />
+		<parameter name="password" value="yourPassword" />
+		<parameter name="scriptKey" value="yourRepositoryKey" />
+		<parameter name="deviceId" value="yourDeviceId" />
+		<!-- in testng the additional parameters need to have their & encoded like this value="&amp;param.url=m.newegg.com" /> -->
+		<parameter name="additionalParams" value="" />
+		<parameter name="cycles" value="1000" />
+		<parameter name="waitForCycles" value="5000" />
+		<classes>
+			<class name="tests.TestSystem">
+			</class>
+		</classes>
+	</test>
+</suite>
