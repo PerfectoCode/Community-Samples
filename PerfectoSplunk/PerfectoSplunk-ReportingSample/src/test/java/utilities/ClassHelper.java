@@ -30,20 +30,21 @@ public abstract class ClassHelper {
 	private static String splunkHost;
 	private static String splunkPort;
 	private static String splunkToken;
-	private static String splunkSLA;
+	private static long splunkSLA;
 
 	// Call this at the start of test to set the reporting class and
 	// define splunk details
 	// Params
-	// @1SLA in milliseconds - this will define pass/fail threshold for steps based on response time
+	// @1SLA in milliseconds - this will define pass/fail threshold for steps
+	// based on response time
 	// @2 Splunk scheme http or https
 	// @3 Splunk host
 	// @4 Splunk port
 	// @5 Splunk token if required
 	// @6 Proxy if desired
 	public void setSplunk() {
-		SplunkReporting reporting = ReportingFactory.createInstance(Long.parseLong(splunkSLA), splunkScheme, splunkHost,
-				splunkPort, splunkToken);
+		SplunkReporting reporting = ReportingFactory.createInstance(splunkSLA, splunkScheme, splunkHost, splunkPort,
+				splunkToken);
 		ReportingFactory.setReporting(reporting);
 	}
 
@@ -72,7 +73,7 @@ public abstract class ClassHelper {
 	@BeforeMethod(alwaysRun = true)
 	public void beforeMethod(Method method, String targetEnvironment, String perfectoHost, String perfectoUsername,
 			String perfectoPassword, String splunkHost, String splunkPort, String splunkScheme, String splunkToken,
-			String splunkSLA) {
+			long splunkSLA) {
 
 		this.splunkScheme = splunkScheme;
 		this.splunkHost = splunkHost;

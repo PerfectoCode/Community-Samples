@@ -28,7 +28,7 @@ public abstract class ClassHelper {
 	private static String splunkHost;
 	private static String splunkPort;
 	private static String splunkToken;
-	private static String splunkSLA;
+	private static long splunkSLA;
 
 	// Call this at the start of test to set the reporting class and
 		// define splunk details
@@ -40,7 +40,7 @@ public abstract class ClassHelper {
 		// @5 Splunk token if required
 		// @6 Proxy if desired
 	public void setSplunk() {
-		SplunkReportingCollector reporting = ReportingCollectorFactory.createInstance(Long.parseLong(splunkSLA),
+		SplunkReportingCollector reporting = ReportingCollectorFactory.createInstance(splunkSLA,
 				splunkScheme, splunkHost, splunkPort, splunkToken);
 		ReportingCollectorFactory.setReporting(reporting);
 	}
@@ -53,7 +53,7 @@ public abstract class ClassHelper {
 	@Parameters({ "splunkScheme", "splunkHost", "splunkPort", "splunkToken", "splunkSLA" })
 	@BeforeSuite
 	public void beforeSuite(String splunkScheme, String splunkHost, String splunkPort, String splunkToken,
-			String splunkSLA) {
+			long splunkSLA) {
 		this.splunkScheme = splunkScheme;
 		this.splunkHost = splunkHost;
 		this.splunkPort = splunkPort;
