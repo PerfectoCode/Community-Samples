@@ -13,6 +13,8 @@
 		<parameter name="password" value="yourPassword" />
 		<parameter name="scriptKey" value="yourRepositoryKey" />
 		<parameter name="deviceId" value="yourDeviceId" />
+		<!-- in testng the additional parameters need to have their & encoded like this value="&amp;param.url=m.newegg.com" /> -->
+		<parameter name="additionalParams" value="" />
 		<parameter name="cycles" value="1000" />
 		<parameter name="waitForCycles" value="5000" />
 		<classes>
