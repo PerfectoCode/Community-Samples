@@ -30,9 +30,10 @@ public class TestSystem {
 	// @3 Perfecto password
 	// @4 Perfect script key "Private:yourscript or Private:directory/yourscript
 	// @5 Device Id to execute the script
-	// @6 Number of times to loop and wait for the completion of the script ---
+	// @6 Additional Params -- the format for the parameters 
+	// @7 Number of times to loop and wait for the completion of the script ---
 	// suggested value in the 1000s
-	// @7 Number of milliseconds to wait between each status check of the script
+	// @8 Number of milliseconds to wait between each status check of the script
 	// ---- suggest 5000 milliseconds
 	@Parameters({ "host", "username", "password", "scriptKey", "deviceId", "additionalParams", "cycles",
 			"waitForCycles" })
@@ -42,6 +43,20 @@ public class TestSystem {
 		PerfectoRunner pr = new PerfectoRunner();
 
 		// executes the script and gathers the test results
+		
+		// Executes the Native Tests
+		// define Perfecto and Script details
+		// Params
+		// @1 Perfecto Host
+		// @2 Perfecto username
+		// @3 Perfecto password
+		// @4 Perfect script key "Private:yourscript or Private:directory/yourscript
+		// @5 Device Id to execute the script
+		// @6 Additional Params -- the format for the parameters &param.url=m.newegg.com
+		// @7 Number of times to loop and wait for the completion of the script ---
+		// suggested value in the 1000s
+		// @8 Number of milliseconds to wait between each status check of the script
+		// ---- suggest 5000 milliseconds
 		testResults = pr.executeScript(host, username, password, scriptKey, deviceId, additionalParams, cycles,
 				waitForCycles);
 
