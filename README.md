@@ -20,3 +20,4 @@ The following examples are included:
 |PerfectoNativeRunner | Samples to execute Perfecto Native Automation Tests from Java | [Perfecto Native Runner](https://community.perfectomobile.com/posts/1231466-perfecto-native-runner) |
 |TimerToExcelExtractor | Shows how to extract timers of run results to excel | [TimerToExcelExtractor](https://community.perfectomobile.com/posts/1223970) |
 |PerfectoSplunk | Samples for use with the Perfecto Connector for Splunk | [Perfecto Connector for Splunk](https://community.perfectomobile.com/series/32230/posts/1103159) |
+|PerfectoSplunk-ReportingCollectorRunner|Project combining the Perfecto Native Runner and the Perfecto Connector for Splunk|[Combining Perfecto Native Runner and Splunk](https://community.perfectomobile.com/posts/1231957-combining-perfecto-native-runner-and-splunk)
