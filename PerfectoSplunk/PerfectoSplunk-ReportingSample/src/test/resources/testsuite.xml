@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite" parallel="tests" thread-count="2" verbose="1"
+	configfailurepolicy="skip">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="utilities.TestListener" />
+	</listeners>
+
+	<test name="Test Galaxy S6">
+		<parameter name="splunkScheme" value="yourSplunkScheme" />
+		<parameter name="splunkHost" value="yourSplunkHost" />
+		<parameter name="splunkPort" value="yourSplunkPort" />
+		<parameter name="splunkToken" value="yourSplunkToken" />
+		<parameter name="splunkSLA" value="yourSLAinMiliseconds" />
+		<parameter name="targetEnvironment" value="yourPerfectoModel" />
+		<parameter name="perfectoHost" value="yourPerfectoHost" />
+		<parameter name="perfectoUsername" value="yourPerfectoUsername" />
+		<parameter name="perfectoPassword" value="yourPerfectoPassword" />
+		<classes>
+			<class name="tests.TestSystem" />
+		</classes>
+	</test>
+
+	<test name="Test iPhone-6">
+		<parameter name="splunkScheme" value="yourSplunkScheme" />
+		<parameter name="splunkHost" value="yourSplunkHost" />
+		<parameter name="splunkPort" value="yourSplunkPort" />
+		<parameter name="splunkToken" value="yourSplunkToken" />
+		<parameter name="splunkSLA" value="yourSLAinMiliseconds" />
+		<parameter name="targetEnvironment" value="yourPerfectoModel" />
+		<parameter name="perfectoHost" value="yourPerfectoHost" />
+		<parameter name="perfectoUsername" value="yourPerfectoUsername" />
+		<parameter name="perfectoPassword" value="yourPerfectoPassword" />
+		<classes>
+			<class name="tests.TestSystem" />
+		</classes>
+	</test>
+
+</suite>
