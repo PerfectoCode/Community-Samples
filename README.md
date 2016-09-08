@@ -15,6 +15,7 @@ The following examples are included:
 |WebDemoDotNetC# | C# sample that demonstrate parallel desktop and mobile test runs |[C# Test Mobile and Web Browsers](https://community.perfectomobile.com/posts/1149050) |
 |AmazonWebAppProject | Cross Platform - Cross Browser Testing - Sample Project in Java for Responsive Web Test |[Cross Platform - Cross Browser Testing](https://community.perfectomobile.com/posts/1197636) |
 |HybridAppProject | Demonstrate hybrid application testing | [Hybrid Application Testing](https://community.perfectomobile.com/posts/1201527-hybrid-apps-object-spy-support-for-multiple-webviews)|
+|ImageInjection|Appium Java sample that uses _image injection_ for a simple camera app.|[Image Injection](https://community.perfectomobile.com/posts/1222313)|
 |NetworkPreferencesDemo| Network condition / preferences testing | [Network Preferences](https://community.perfectomobile.com/posts/1215302-network-virtualization-network-preferences-testing-testing-for-various-networks)|
 |Calabash| Perfecto Integration with Calabash | [Calabash](https://community.perfectomobile.com/posts/1215991)|
 |PerfectoNativeRunner | Samples to execute Perfecto Native Automation Tests from Java | [Perfecto Native Runner](https://community.perfectomobile.com/posts/1231466-perfecto-native-runner) |
