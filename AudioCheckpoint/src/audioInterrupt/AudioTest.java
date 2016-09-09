@@ -120,7 +120,7 @@ public class AudioTest {
 			
 			// Use the automationName capability to define the required framework - Appium (this is the default) or PerfectoMobile.
 			capabilities.setCapability("automationName", "Appium");
-			capabilities.setCapability("scriptName", "Audio Interrupt Test");
+			capabilities.setCapability("scriptName", "AudioInterruptTest");
 
 			// Call this method if you want the script to share the devices with the Perfecto Lab plugin.
 			PerfectoLabUtils.setExecutionIdCapability(capabilities, host);
