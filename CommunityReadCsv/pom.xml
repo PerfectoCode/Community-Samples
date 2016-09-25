@@ -16,25 +16,4 @@
 			<version>3.1</version>
 		</dependency>
 	</dependencies>
-
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-failsafe-plugin</artifactId>
-    <configuration>
-        <skip>${skip.selenium.tests}</skip>
-        <parallel>none</parallel>
-        <threadCount>1</threadCount>
-        <reuseForks>false</reuseForks>
-        <disableXmlReport>true</disableXmlReport>
-    </configuration>
-    <executions>
-        <execution>
-            <id>runSeleniumTests</id>
-            <phase>integration-test</phase>
-            <goals>
-                <goal>integration-test</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
 </project>
