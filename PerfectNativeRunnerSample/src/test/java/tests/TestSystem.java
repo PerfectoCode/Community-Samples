@@ -30,7 +30,7 @@ public class TestSystem {
 	// @3 Perfecto password
 	// @4 Perfect script key "Private:yourscript or Private:directory/yourscript
 	// @5 Device Id to execute the script
-	// @6 Additional Params -- the format for the parameters 
+	// @6 Additional Params -- the format for the parameters
 	// @7 Number of times to loop and wait for the completion of the script ---
 	// suggested value in the 1000s
 	// @8 Number of milliseconds to wait between each status check of the script
@@ -43,19 +43,23 @@ public class TestSystem {
 		PerfectoRunner pr = new PerfectoRunner();
 
 		// executes the script and gathers the test results
-		
+
 		// Executes the Native Tests
 		// define Perfecto and Script details
 		// Params
 		// @1 Perfecto Host
 		// @2 Perfecto username
 		// @3 Perfecto password
-		// @4 Perfect script key "Private:yourscript or Private:directory/yourscript
+		// @4 Perfect script key "Private:yourscript or
+		// Private:directory/yourscript
 		// @5 Device Id to execute the script
-		// @6 Additional Params -- the format for the parameters &param.url=m.newegg.com
-		// @7 Number of times to loop and wait for the completion of the script ---
+		// @6 Additional Params -- the format for the parameters
+		// &param.url=m.newegg.com
+		// @7 Number of times to loop and wait for the completion of the script
+		// ---
 		// suggested value in the 1000s
-		// @8 Number of milliseconds to wait between each status check of the script
+		// @8 Number of milliseconds to wait between each status check of the
+		// script
 		// ---- suggest 5000 milliseconds
 		testResults = pr.executeScript(host, username, password, scriptKey, deviceId, additionalParams, cycles,
 				waitForCycles);
@@ -64,28 +68,43 @@ public class TestSystem {
 		// PerfectoRunner.availableReportOptions.<selected report
 		// options>.toString()
 
-		System.out.println("ScriptStatus:"
-				+ testResults.get(PerfectoRunner.availableReportOptions.scriptStatus.toString()).toString());
-
-		System.out
-				.println("Model:" + testResults.get(PerfectoRunner.availableReportOptions.model.toString()).toString());
-
-		System.out.println("Os:" + testResults.get(PerfectoRunner.availableReportOptions.os.toString()).toString());
+		System.out.println("ExecutionId:"
+				+ testResults.get(PerfectoRunner.availableReportOptions.executionId.toString()).toString());
 
 		System.out.println(
-				"OSVersion:" + testResults.get(PerfectoRunner.availableReportOptions.osVersion.toString()).toString());
+				"ReportId:" + testResults.get(PerfectoRunner.availableReportOptions.reportId.toString()).toString());
+
+		System.out.println("ScriptName:"
+				+ testResults.get(PerfectoRunner.availableReportOptions.scriptName.toString()).toString());
+
+		System.out.println("ScriptStatus:"
+				+ testResults.get(PerfectoRunner.availableReportOptions.scriptStatus.toString()).toString());
 
 		System.out.println(
 				"DeviceId:" + testResults.get(PerfectoRunner.availableReportOptions.deviceId.toString()).toString());
 
-		System.out.println("scriptName:"
-				+ testResults.get(PerfectoRunner.availableReportOptions.scriptName.toString()).toString());
+		System.out.println(
+				"Location:" + testResults.get(PerfectoRunner.availableReportOptions.location.toString()).toString());
+
+		System.out.println("Manufacturer:"
+				+ testResults.get(PerfectoRunner.availableReportOptions.manufacturer.toString()).toString());
+
+		System.out
+				.println("Model:" + testResults.get(PerfectoRunner.availableReportOptions.model.toString()).toString());
 
 		System.out.println(
-				"reportId:" + testResults.get(PerfectoRunner.availableReportOptions.reportId.toString()).toString());
+				"Firmware:" + testResults.get(PerfectoRunner.availableReportOptions.firmware.toString()).toString());
 
-		System.out.println("executionId:"
-				+ testResults.get(PerfectoRunner.availableReportOptions.executionId.toString()).toString());
+		System.out.println("Description:"
+				+ testResults.get(PerfectoRunner.availableReportOptions.description.toString()).toString());
+
+		System.out.println("OS:" + testResults.get(PerfectoRunner.availableReportOptions.os.toString()).toString());
+
+		System.out.println(
+				"OsVersion:" + testResults.get(PerfectoRunner.availableReportOptions.osVersion.toString()).toString());
+		
+		System.out.println(
+				"ReportURL:" + testResults.get(PerfectoRunner.availableReportOptions.reportUrl.toString()).toString());
 
 		// Transactions are returned in its own map
 		Map<String, String> transactions = (Map<String, String>) testResults
