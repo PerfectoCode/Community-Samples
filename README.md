@@ -26,4 +26,4 @@ The following examples are included:
 |CommunityReadTxt|This is a sample code in java for reading external txt files.|[Reading External File in Txt Formats](https://community.perfectomobile.com/series/32598/posts/1219001)|
 |CommunityReadXlsx|This is a sample code in java for reading external xls/xlsx files.|[Reading External File in XLS/XLSX Formats](https://community.perfectomobile.com/series/32598/posts/1218177)|
 |CommunityReadXml|This is a sample code in java for reading external xml file.|[Reading External File in xml Formats](https://community.perfectomobile.com/series/32598/posts/1222317)|
-|Run Espresso from Jenkins| Sample code with Android project and Selenium project that runs the Espresso in the Android project| [Running Espresso Tests with Jenkins](https://community.perfectomobile.com/groups/30292/posts/1254777)
+|EspressoEx| Sample code with Android project and Selenium project that runs the Espresso in the Android project| [Running Espresso Tests with Jenkins](https://community.perfectomobile.com/groups/30292/posts/1254777)
