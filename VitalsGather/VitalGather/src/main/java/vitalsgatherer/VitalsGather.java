@@ -63,16 +63,6 @@ public class VitalsGather {
 
 	public Map<resultOptions, String> results = new HashMap<resultOptions, String>();
 
-	@SuppressWarnings("deprecation")
-	public void main(String[] args) throws IOException, URISyntaxException, ParserConfigurationException, SAXException,
-			XPathExpressionException {
-		/*
-		 * // TODO Auto-generated method stub
-		 * getVitals("demo.perfectomobile.com", "jeremyp@perfectomobile.com",
-		 * "perfecto123", "PRIVATE:NewEggSite", new Date("09/12/2016 19:51:15"),
-		 * "", availableTimeTypes.started, "dataz", "d:\\", true);
-		 */
-	}
 
 	public Map<resultOptions, String> getVitals(String host, String username, String password, String scriptKey,
 			Date startTime, String offSet, availableTimeTypes att, String fileName, String fileLocation,
