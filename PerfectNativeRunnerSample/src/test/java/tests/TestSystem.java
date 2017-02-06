@@ -22,9 +22,8 @@ import PerfectoNativeRunner.PerfectoRunner;
 import com.google.common.collect.Table;
 import com.google.common.collect.Table.Cell;
 
-import utilities.ClassHelperNative;
 
-public class TestSystem extends ClassHelperNative {
+public class TestSystem  {
 	
 
 	// the map to store the test results
@@ -47,6 +46,7 @@ public class TestSystem extends ClassHelperNative {
 	public void NativeTests(String host, String username, String password,
 			String scriptKey, String deviceId, String additionalParams,
 			int cycles, long waitForCycles) throws Exception {
+		Map<PerfectoRunner.availableReportOptions, Object> testResults = new HashMap<PerfectoRunner.availableReportOptions, Object>();
 		PerfectoRunner pr = new PerfectoRunner();
 
 		// executes the script and gathers the test results
@@ -99,7 +99,7 @@ public class TestSystem extends ClassHelperNative {
 						PerfectoRunner.availableReportOptions.scriptName)
 						.toString());
 		
-		getCollector().reporting.put("testName", testResults.get(
+		System.out.println("testName:" + testResults.get(
 				PerfectoRunner.availableReportOptions.scriptName)
 				.toString());
 
