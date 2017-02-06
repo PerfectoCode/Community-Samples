@@ -5,7 +5,7 @@
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-		<listener class-name="utilities.TestListener" />
+		<listener class-name="utilities.TestListenerNative" />
 	</listeners>
 
 	<parameter name="splunkScheme" value="yourSplunkScheme" />
