@@ -1,0 +1,14 @@
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\ALMReportingBridge.exe.config
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\ALMReportingBridge.exe.manifest
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\ALMReportingBridge.application
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\ALMReportingBridge.exe
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\ALMReportingBridge.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\CLAP.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\CLAP.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Debug\CLAP.xml
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Debug\Interop.TDAPIOLELib.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Debug\ALMReportingBridge.csproj.ResolveComReference.cache
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Debug\ALMReportingBridge.exe.manifest
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Debug\ALMReportingBridge.application
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Debug\ALMReportingBridge.exe
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Debug\ALMReportingBridge.pdb

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ALMReportingBridge.exe" version="1.0.0.1" publicKeyToken="e2e31ff898303911" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ALMReportingBridge" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ALMReportingBridge.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALMReportingBridge.exe" size="41976">
+      <assemblyIdentity name="ALMReportingBridge" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tIuHnME1iOFcGPJXlao96Naxpurg4NMiFbL/65BDmk4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CLAP.dll" size="448000">
+      <assemblyIdentity name="CLAP" version="4.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kKxoUHuWKRLRyJE5k5cNiknmA4bUC8HIJr3g/VNiw5E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ALMReportingBridge.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PMCCARTNEY-MBP\pmccartney" issuerKeyHash="78206fe42e055a750a324f9a278daee1be4e62ff" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gldqSrx4ELChrWCP7mgJiWU9+oAUTmpWYP37Le3xbIM=</DigestValue></Reference></SignedInfo><SignatureValue>J/9gkI6VqvhHrB8V0VZb4LkGzbkYijngG80BbyZJRg2fLQ5LRvYPFebQPITy4iTPHaFK25QUANNd+JOmwszdGCKWvkRoEWrjRDvE+t0iUy5YZ3hNqvMdf+vjI/hAYdHxGF6yicLn4w2XIbZnoactxdQp/4rrYTHsbfb7XF+yquI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>moe9VDI8dOn3fX4+wdNpI5fgS6En4IiDsZNaCvVL6EUe47CT3UK6r9I/TTiKKZI6cXvtcoKQrZZPcQUxaKxuGR/qV3AtwAGDI7NRvt5C8Rh9JL/KQ6R48RqTOB7JffFr12dclenWcmZrMTAnovL55yzw0/mWXdT8nLwtcVfNAz0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="836cf1ed2dfbfd60566a4e1480fa3d65890968ee8f60ada1b01078bc4a6a5782" Description="" Url=""><as:assemblyIdentity name="ALMReportingBridge.exe" version="1.0.0.1" publicKeyToken="e2e31ff898303911" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PMCCARTNEY-MBP\pmccartney</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zGCK83RY0YaTsqBRxRvUIEesNIlrPUcd4sY3Onhy4Z8=</DigestValue></Reference></SignedInfo><SignatureValue>QAqhn2qroCsR6B/w70X3tf63YEmSelWHAsMef+nonmNno8qws6HMGCEIfPmqhQO1Hc1MJvSNrrJCA3VRZuCrB0ZZwofDN4rXDw5O1D/N3vyVOG8j/5wz3tIj2Z52b0SqbOjgbDdKmqxja/F2vMO5KBBc02W8Xfd7hzSQlc3dIE4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>moe9VDI8dOn3fX4+wdNpI5fgS6En4IiDsZNaCvVL6EUe47CT3UK6r9I/TTiKKZI6cXvtcoKQrZZPcQUxaKxuGR/qV3AtwAGDI7NRvt5C8Rh9JL/KQ6R48RqTOB7JffFr12dclenWcmZrMTAnovL55yzw0/mWXdT8nLwtcVfNAz0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQY6nb28IxP7FF+1+F4OuNtDANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIAUABNAEMAQwBBAFIAVABOAEUAWQAtAE0AQgBQAFwAcABtAGMAYwBhAHIAdABuAGUAeTAeFw0xNzAyMjAwNDIxMzdaFw0xODAyMjAxMDIxMzdaMD0xOzA5BgNVBAMeMgBQAE0AQwBDAEEAUgBUAE4ARQBZAC0ATQBCAFAAXABwAG0AYwBjAGEAcgB0AG4AZQB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCah71UMjx06fd9fj7B02kjl+BLoSfgiIOxk1oK9UvoRR7jsJPdQrqv0j9NOIopkjpxe+1ygpCtlk9xBTForG4ZH+pXcC3AAYMjs1G+3kLxGH0kv8pDpHjxGpM4Hsl98WvXZ1yV6dZyZmsxMCei8vnnLPDT+ZZd1PycvC1xV80DPQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACyFrtCv3Bm8k0Wra9C6nc3J21Nr4bS5Akutb3Z7Wj0mRVZiWvz+t+D8w35z8fPKnozbTmN8Wn+VyLIoiPiqqQ5izaI9Qm//DJIdcNOt3tUZ/mgzemWAXy0r1fOcd340uvYLqAhc7h8jaoLdslB80MhzvFLGh/wPBhKFRIlKMuW0</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

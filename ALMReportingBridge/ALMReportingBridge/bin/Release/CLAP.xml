@@ -1,0 +1,1675 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CLAP</name>
+    </assembly>
+    <members>
+        <member name="T:CLAP.CollectionValidationAttribute">
+            <summary>
+            Validates a collection of parameters of properties
+            </summary>
+        </member>
+        <member name="T:CLAP.ICollectionValidation">
+            <summary>
+            Validation of collections of parameters and values
+            </summary>
+        </member>
+        <member name="M:CLAP.ICollectionValidation.GetValidator">
+            <summary>
+            Gets an instance of the collection validator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:CLAP.ICollectionValidation.Description">
+            <summary>
+            The description of this validation attribute, used when asking for help
+            </summary>
+        </member>
+        <member name="M:CLAP.CollectionValidationAttribute.GetValidator">
+            <summary>
+            Gets a validator instance
+            </summary>
+        </member>
+        <member name="P:CLAP.CollectionValidationAttribute.Description">
+            <summary>
+            The validation description
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.UserVerbExecutionContext.Method">
+            <summary>
+            The method that is executed
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.UserVerbExecutionContext.Target">
+            <summary>
+            The target object, if any, that the verb is executed on.
+            If the verb is static, this is null.
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.UserVerbExecutionContext.UserContext">
+            <summary>
+            A user-context that can be filled with custom keys and values.
+            Once filled in the pre-execution context - it is available in the post-execution context.
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.UserVerbExecutionContext.Parameters">
+            <summary>
+            The list of parameters and their values
+            </summary>
+        </member>
+        <member name="T:CLAP.Parser">
+            <summary>
+            A command-line arguments parser
+            </summary>
+        </member>
+        <member name="T:CLAP.MultiParser">
+            <summary>
+            A parser of one or more classes
+            </summary>
+        </member>
+        <member name="M:CLAP.MultiParser.RunStatic(System.String[])">
+            <summary>
+            Run a parser of static verbs
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.MultiParser.RunTargets(System.String[],System.Object[])">
+            <summary>
+            Run a parser of instance verbs against instances of the verb classes
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="targets">The instances of the verb classes</param>
+        </member>
+        <member name="M:CLAP.MultiParser.GetHelpString">
+            <summary>
+            Gets a help string that describes all the parser information for the user
+            </summary>
+        </member>
+        <member name="P:CLAP.MultiParser.Register">
+            <summary>
+            Parser registration
+            </summary>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms(System.String[],System.Object[])">
+            <summary>
+            Executes a winforms parser of instance-verbs based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="targets">The instances of the verb classes</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``1(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of a specified type
+            </summary>
+            <typeparam name="T">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``1(System.String[],``0)">
+            <summary>
+            Executes a generic winforms parser of a specified type
+            </summary>
+            <typeparam name="T">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``2(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``2(System.String[],``0,``1)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``3(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``3(System.String[],``0,``1,``2)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``4(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``4(System.String[],``0,``1,``2,``3)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``5(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``5(System.String[],``0,``1,``2,``3,``4)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``6(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``6(System.String[],``0,``1,``2,``3,``4,``5)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``7(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``7(System.String[],``0,``1,``2,``3,``4,``5,``6)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``8(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``8(System.String[],``0,``1,``2,``3,``4,``5,``6,``7)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <typeparam name="T8">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``9(System.String[])">
+            <summary>
+            Executes a generic winforms static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunWinForms``9(System.String[],``0,``1,``2,``3,``4,``5,``6,``7,``8)">
+            <summary>
+            Executes a generic winforms parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <typeparam name="T8">The type of the parser</typeparam>
+            <typeparam name="T9">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+            <param name="t9">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole(System.String[],System.Object[])">
+            <summary>
+            Executes a console parser of instance-verbs based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="targets">The instances of the verb classes</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``1(System.String[])">
+            <summary>
+            Executes a generic console static parser of a specified type
+            </summary>
+            <typeparam name="T">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``1(System.String[],``0)">
+            <summary>
+            Executes a generic console parser of a specified type
+            </summary>
+            <typeparam name="T">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``2(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``2(System.String[],``0,``1)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``3(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``3(System.String[],``0,``1,``2)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``4(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``4(System.String[],``0,``1,``2,``3)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``5(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``5(System.String[],``0,``1,``2,``3,``4)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``6(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``6(System.String[],``0,``1,``2,``3,``4,``5)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``7(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``7(System.String[],``0,``1,``2,``3,``4,``5,``6)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``8(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``8(System.String[],``0,``1,``2,``3,``4,``5,``6,``7)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <typeparam name="T8">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``9(System.String[])">
+            <summary>
+            Executes a generic console static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.RunConsole``9(System.String[],``0,``1,``2,``3,``4,``5,``6,``7,``8)">
+            <summary>
+            Executes a generic console parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <typeparam name="T8">The type of the parser</typeparam>
+            <typeparam name="T9">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+            <param name="t9">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.#ctor(System.Type[])">
+            <summary>
+            Creates a parser based on the specified types
+            </summary>
+            <param name="types"></param>
+        </member>
+        <member name="M:CLAP.Parser.Run(System.String[],System.Object[])">
+            <summary>
+            Executes a parser of instance-verbs based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="targets">The instances of the verb classes</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``1(System.String[])">
+            <summary>
+            Executes a generic static parser of a specified type
+            </summary>
+            <typeparam name="T">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``1(System.String[],``0)">
+            <summary>
+            Executes a generic parser of a specified type
+            </summary>
+            <typeparam name="T">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``2(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``2(System.String[],``0,``1)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``3(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``3(System.String[],``0,``1,``2)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``4(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``4(System.String[],``0,``1,``2,``3)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``5(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``5(System.String[],``0,``1,``2,``3,``4)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``6(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``6(System.String[],``0,``1,``2,``3,``4,``5)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``7(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``7(System.String[],``0,``1,``2,``3,``4,``5,``6)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``8(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``8(System.String[],``0,``1,``2,``3,``4,``5,``6,``7)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <typeparam name="T8">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``9(System.String[])">
+            <summary>
+            Executes a generic static parser of some specified types
+            </summary>
+            <param name="args">The user arguments</param>
+        </member>
+        <member name="M:CLAP.Parser.Run``9(System.String[],``0,``1,``2,``3,``4,``5,``6,``7,``8)">
+            <summary>
+            Executes a generic parser of some specified types
+            </summary>
+            <typeparam name="T1">The type of the parser</typeparam>
+            <typeparam name="T2">The type of the parser</typeparam>
+            <typeparam name="T3">The type of the parser</typeparam>
+            <typeparam name="T4">The type of the parser</typeparam>
+            <typeparam name="T5">The type of the parser</typeparam>
+            <typeparam name="T6">The type of the parser</typeparam>
+            <typeparam name="T7">The type of the parser</typeparam>
+            <typeparam name="T8">The type of the parser</typeparam>
+            <typeparam name="T9">The type of the parser</typeparam>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+            <param name="t9">An instance of the verb class</param>
+        </member>
+        <member name="T:CLAP.ErrorAttribute">
+            <summary>
+            Marks a method to be executed when an exception occurs.
+            The method may only accept one parameter of type CLAP.ExceptionContext
+            </summary>
+        </member>
+        <member name="T:CLAP.FileSystemHelper">
+            <summary>
+            A helper for file reading to allow mocking for tests
+            </summary>
+        </member>
+        <member name="T:CLAP.EmptyAttribute">
+            <summary>
+            Marks a method to be executed when there is no input.
+            The method must not accept any parameter except if marked along with [Help].
+            </summary>
+        </member>
+        <member name="T:CLAP.CommandLineParserException">
+            <summary>
+            Base exception class for all parser exceptions
+            </summary>
+        </member>
+        <member name="M:CLAP.CommandLineParserException.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.CommandLineParserException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.CommandLineParserException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbNotFoundException.Verb">
+            <summary>
+            The verb string that wasn't found
+            </summary>
+        </member>
+        <member name="P:CLAP.MissingRequiredArgumentException.ParameterName">
+            <summary>
+            The name of the required parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.MissingRequiredArgumentException.Method">
+            <summary>
+            The verb that requires the parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.MissingArgumentValueException.ParameterName">
+            <summary>
+            The name of the parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.MissingArgumentPrefixException.ParameterName">
+            <summary>
+            The name of the parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.TypeConvertionException.Value">
+            <summary>
+            The string value that failed to be converted
+            </summary>
+        </member>
+        <member name="P:CLAP.TypeConvertionException.Type">
+            <summary>
+            The target type
+            </summary>
+        </member>
+        <member name="P:CLAP.UnhandledParametersException.UnhandledParameters">
+            <summary>
+            The collection of unhandled arguments
+            </summary>
+        </member>
+        <member name="P:CLAP.MoreThanOneDefaultVerbException.Verbs">
+            <summary>
+            The collection of the verbs that are defined as default
+            </summary>
+        </member>
+        <member name="P:CLAP.DuplicateTargetAliasException.DuplicateTargetAlias">
+            <summary>
+            The target alias that was determined to be duplicated.
+            </summary>
+        </member>
+        <member name="P:CLAP.InvalidHelpHandlerException.Method">
+            <summary>
+            The method that is defined as help
+            </summary>
+        </member>
+        <member name="P:CLAP.AmbiguousParameterDefaultException.Parameter">
+            <summary>
+            The parameter that has both a Default and a DefaultProvider
+            </summary>
+        </member>
+        <member name="P:CLAP.InvalidParameterDefaultProviderException.Parameter">
+            <summary>
+            The parameter that has an invalid DefaultProvider
+            </summary>
+        </member>
+        <member name="P:CLAP.DuplicateGlobalHandlerException.Name">
+            <summary>
+            The global handler name
+            </summary>
+        </member>
+        <member name="P:CLAP.NonArrayParameterWithSeparatorException.Parameter">
+            <summary>
+            The parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.InvalidSeparatorException.Parameter">
+            <summary>
+            The parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.GlobalAttribute">
+            <summary>
+            Marks a method as a global parameter.
+            The method can either accept any single allowed parameter type or accept 
+            no parameters and be treated as a boolean switch.
+            </summary>
+        </member>
+        <member name="P:CLAP.GlobalAttribute.Aliases">
+            <summary>
+            The additional aliases (as CSV) of the parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.GlobalAttribute.Description">
+            <summary>
+            The description of this parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.GlobalAttribute.Name">
+            <summary>
+            The name of this parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.IVerbInterceptor">
+            <summary>
+            Gives interception options to verb execution
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.IPreVerbInterceptor">
+            <summary>
+            Gives interception options to verb execution BEFORE the verb is executed
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.IPostVerbInterceptor">
+            <summary>
+            Gives interception options to verb execution AFTER the verb is executed, even if the execution fails
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.PostVerbExecutionAttribute">
+            <summary>
+            Marks a method to run after each verb is executed
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.PostVerbExecutionContext">
+            <summary>
+            The context after a verb was executed
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.PostVerbExecutionContext.Cancelled">
+            <summary>
+            Whether the verb execution was cancelled by the pre-execution interception
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.PostVerbExecutionContext.Exception">
+            <summary>
+            If the verb failed to execute - this contains the exception that was thrown
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.PostVerbExecutionContext.Failed">
+            <summary>
+            Whether the verb failed to execute
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.ParameterAndValue">
+            <summary>
+            A parameter and its value
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.ParameterAndValue.Parameter">
+            <summary>
+            The parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.ParameterAndValue.Value">
+            <summary>
+            The value of the parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.PreVerbExecutionAttribute">
+            <summary>
+            Marks a method to run before each verb is executed
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.PreVerbExecutionContext">
+            <summary>
+            The context before a verb is to be executed
+            </summary>
+        </member>
+        <member name="P:CLAP.Interception.PreVerbExecutionContext.Cancel">
+            <summary>
+            Whether to cancel to verb execution.
+            The post-interception will be called having the Cancelled property set to true.
+            </summary>
+        </member>
+        <member name="T:CLAP.VerbExecutionContext">
+            <summary>
+            A verb execution context
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbExecutionContext.Method">
+            <summary>
+            The method that is executed
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbExecutionContext.Target">
+            <summary>
+            The target object, if any, that the verb is executed on.
+            If the verb is static, this is null.
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbExecutionContext.Input">
+            <summary>
+            The input arguments
+            </summary>
+        </member>
+        <member name="T:CLAP.Interception.VerbInterception">
+            <summary>
+            Marks a class to allow verb-interception by a defined IVerbInterceptor
+            (or either IPreVerbInterceptor or IPostVerbInterceptor) type
+            </summary>
+        </member>
+        <member name="M:CLAP.Interception.VerbInterception.#ctor(System.Type)">
+            <summary>
+            Marks a class to allow verb-interception by a defined IVerbInterceptor
+            (or either IPreVerbInterceptor or IPostVerbInterceptor) type
+            </summary>
+            <param name="interceptorType">An interceptor type that implements either IVerbInterceptor, IPreVerbInterceptor or IPostVerbInterceptor</param>
+        </member>
+        <member name="P:CLAP.Interception.VerbInterception.InterceptorType">
+            <summary>
+            The interceptor type
+            </summary>
+        </member>
+        <member name="T:CLAP.Method">
+            <summary>
+            A method descriptor
+            </summary>
+        </member>
+        <member name="P:CLAP.Method.Names">
+            <summary>
+            The names of the method, as defined by the Verb attribute and the additional names
+            </summary>
+        </member>
+        <member name="P:CLAP.Method.Description">
+            <summary>
+            The description of the method
+            </summary>
+        </member>
+        <member name="P:CLAP.Method.MethodInfo">
+            <summary>
+            The <see cref="P:CLAP.Method.MethodInfo"/> this method describes
+            </summary>
+        </member>
+        <member name="P:CLAP.Method.IsDefault">
+            <summary>
+            Whether this verb is the default verb of the class
+            </summary>
+        </member>
+        <member name="T:CLAP.MethodInvoker">
+            <summary>
+            A helper for method invoking to allow mocking for tests
+            </summary>
+        </member>
+        <member name="T:CLAP.Parameter">
+            <summary>
+            A parameter descriptor
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.Default">
+            <summary>
+            The default value
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.DefaultProvider">
+            <summary>
+            The default value provider
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.Required">
+            <summary>
+            Whether this parameter is required
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.Names">
+            <summary>
+            The names of the parameter, as defined by the Parameter attribute and the additional names
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.Description">
+            <summary>
+            The parameter description
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.Separator">
+            <summary>
+            The parameter array separator
+            </summary>
+        </member>
+        <member name="P:CLAP.Parameter.ParameterInfo">
+            <summary>
+            The <see cref="P:CLAP.Parameter.ParameterInfo"/> this parameter describes
+            </summary>
+        </member>
+        <member name="T:CLAP.ParameterAttribute">
+            <summary>
+            A parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.ParameterAttribute.Default">
+            <summary>
+            The default value
+            </summary>
+        </member>
+        <member name="P:CLAP.ParameterAttribute.DefaultProvider">
+            <summary>
+            The default provider type
+            </summary>
+            <remarks>
+            The type must derive from CLAP.DefaultProvider.
+            A parameter cannot have both a Default and a DefaultProvider defined.
+            </remarks>
+        </member>
+        <member name="P:CLAP.ParameterAttribute.Required">
+            <summary>
+            Whether this parameter is required
+            </summary>
+        </member>
+        <member name="P:CLAP.ParameterAttribute.Aliases">
+            <summary>
+            The parameter additional names
+            </summary>
+        </member>
+        <member name="P:CLAP.ParameterAttribute.Description">
+            <summary>
+            The description of the verb. Used to generate the help string
+            </summary>
+        </member>
+        <member name="T:CLAP.DefaultValueAttribute">
+            <summary>
+            Sets a default value for a parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.DefaultProviderAttribute">
+            <summary>
+            Sets a default value provider type for a parameter.
+            The type must derive from DefaultProvider
+            </summary>
+        </member>
+        <member name="T:CLAP.RequiredAttribute">
+            <summary>
+            Marks a parameter to be required
+            </summary>
+        </member>
+        <member name="T:CLAP.AliasesAttribute">
+            <summary>
+            Sets additional names to a parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.DescriptionAttribute">
+            <summary>
+            Sets a description to a parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.SeparatorAttribute">
+            <summary>
+            Sets an array parameter separator
+            </summary>
+        </member>
+        <member name="M:CLAP.SeparatorAttribute.#ctor(System.String)">
+            <summary>
+            The separator to use.
+            The default is a comma (",")
+            </summary>
+            <param name="separator"></param>
+        </member>
+        <member name="T:CLAP.ParametersExpressionValidator">
+            <summary>
+            Validates a collection of named parameters or properties against a boolean expression
+            </summary>
+        </member>
+        <member name="T:CLAP.ICollectionValidator">
+            <summary>
+            Validation of collections of parameters and values
+            </summary>
+        </member>
+        <member name="P:CLAP.ParametersExpressionValidator.Expression">
+            <summary>
+            The expression
+            </summary>
+        </member>
+        <member name="P:CLAP.ParametersExpressionValidator.CaseSensitive">
+            <summary>
+            Whether the expression should be treated as case-sensitive
+            </summary>
+        </member>
+        <member name="T:CLAP.Parser`1">
+            <summary>
+            A command-line arguments parser of the specified type
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:CLAP.Parser`1.Run(System.String[],`0)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`2.Run(System.String[],`0,`1)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`3.Run(System.String[],`0,`1,`2)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`4.Run(System.String[],`0,`1,`2,`3)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`5.Run(System.String[],`0,`1,`2,`3,`4)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`6.Run(System.String[],`0,`1,`2,`3,`4,`5)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`7.Run(System.String[],`0,`1,`2,`3,`4,`5,`6)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`8.Run(System.String[],`0,`1,`2,`3,`4,`5,`6,`7)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.Parser`9.Run(System.String[],`0,`1,`2,`3,`4,`5,`6,`7,`8)">
+            <summary>
+            Executes the parser based on the specified targets
+            </summary>
+            <param name="args">The user arguments</param>
+            <param name="t1">An instance of the verb class</param>
+            <param name="t2">An instance of the verb class</param>
+            <param name="t3">An instance of the verb class</param>
+            <param name="t4">An instance of the verb class</param>
+            <param name="t5">An instance of the verb class</param>
+            <param name="t6">An instance of the verb class</param>
+            <param name="t7">An instance of the verb class</param>
+            <param name="t8">An instance of the verb class</param>
+            <param name="t9">An instance of the verb class</param>
+        </member>
+        <member name="M:CLAP.ParserRunner.MapArguments(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a map of the input arguments and their string values
+            </summary>
+        </member>
+        <member name="M:CLAP.ParserRunner.GetParameters(System.Reflection.MethodInfo)">
+            <summary>
+            Create a list of parameters for the given method
+            </summary>
+        </member>
+        <member name="M:CLAP.ParserRunner.GetVerbs">
+            <summary>
+            Create a list of methods (verbs) for the given type
+            </summary>
+        </member>
+        <member name="M:CLAP.ParserRunner.HandleGlobals(System.Collections.Generic.Dictionary{System.String,System.String},System.Object)">
+            <summary>
+            Handles any global parameter that has any input
+            </summary>
+        </member>
+        <member name="M:CLAP.ParserRunner.HandleRegisteredGlobals(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Handles any registered global parameter that has any input
+            </summary>
+        </member>
+        <member name="M:CLAP.ParserRunner.HandleDefinedGlobals(System.Collections.Generic.Dictionary{System.String,System.String},System.Object)">
+            <summary>
+            Handles any defined global parameter that has any input
+            </summary>
+        </member>
+        <member name="T:CLAP.ParserRegistration">
+            <summary>
+            Provides registration features for parser instances
+            </summary>
+        </member>
+        <member name="M:CLAP.ParserRegistration.HelpHandler(System.String,System.Action{System.String})">
+            <summary>
+            Registers a help handler that is executed when the user requests for help
+            </summary>
+            <param name="names">The names (CSV) to be registered as help parameters. For example: "?,h,help"</param>
+            <param name="helpHandler">The action to be executed</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.EmptyHelpHandler(System.Action{System.String})">
+            <summary>
+            Registers an empty help handler that is executed when there is no input
+            </summary>
+            <param name="handler">The action to be executed</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.EmptyHandler(System.Action)">
+            <summary>
+            Registers an empty handler that is executed when there is no input
+            </summary>
+            <param name="handler">The action to be executed</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.ErrorHandler(System.Action{CLAP.ExceptionContext})">
+            <summary>
+            Registers an error handler that is executed when an exception is thrown
+            </summary>
+            <param name="handler">The action to be executed</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.PreVerbInterceptor(System.Action{CLAP.Interception.PreVerbExecutionContext})">
+            <summary>
+            Registers a pre-verb execution interceptor
+            </summary>
+            <param name="interceptor">The action to be executed before each verb is executed</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.PostVerbInterceptor(System.Action{CLAP.Interception.PostVerbExecutionContext})">
+            <summary>
+            Registers a post-verb execution interceptor
+            </summary>
+            <param name="interceptor">The action to be executed after each verb is executed</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.ParameterHandler(System.String,System.Action)">
+            <summary>
+            Registers a global parameter handler
+            </summary>
+            <param name="names">The names (CSV) to be registered as boolean parameters (switches)</param>
+            <param name="action">The action to execute</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.ParameterHandler(System.String,System.Action,System.String)">
+            <summary>
+            Registers a global parameter handler
+            </summary>
+            <param name="names">The names (CSV) to be registered as boolean parameters (switches)</param>
+            <param name="action">The action to execute</param>
+            <param name="description">The parameter description (for help generation)</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.ParameterHandler``1(System.String,System.Action{``0})">
+            <summary>
+            Registers a global parameter handler
+            </summary>
+            <typeparam name="TParameter">The type of the parameter</typeparam>
+            <param name="names">The names (CSV) to be registered as parameters</param>
+            <param name="action">The action to execute</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.ParameterHandler``1(System.String,System.Action{``0},System.String)">
+            <summary>
+            Registers a global parameter handler
+            </summary>
+            <typeparam name="TParameter">The type of the parameter</typeparam>
+            <param name="names">The names (CSV) to be registered as parameters</param>
+            <param name="action">The action to execute</param>
+            <param name="description">The parameter description (for help generation)</param>
+        </member>
+        <member name="M:CLAP.ParserRegistration.GetTargetType(System.String)">
+            <summary>
+            Attempts to get a registered type by the provided value. The value will first be checked against all of the
+            registered type names, and then if no match is found, by the 'TargetAlias' values applied to the types (if any).
+            </summary>
+            <param name="typeNameOrAlias">The name of the requested type or 'null'</param>
+            <returns>The matching type, or 'null' if no match is found.</returns>
+        </member>
+        <member name="P:CLAP.ParameterOptions.Description">
+            <summary>
+            The parameter description
+            </summary>
+        </member>
+        <member name="P:CLAP.ParameterOptions.Separator">
+            <summary>
+            In case of an array type - the values separator.
+            Unless specified, the default is a comma (",")
+            </summary>
+        </member>
+        <member name="T:CLAP.ValidationAttribute">
+            <summary>
+            Validation on the parameter's value
+            </summary>
+        </member>
+        <member name="M:CLAP.ValidationAttribute.GetValidator">
+            <summary>
+            The validator
+            </summary>
+        </member>
+        <member name="P:CLAP.ValidationAttribute.Description">
+            <summary>
+            The description of this validation attribute, used when asking for help
+            </summary>
+        </member>
+        <member name="T:CLAP.IValueValidator">
+            <summary>
+            A value validator
+            </summary>
+        </member>
+        <member name="M:CLAP.IValueValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate the value
+            </summary>
+        </member>
+        <member name="T:CLAP.HelpAttribute">
+            <summary>
+            Marks a method to be called when the user asks for help
+            </summary>
+        </member>
+        <member name="P:CLAP.HelpAttribute.Aliases">
+            <summary>
+            The additional aliases (as CSV) of the parameter
+            </summary>
+        </member>
+        <member name="P:CLAP.HelpAttribute.Name">
+            <summary>
+            The name of this parameter
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.PathExistsAttribute">
+            <summary>
+            Path exists validation:
+            The string value of the marked parameter or property must be a path to an existing file or directory
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.DirectoryExistsAttribute">
+            <summary>
+            Directory exists validation:
+            The string value of the marked parameter or property must be a path to an existing directory
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.FileExistsAttribute">
+            <summary>
+            File exists validation:
+            The string value of the marked parameter or property must be a path to an existing file
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.FileExistsAttribute.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.FileExistsAttribute.GetValidator">
+            <summary>
+            Gets a validator instance
+            </summary>
+        </member>
+        <member name="P:CLAP.Validation.FileExistsAttribute.Description">
+            <summary>
+            The validation description
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.LessThanAttribute">
+            <summary>
+            Less-Than validation:
+            The numeric value of the marked parameter or property must be a less than the specified number
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.NumberValidationAttribute">
+            <summary>
+            Number validation
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.NumberValidationAttribute.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.LessThanAttribute.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.LessThanAttribute.LessThanValidator">
+            <summary>
+            Less-Than validator
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.NumberValidator">
+            <summary>
+            Number validation
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.NumberValidator.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.NumberValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate
+            </summary>
+        </member>
+        <member name="P:CLAP.Validation.NumberValidator.Number">
+            <summary>
+            The number to validate with
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.LessThanAttribute.LessThanValidator.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.LessThanAttribute.LessThanValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.LessOrEqualToAttribute">
+            <summary>
+            Less-Or-Equal-To validation:
+            The numeric value of the marked parameter or property must be a less or equal to the specified number
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.LessOrEqualToAttribute.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.LessOrEqualToAttribute.LessOrEqualToValidator">
+            <summary>
+            Less Or Equal-To validator
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.LessOrEqualToAttribute.LessOrEqualToValidator.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.LessOrEqualToAttribute.LessOrEqualToValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.MoreThanAttribute">
+            <summary>
+            More-Than validation:
+            The numeric value of the marked parameter or property must be a more than the specified number
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.MoreThanAttribute.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="number"></param>
+        </member>
+        <member name="T:CLAP.Validation.MoreThanAttribute.MoreThanValidator">
+            <summary>
+            More-Than validator
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.MoreThanAttribute.MoreThanValidator.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.MoreThanAttribute.MoreThanValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.MoreOrEqualToAttribute">
+            <summary>
+            More-Or-Equal-To validation:
+            The numeric value of the marked parameter or property must be a more or equal to the specified number
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.MoreOrEqualToAttribute.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.MoreOrEqualToAttribute.MoreOrEqualToValidator">
+            <summary>
+            More Or Equal-To validator
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.MoreOrEqualToAttribute.MoreOrEqualToValidator.#ctor(System.Double)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="number"></param>
+        </member>
+        <member name="M:CLAP.Validation.MoreOrEqualToAttribute.MoreOrEqualToValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.RegexMatchesAttribute">
+            <summary>
+            Regex validation:
+            The string value of the marked parameter or property must match the specified regular expression
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.RegexMatchesAttribute.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern"></param>
+        </member>
+        <member name="T:CLAP.Validation.RegexMatchesAttribute.RegexMatchesValidator">
+            <summary>
+            Regex validator
+            </summary>
+        </member>
+        <member name="M:CLAP.Validation.RegexMatchesAttribute.RegexMatchesValidator.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="pattern"></param>
+        </member>
+        <member name="M:CLAP.Validation.RegexMatchesAttribute.RegexMatchesValidator.Validate(CLAP.ValueInfo)">
+            <summary>
+            Validate
+            </summary>
+        </member>
+        <member name="P:CLAP.Validation.RegexMatchesAttribute.RegexMatchesValidator.Pattern">
+            <summary>
+            The regex pattern
+            </summary>
+        </member>
+        <member name="T:CLAP.Validation.ValidateAttribute">
+            <summary>
+            Validates all the parameters against an expression
+            </summary>
+            <example>"param1 > param2"</example>
+            <remarks>
+            For full documentation, see MSDN:
+            http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx
+            </remarks>
+        </member>
+        <member name="M:CLAP.Validation.ValidateAttribute.#ctor(System.String)">
+            <summary>
+            Validates all the parameters against an expression
+            </summary>
+            <example>param1 > param2</example>
+            <remarks>
+            For full documentation, see MSDN:
+            http://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx
+            </remarks>
+            <param name="expression">The expression to validate</param>
+        </member>
+        <member name="P:CLAP.Validation.ValidateAttribute.Expression">
+            <summary>
+            The expression to validate
+            </summary>
+        </member>
+        <member name="P:CLAP.Validation.ValidateAttribute.CaseSensitive">
+            <summary>
+            Whether to use case-sensitive comparison when validating the expression
+            </summary>
+        </member>
+        <member name="T:CLAP.ValueInfo">
+            <summary>
+            Information about a vluae
+            </summary>
+        </member>
+        <member name="P:CLAP.ValueInfo.Name">
+            <summary>
+            The name of the value. Either the parameter or property name
+            </summary>
+        </member>
+        <member name="P:CLAP.ValueInfo.Type">
+            <summary>
+            The type of the value
+            </summary>
+        </member>
+        <member name="P:CLAP.ValueInfo.Value">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="M:CLAP.ValuesFactory.ConvertToArray``1(System.String[])">
+            <summary>
+            This method is called via reflection
+            </summary>
+        </member>
+        <member name="T:CLAP.VerbAttribute">
+            <summary>
+            Marks a method as a verb
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbAttribute.Aliases">
+            <summary>
+            Additional names for the verb
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbAttribute.Description">
+            <summary>
+            The description of the verb. Used to generate the help string
+            </summary>
+        </member>
+        <member name="P:CLAP.VerbAttribute.IsDefault">
+            <summary>
+            Whether this verb is the default verb of the class
+            </summary>
+        </member>
+    </members>
+</doc>

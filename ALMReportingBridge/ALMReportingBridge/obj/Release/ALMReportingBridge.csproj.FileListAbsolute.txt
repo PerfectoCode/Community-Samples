@@ -1,0 +1,14 @@
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\ALMReportingBridge.exe.config
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Release\Interop.TDAPIOLELib.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Release\ALMReportingBridge.csproj.ResolveComReference.cache
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\ALMReportingBridge.exe.manifest
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\ALMReportingBridge.application
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\ALMReportingBridge.exe
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\ALMReportingBridge.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\CLAP.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\CLAP.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\bin\Release\CLAP.xml
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Release\ALMReportingBridge.exe.manifest
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Release\ALMReportingBridge.application
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Release\ALMReportingBridge.exe
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALMReportingBridge\obj\Release\ALMReportingBridge.pdb
