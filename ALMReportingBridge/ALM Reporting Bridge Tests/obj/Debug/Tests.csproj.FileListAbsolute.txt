@@ -1,0 +1,11 @@
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\ALM Reporting Bridge Tests.dll.config
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\ALM Reporting Bridge Tests.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\ALM Reporting Bridge Tests.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\ALMReportingBridge.exe
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\CLAP.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\ALMReportingBridge.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\CLAP.pdb
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\bin\Debug\CLAP.xml
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\obj\Debug\ALM Reporting Bridge Tests.dll
+C:\Users\pmccartney\documents\visual studio 2015\Projects\ALMReportingBridge\ALM Reporting Bridge Tests\obj\Debug\ALM Reporting Bridge Tests.pdb
