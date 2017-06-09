@@ -22,10 +22,34 @@ Example: `ALMReportingBridge.exe test /serverurl=http://myalmserver:8080/qcbin /
 Running the executable with no arguments or by using the ***/h*** argument will display the help. The help displays all of the possible commands, arguments, and data types for each command. When a command is executed, the results of the command are returned in XML. 
 
 ## Commands ##
-| Command     | Description	 | Return XML	|
-|--------	  | ---			 | ------------ |
-|copytestset  | Copies an ALM test set to the destination folder using a test set ID. Useful when copying a template test set for a test suite that runs frequently. The test set copy only copies the test instances -- no run data is copied. Therefore all tests have a "No Run" initial status. | test |
+| Command     		 | Description	 | 
+|--------	 	     | ---			 | 
+| copytestset        | Copies an ALM test set to the destination folder using a test set ID. Useful when copying a template test set for a test suite that runs frequently. The test set copy only copies the test instances -- no run data is copied. Therefore all tests have a "No Run" initial status. |
+| updaterunfield     | Updates a field associated to the Run entity to the specified value based on the Run ID. The *fieldname* must be the database identifier of the field, not the logical ALM name. |
+| recordrunresult    | Records a run result to a test instance. This command creates a new run for the test instance with the status provided. | 
+| createtestset      | Creates a new empty test set in the specified folder | 
+| updatetestsetfield | Updates the value of a test set field by its database name. | 
+| addtesttotestset   | Adds a test configuration to a test set. | 
+| attachtorun        | Uploads attachment to a run. The attachment can be a file or a URL. | 
+| attachtotestset    | Uploads attachment to a test set. The attachment can be a file or a URL. | 
+| test               | Tests the connection to the ALM server | 
 
+## Command Return Values ##
+| Command     		 | Success	 |  Failure |
+|--------	 	     | ---			 | ------ |
+| copytestset        |  |  |
+| updaterunfield     |  | |
+| recordrunresult    |  |  |
+| createtestset      |  |  |
+| updatetestsetfield | |  |
+| addtesttotestset   |  |  |
+| attachtorun        |  |  |
+| attachtotestset    |  |  |
+| test               | <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+<body>
+  <operation>Test</operation>
+  <status>Success</status>
+</body> |  |
 
 
 ## Understanding Tests vs. Test Configurations ##
