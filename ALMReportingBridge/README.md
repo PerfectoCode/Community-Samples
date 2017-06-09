@@ -45,11 +45,11 @@ Running the executable with no arguments or by using the ***/h*** argument will 
 | addtesttotestset   |  |  |
 | attachtorun        |  |  |
 | attachtotestset    |  |  |
-| test               | <?xml version="1.0" encoding="utf-16" standalone="yes"?>
-<body>
-  <operation>Test</operation>
-  <status>Success</status>
-</body> |  |
+| test               |     &lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;Test&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+&lt;/body&gt; |  |
 
 
 ## Understanding Tests vs. Test Configurations ##
