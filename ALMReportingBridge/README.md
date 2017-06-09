@@ -46,6 +46,7 @@ Running the executable with no arguments or by using the ***/h*** argument will 
 The new test set was created, but will have the suffix "_copy_ appended to the name&lt;/message&gt;
 &lt;/body&gt;
 </pre>
+
 <pre>
 &lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
 &lt;body&gt;
@@ -65,12 +66,138 @@ Unhandled: -2147220481
   &lt;status&gt;Success&lt;/status&gt;
 &lt;/body&gt;
 </pre>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;UpdateRunField&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: Invalid field name &lt; RN_USER_99 &gt;.
+Refer to the HPE ALM Project Database Reference for valid field names&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
+
 ### recordreunresult ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;RecordRunResult&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+  &lt;entityid&gt;510&lt;/entityid&gt;
+&lt;/body&gt;
+</pre>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;RecordRunResult&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: Entity with key '3' does not exist in table 'CYCLE'
+Test set does not exist.&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
+
 ### createtestset ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;CreateTestSet&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+  &lt;entityid&gt;2719&lt;/entityid&gt;
+&lt;/body&gt;
+</pre>
+
+<pre>&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;CreateTestSet&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: Node not found.
+Unhandled: -2147220481
+32972388&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
+
 ### updatetestsetfield ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;UpdateTestSetField&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+&lt;/body&gt;
+</pre>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;UpdateTestSetField&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: Exception from HRESULT: 0x8004051A
+Refer to the HPE ALM project customization for valid transitions for this field.&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
+
 ### addtesttotestset ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;AddTestToTestSet&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+&lt;/body&gt;
+</pre>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;AddTestToTestSet&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: '5d676' is out of range for an integer value.
+Refer to the HPE ALM Project Database Reference or the project customization for the correct data type for the field&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
+
 ### attachtorun ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;AttachToRun&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+&lt;/body&gt;
+</pre>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;AttachToRun&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+&lt;/body&gt;
+</pre>
+
+
 ### attachtotestset ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;AttachToTestSet&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+&lt;/body&gt;
+</pre>
+
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;AttachToTestSet&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Unhandled Error
+Error: You do not have the required permissions to execute this action.
+-2147219913&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
 ### test ###
 <pre>
 &lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
