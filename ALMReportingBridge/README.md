@@ -34,23 +34,63 @@ Running the executable with no arguments or by using the ***/h*** argument will 
 | attachtotestset    | Uploads attachment to a test set. The attachment can be a file or a URL. | 
 | test               | Tests the connection to the ALM server | 
 
-## Command Return Values ##
-| Command     		 | Success	 |  Failure |
-|--------	 	     | ---			 | ------ |
-| copytestset        |  |  |
-| updaterunfield     |  | |
-| recordrunresult    |  |  |
-| createtestset      |  |  |
-| updatetestsetfield | |  |
-| addtesttotestset   |  |  |
-| attachtorun        |  |  |
-| attachtotestset    |  |  |
-| test               |     &lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+## Example Command Return Values ##
+### copytestset ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;CopyTestSet&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+  &lt;entityid&gt;2721&lt;/entityid&gt;
+  &lt;message&gt;Error: a test set with the same name as the template already exists in the test set folder
+The new test set was created, but will have the suffix "_copy_ appended to the name&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;CopyTestSet&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: Node not found.
+Unhandled: -2147220481
+56628227&lt;/message&gt;
+&lt;/body&gt;
+</pre>
+
+### updaterunfield ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;UpdateRunField&lt;/operation&gt;
+  &lt;status&gt;Success&lt;/status&gt;
+&lt;/body&gt;
+</pre>
+### recordreunresult ###
+### createtestset ###
+### updatetestsetfield ###
+### addtesttotestset ###
+### attachtorun ###
+### attachtotestset ###
+### test ###
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
 &lt;body&gt;
   &lt;operation&gt;Test&lt;/operation&gt;
   &lt;status&gt;Success&lt;/status&gt;
-&lt;/body&gt; |  |
+&lt;/body&gt;
+</pre>
 
+<pre>
+&lt;?xml version="1.0" encoding="utf-16" standalone="yes"?&gt;
+&lt;body&gt;
+  &lt;operation&gt;Test&lt;/operation&gt;
+  &lt;status&gt;Failed&lt;/status&gt;
+  &lt;message&gt;Error: Server is not available
+Check the server URL. Server URLs must be in the following format: 
+http://hostname:port/qcbin
+Example: http://alm.mydomain.com:8080/qcbin&lt;/message&gt;
+&lt;/body&gt;
+</pre>
 
 ## Understanding Tests vs. Test Configurations ##
 ALM projects use test entities to represent a test that is to be run. Digital testing creates a new problem in that the same test may need to be executed on many different browers or device combinations. Creating unique test entities for each combination, while possible, replicates data and tests and generally makes the project harder to manage. 
