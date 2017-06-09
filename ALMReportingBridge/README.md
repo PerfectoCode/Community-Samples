@@ -19,11 +19,30 @@ The reporting bridge works on a simple format: `filename.exe command /argument=v
 
 Example: `ALMReportingBridge.exe test /serverurl=http://myalmserver:8080/qcbin /username=johndoe /password=mypassword /domain=ALMREPORTINGBRIDGE /project=ConnectionTests`
 
-Running the executable with no arguments or by using the ***/h*** argument will display the help. The help displays all of the possible commands, arguments, and data types for each command. 
+Running the executable with no arguments or by using the ***/h*** argument will display the help. The help displays all of the possible commands, arguments, and data types for each command. When a command is executed, the results of the command are returned in XML. 
 
 ## Commands ##
-Command     | Description
+Command     | Description | Return XML
 -------- | ---
-copytestset | $1600
-updaterunfield    | $12
-recordrunresult     | $1
+copytestset | Copies an ALM test set to the destination folder using a test set ID. Useful when copying a template test set for a test suite that runs frequently. The test set copy only copies the test instances -- no run data is copied. Therefore all tests have a "No Run" initial status. | 
+updaterunfield    | Updates a field associated to the Run entity to the specified value based on the Run ID. The *fieldname* must be the database identifier of the field, not the logical ALM name. | 
+recordrunresult     | Records a run result to a test instance. This command creates a new run for the test instance with the status provided. | 
+createtestset | Creates a new empty test set in the specified folder | 
+updatetestsetfield | Updates the value of a test set field by its database name. | 
+addtesttotestset | Adds a test configuration to a test set. | 
+attachtorun | Uploads attachment to a run | 
+attachtotestset | Uploads attachment to a test set |
+test | Tests the connection to the ALM server | 
+    <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+    <body>
+      <operation>Test</operation>
+      <status>Success</status>
+    </body>
+
+
+## Understanding Tests vs. Test Configurations ##
+ALM projects use test entities to represent a test that is to be run. Digital testing creates a new problem in that the same test may need to be executed on many different browers or device combinations. Creating unique test entities for each combination, while possible, replicates data and tests and generally makes the project harder to manage. 
+
+To solve this problem, HP introduced the concept of a Test Configuration. Test configurations allow the parameterization of tests so that they can be run many times without having to duplicate the test entities. A Test Configuration represents a unique combination of a test and a data scenario. In this case, the data scenario is the device or browser under test. As an example, you may have a test that verifies an account balance. That test may have 10 Test Configurations -- one for each mobile device in the coverage model. 
+
+This project uses the Test Configuration model when interacting with test cases. 
