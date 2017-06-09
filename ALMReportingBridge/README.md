@@ -21,6 +21,8 @@ Example: `ALMReportingBridge.exe test /serverurl=http://myalmserver:8080/qcbin /
 
 Running the executable with no arguments or by using the ***/h*** argument will display the help. The help displays all of the possible commands, arguments, and data types for each command. When a command is executed, the results of the command are returned in XML. 
 
+Any argument value that contains a space must be encapsulated by quotations. For example: `/password="my password contains spaces"`.
+
 ## Commands ##
 | Command     		 | Description	 | 
 |--------	 	     | ---			 | 
@@ -225,3 +227,8 @@ ALM projects use test entities to represent a test that is to be run. Digital te
 To solve this problem, HP introduced the concept of a Test Configuration. Test configurations allow the parameterization of tests so that they can be run many times without having to duplicate the test entities. A Test Configuration represents a unique combination of a test and a data scenario. In this case, the data scenario is the device or browser under test. As an example, you may have a test that verifies an account balance. That test may have 10 Test Configurations -- one for each mobile device in the coverage model. 
 
 This project uses the Test Configuration model when interacting with test cases. 
+
+## Useful Tips ##
+- Do not add a test instance to a test set more than once if you plan on modifying the test instance via this tool. When there are multiple test instances with the same configuration ID, ALM makes it very difficult to distinguish between them.
+- When updating an entity field, make sure the data that is being entered conforms to the field's ALM configuration. The ALM OTA API enforces data types and field transition rules. However, it does not enforce string masks. 
+- When specifying test set paths in the Test Lab module, use the following format: `Root\My Folder\My Sub Folder`. All paths start with Root, use backslashes to denote folders, and lack a trailing slash.
