@@ -2,43 +2,39 @@
 using CLAP;
 using CLAP.Validation;
 using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using TDAPIOLELib;
+using System.Reflection;
 
 namespace ALMReportingBridge
 {
     public class ReportingConnector
     {
-
-        static TDConnection tdc = new TDConnection();
-
-        // Consume them
         public static void Main(string[] args)
         {
+            if (!IsOTAClientRegistered())
+            {
+                Console.Out.WriteLine("Error: HPE ALM OTA client is not registered on this machine.");
+            }
+            else
+            {
+                try
+                {
+                    Parser.Run<ReportingConnector>(args);
+                }
 
-            try
-            {
-                Parser.Run<ReportingConnector>(args);
+                catch (MissingRequiredArgumentException e)
+                {
+                    Console.Out.WriteLine(e.Message);
+                }
+                catch (VerbNotFoundException e)
+                {
+                    Console.Out.WriteLine(e.Message);
+                }
+                catch (Exception e)
+                {
+                    Console.Out.WriteLine(e.Message);
+                }
             }
-            catch (MissingRequiredArgumentException e)
-            {
-                Console.Out.WriteLine(e.Message);
-            }
-            catch (VerbNotFoundException e)
-            {
-                Console.Out.WriteLine(e.Message);
-            }
-            catch (Exception e)
-            {
-                Console.Out.WriteLine(e.Message);
-            }
-
-            //Environment.Exit(0);
         }
-
 
         [Verb(Description = "Creates a a copy of a test set")]
         public static int CopyTestSet(
@@ -49,16 +45,15 @@ namespace ALMReportingBridge
             [Required Description("ALM project name")] string Project,
             [Required Description("Destination folder where the new test set will be copied")] string DestinationPath,
             [Required Description("Name of the newly copied test set")] string TestSetName,
-
+            
             [MoreThan(0)]
             [Required Description("The ID of the test set to be copied")] int TemplateTestSetId)
         {
             ALMTestSet TestSet = new ALMTestSet(ServerUrl, Username, Password, Domain, Project);
             int result = TestSet.Copy(DestinationPath, TestSetName, TemplateTestSetId);
             TestSet.WriteResult(ReturnResult.Operation.CopyTestSet, Convert.ToBoolean(result), result);
-            return result;     
+            return result;
         }
-
 
         [Verb(Description = "Update a run result field by its database name")]
         public static bool UpdateRunField(
@@ -67,7 +62,7 @@ namespace ALMReportingBridge
             [Required Description("ALM password")] string Password,
             [Required Description("ALM project domain name")] string Domain,
             [Required Description("ALM project name")] string Project,
-
+            
             [MoreThan(0)]
             [Required Description("The run ID to update")] int RunId,
             [Required Description("The database field name to update")] string FieldName,
@@ -157,7 +152,7 @@ namespace ALMReportingBridge
             [MoreThan(0)]
             [Required Description("Test configuration ID to add to test set")] int TestConfigId,
             [Description("An array of additional fields and values to update in the following format: fieldName;;value,fieldName;;value")] string[] Additional = default(string[]),
-            
+
             [DefaultValue(true)]
             [Description("Remove the newly added test if a field update fails while adding")] bool RemoveTestOnUpdateFail = true)
         {
@@ -211,10 +206,10 @@ namespace ALMReportingBridge
         }
 
 
-
         [Verb(IsDefault = true), Help, Empty]
         static void ShowHelp(string help)
-        {
+        {   
+            Console.WriteLine("Version : {0}", Assembly.GetExecutingAssembly().GetName().Version.ToString());
             Console.WriteLine(help);
         }
 
@@ -226,15 +221,41 @@ namespace ALMReportingBridge
             [Required Description("ALM project domain name")] string Domain,
             [Required Description("ALM project name")] string Project)
         {
-            ALMEntity connection = new ALMEntity(ServerUrl, Username, Password, Domain, Project);
-            bool result = connection.Test();
+            bool returnValue = false;
+            try
+            {
+                ALMEntity connection = new ALMEntity(ServerUrl, Username, Password, Domain, Project);
+                bool result = connection.Test();
+                connection.WriteResult(ReturnResult.Operation.Test, result);
+                returnValue = result;
+            }
+            catch (Exception e)
+            {
+                Console.Out.WriteLine(e.StackTrace);
+            }
 
-            connection.WriteResult(ReturnResult.Operation.Test, result);
-            return result;
+            return returnValue;
         }
 
 
+        private static bool IsOTAClientRegistered()
+        {
+            using (var classesRootKey = Microsoft.Win32.RegistryKey.OpenBaseKey(
+                   Microsoft.Win32.RegistryHive.ClassesRoot, Microsoft.Win32.RegistryView.Default))
+            {
+                const string clsid = "{C5CBD7B2-490C-45f5-8C40-B8C3D108E6D7}";
 
+                var clsIdKey = classesRootKey.OpenSubKey(@"Wow6432Node\CLSID\" + clsid) ??
+                                classesRootKey.OpenSubKey(@"CLSID\" + clsid);
+
+                if (clsIdKey != null)
+                {
+                    clsIdKey.Dispose();
+                    return true;
+                }
+
+                return false;
+            }
+        }
     }
-
 }
