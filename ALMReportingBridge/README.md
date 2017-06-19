@@ -5,10 +5,11 @@ The HPE ALM Reporting Bridge is a C# wrapper implementation of the ALM Open Test
 
 The reporting bridge is compiled into a single Windows executable that is run from a command prompt. It can be used in batch jobs, or embedded inside of any test execution framework. When executed, the application will return an XML string with the status of the operation, entity IDs, and any errors. 
 
-The full code of the project is provided here along with a full suite of unit tests. The unit command line unit tests are especially helpful to understand how individual commands are assembled. 
+The full code of the project is provided here along with a full suite of unit tests. The command line unit tests are especially helpful to understand how individual commands are assembled. 
 
 ## Requirements ##
 - HPE ALM/Quality Center 11+
+- Microsoft .NET Framework 4.5.2 or higher
 - Machine executing the command line must have either the HPE ALM Client Components registered (by following **Tools** > **HP ALM Client Registration** > **Register HP ALM** links from the spash screen) or by installing the HP ALM Connectivity Tool (by following **Tools** > **HP ALM  Connectivity** > **Download HP ALM Connectivity** from the splash screen)
 - Must have permission to perform the operation in the ALM project
 
@@ -222,7 +223,7 @@ Example: http://alm.mydomain.com:8080/qcbin&lt;/message&gt;
 </pre>
 
 ## Understanding Tests vs. Test Configurations ##
-ALM projects use test entities to represent a test that is to be run. Digital testing creates a new problem in that the same test may need to be executed on many different browers or device combinations. Creating unique test entities for each combination, while possible, replicates data and tests and generally makes the project harder to manage. 
+ALM projects use test entities to represent a test that is to be run. Digital testing creates a new problem in that the same test may need to be executed on many different browsers or device combinations. Creating unique test entities for each combination, while possible, replicates data and tests and generally makes the project harder to manage. 
 
 To solve this problem, HP introduced the concept of a Test Configuration. Test configurations allow the parameterization of tests so that they can be run many times without having to duplicate the test entities. A Test Configuration represents a unique combination of a test and a data scenario. In this case, the data scenario is the device or browser under test. As an example, you may have a test that verifies an account balance. That test may have 10 Test Configurations -- one for each mobile device in the coverage model. 
 
