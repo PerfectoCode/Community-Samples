@@ -1,10 +1,6 @@
 ﻿using ALMReportingBridge.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using TDAPIOLELib;
 using static ALMReportingBridge.Entities.ReturnResult;
 
@@ -18,6 +14,7 @@ namespace ALMReportingBridge
         protected string Domain;
         protected string Project;
         public ReturnResult rr; 
+        protected static TDConnection tdc;
 
         public ALMEntity(string ServerUrl, string Username, string Password, string Domain, string Project)
         {
@@ -27,19 +24,25 @@ namespace ALMReportingBridge
             this.Domain = Domain;
             this.Project = Project;
             rr = new ReturnResult();
+            tdc = new TDConnection();
         }
 
-        protected static TDConnection tdc = new TDConnection();
+
+        //protected static TDConnection tdc = new TDConnection();
 
         /// <exception cref="COMException">Server connection error.</exception>
         protected bool Connect(String serverUrl, String username, string password, string domain, string project)
         {
-            tdc = new TDConnection();
+
             try { tdc.InitConnectionEx(serverUrl); }
             catch (System.Runtime.InteropServices.COMException ce)
             {
                 rr.AddErrorLine(HandleException(ce));
                 //Environment.Exit(0);
+            }
+            catch (Exception e)
+            {
+                rr.AddErrorLine("Error: " + e.Message);
             }
 
             if (tdc.Connected)
@@ -281,7 +284,7 @@ namespace ALMReportingBridge
 
         public enum TestStatus
         {
-            No_Run, Not_Completed, Failed, Passed, NA, Blocked
+           No_Run, Not_Completed, Failed, Passed, NA, Blocked
         }
 
         public enum AttachmentType

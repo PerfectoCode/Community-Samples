@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using TDAPIOLELib;
 
 namespace ALMReportingBridge.Entities
@@ -137,7 +133,7 @@ namespace ALMReportingBridge.Entities
             return success;
         }
 
-        string TestStatus(TestStatus status)
+        string NormalizeTestStatus(TestStatus status)
         {
             string returnValue = default(string);
 
@@ -185,7 +181,7 @@ namespace ALMReportingBridge.Entities
                     return 0;
                 }
 
-                string runStatus = TestStatus(Status);
+                string runStatus = NormalizeTestStatus(Status);
 
                 TestSetFactory tsFact = tdc.TestSetFactory;
                 TestSet targetTestSet = tsFact[TestSetId];
