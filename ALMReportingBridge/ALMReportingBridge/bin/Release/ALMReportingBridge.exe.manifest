@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0Tw41v5Ir3v9sxk9iZSTkV6eB4cDhayHu71iP+/O08k=</dsig:DigestValue>
+        <dsig:DigestValue>jZgCdhPwlbWW9MXykFJ9vkKO+LcfrF5giVybzI4rkB4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -65,13 +65,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ALMReportingBridge.exe.config" size="189">
+  <file name="ALMReportingBridge.exe.config" size="186">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+      <dsig:DigestValue>E1PUDFFyIhhQdWOAG+LVI/LTgMIEvTjE59cqlPY7a68=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
