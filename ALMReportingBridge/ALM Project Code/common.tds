@@ -1,0 +1,4 @@
+Const TESTING_COMBINATIONS = "Testing Combinations"    
+
+Dim configList
+Set configList = TDConnection.Customization.Lists.List(TESTING_COMBINATIONS).RootNode.Children
