@@ -1,0 +1,58 @@
+Sub CreateTestConfigs
+  On Error Resume Next
+  Dim testId
+  testId = Test_Fields.Field("TS_TEST_ID").Value
+
+  Dim testObj
+  Set testObj = TDConnection.TestFactory.Item(testId)
+
+  Dim testConfigFactory
+  Set testConfigFactory = testObj.TestConfigFactory
+
+  'get the id of the original config so we can delete it later
+  Dim existingConfigList, testConfig, configName, existingConfig, configExists, defaultConfigId
+
+  defaultConfigId = 0
+
+  'Get the list of existing configurations. If the default config exists, save the value so we can delete it later
+  Set existingConfigList = testConfigFactory.NewList("")
+
+  For Each existingConfig In existingConfigList
+    If existingConfig.Name = testObj.Name Then
+      defaultConfigId = existingConfig.ID
+      Exit For
+    End If
+  Next
+
+  'Check to see if the config exists already and only create it if it does not
+  For Each configName In configList
+    configExists = False
+    For Each existingConfig In existingConfigList
+      If existingConfig.Name = configName.Name Then
+        configExists = True
+        Exit For
+      Else
+        configExists = False
+      End If
+    Next
+
+    If Not configExists Then
+      Set testConfig = testConfigFactory.AddItem(Null)
+      testConfig.Name = configName.Name
+      testConfig.Post
+    end If
+  Next
+
+  If defaultConfigId <> 0 Then
+    testConfigFactory.RemoveItem(defaultConfigId)
+  End If
+
+  Set testObj = Nothing
+  Set testConfigFactory = Nothing
+  Set testConfig = Nothing
+  Set configName = Nothing
+  Set existingConfigList = Nothing
+
+  MsgBox "Test configuration creation finished.", 64, "Finished"
+  On Error Goto 0
+End Sub
