@@ -14,7 +14,7 @@ The full code of the project is provided here along with a full suite of unit te
 - Must have permission to perform the operation in the ALM project
 
 ## Using the Reporting Bridge ##
-Two files must be either embedded in your testing project or accessible to the execution engine of your code: *ALMReportingBridge.exe* and *CLAP.dll*. Both must be in the same directory. Binary versions of these files can be found in the */bin* folder of the GitHub project. 
+To use the reporting bridge in a project, embed the contents of the *ALMReportingBridge/bin/x86/Release/* directory into a folder in your project. Note that while only *ALMReportingBridge.exe* and *CLAP.dll* are required to run, including the additional configuration files can be helpful when resolving library dependency issues that are common in Windows machines. 
 
 The reporting bridge works on a simple format: `filename.exe command /argument=value`
 
@@ -23,6 +23,10 @@ Example: `ALMReportingBridge.exe test /serverurl=http://myalmserver:8080/qcbin /
 Running the executable with no arguments or by using the ***/h*** argument will display the help. The help displays all of the possible commands, arguments, and data types for each command. When a command is executed, the results of the command are returned in XML. 
 
 Any argument value that contains a space must be encapsulated by quotations. For example: `/password="my password contains spaces"`.
+
+Note: When running the executable (with or without arguments), it first checks if the ALM OTA API components are registered on the machine. If they are not, you will receive the following error: 
+<pre>Error: HPE ALM OTA client is not registered on this machine.</pre>
+Should you receive this error, refer to **Requirements** section above for information in registering the ALM Client Components. 
 
 ## Commands ##
 | Command     		 | Description	 | 
@@ -222,12 +226,42 @@ Example: http://alm.mydomain.com:8080/qcbin&lt;/message&gt;
 &lt;/body&gt;
 </pre>
 
+## Formatting Multifield Inputs on Creation ##
+During the entity creation process (specifically commands *recordrunresults*, *createtestset*, and *addtesttotestset*), your ALM project customization may require the population of one or many required fields before the entity can be successfully created. These commands include the */additional* argument which provide a means of supplying data for required fields that may not be otherwise accounted for. The format for this data is an array formatted as follows:
+<pre><code>fieldName;;value,fieldName;;value</code></pre>
+
+*fieldName* must correspond to the ALM Project database name of the field (*CY\_USER\_01**, for example). 
+
+For example: 
+<pre><code>/additional="CY_USER_01;;Regression Test,CY_USER_02;;SIT_2,CY_USER_03;;Ronald Swanson"</code></pre>
+
+Note that if mulitple fields are required to be updated after an entity is created, simply run the corresponding update command multiple times, one for each field to be updated. 
+
 ## Understanding Tests vs. Test Configurations ##
 ALM projects use test entities to represent a test that is to be run. Digital testing creates a new problem in that the same test may need to be executed on many different browsers or device combinations. Creating unique test entities for each combination, while possible, replicates data and tests and generally makes the project harder to manage. 
 
 To solve this problem, HP introduced the concept of a Test Configuration. Test configurations allow the parameterization of tests so that they can be run many times without having to duplicate the test entities. A Test Configuration represents a unique combination of a test and a data scenario. In this case, the data scenario is the device or browser under test. As an example, you may have a test that verifies an account balance. That test may have 10 Test Configurations -- one for each mobile device in the coverage model. 
 
 This project uses the Test Configuration model when interacting with test cases. 
+
+## ALM Project Customization ##
+The reporting bridge itself does not need any special HP ALM customization. However, the reliance on test configurations for the test mapping requires these configurations be built. Since the configurations are typically going to be the same or similar across an ALM project, the process of creating them can be expedited by using a small piece of workflow code in the ALM project. The code is triggered from a custom button that is added into the Test Plan module. When clicked, it creates configurations with names listed in a custom Project List, then removes the default configuration. This code dramatically speeds up the process of creating test configurations for your test cases.
+
+The ***ALM Project Code*** folder contains two files of workflow code that can be included in your ALM project. Test Plan code contained in *testplan.tds* can be copied and pasted into the Test Plan module workflow customization editor unchanged. Code in the *common.tds* file should be copied into the Common module workflow customization editor, then modified for your ALM project. Line 1 of this file contains the following code:
+<code>Const TESTING_COMBINATIONS = "Testing Combinations"  </code>
+
+This variable corresponds to a Project List that must be created in the ALM project (in this example, *"Testing Combinations"*. This project list should only have items listed at the Root level and should contain names of configurations you want created in your ALM project. These typically are devices or browsers that you intend to test on. For example:
+
+
+- Safari - iPhone 6 - iOS 9
+- Safari - iPhone 7 - iOS 10
+- Safari - iPhone 6s - iOS 10
+- Safari - iPad Pro 9.7 - iOS 11
+- Chrome - Galaxy S7
+- Firefox 54 - Windows 10 - 1280x1024
+- Chrome 55 - MacOS Sierra - 1440x900
+
+The custom button should be created in the HP ALM project customization and set to call the *CreateTestConfigs* method in the Test Plan module customization. 
 
 ## Useful Tips ##
 - Do not add a test instance to a test set more than once if you plan on modifying the test instance via this tool. When there are multiple test instances with the same configuration ID, ALM makes it very difficult to distinguish between them.
