@@ -9,8 +9,7 @@ The following examples are included:
 
 | Sample      | Description     | Community Post        |
 |----------------|------------------|---------------------|
-|ALMReportingBridge | Command line integration to HP ALM for reporting|[HP ALM Reporting Bridge]
-(https://github.com/PerfectoCode/Community-Samples/tree/master/ALMReportingBridge) |
+|ALMReportingBridge | Command line integration to HP ALM for reporting|[HP ALM Reporting Integration](https://community.perfectomobile.com/posts/959895) |
 |AudioCheckpoint |Shows use of audio checkpoint to verify audio feed|[Using an Audio Checkpoint](https://community.perfectomobile.com/posts/1174358) |
 |DismissWebPopup |Show use of Visual Analysis to dismiss a desktop browser popup |[Visual Analysis to Dismiss Browser Popup](https://community.perfectomobile.com/groups/30292/posts/1195258) |
 |GetURL   |Highlights use of instrumentation and accessing proper WEBVIEW |[Retrieving the URL from a Webview](https://community.perfectomobile.com/posts/1177498) |
