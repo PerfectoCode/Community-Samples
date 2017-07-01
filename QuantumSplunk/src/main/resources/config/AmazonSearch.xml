@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" thread-count="2"
+	parallel="tests">
+	<listeners>
+		<listener class-name="com.quantum.listerners.QuantumReportiumListener" />
+		<listener class-name="com.quantum.listerners.TestListener" />
+	</listeners>
+
+	<parameter name="driver.name" value="perfectoRemoteDriver" />
+<parameter name="monitorTag" value="ACE-PRT" />
+
+	 <test name="Android Amazon Search Test" enabled="true">
+		<parameter name="perfecto.env.resources" value="src/main/resources/android" />
+		<parameter name="perfecto.capabilities.deviceName" value="04157DF43A656B1A" />
+		<parameter name="perfecto.capabilities.browserName" value="mobileOS"></parameter>
+
+		<groups>
+			<run>
+				<include name="@amazonSearch" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	
+		<test name="iOS Amazon Search Test" enabled="true">
+		<parameter name="perfecto.env.resources" value="src/main/resources/ios" />
+		<parameter name="perfecto.capabilities.deviceName" value="1C3B401545D2CDBEC9D323460D914AD7319F31D9" />
+		<parameter name="perfecto.capabilities.browserName" value="mobileOS"></parameter>
+
+		<groups>
+			<run>
+				<include name="@amazonSearch" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+</suite>

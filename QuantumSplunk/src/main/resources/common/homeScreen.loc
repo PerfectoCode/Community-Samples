@@ -1,0 +1,2 @@
+search.input=xpath=//*[@id="nav-search-keywords"]
+submit.button=xpath=//*[@class="nav-input" and @type="submit"]
