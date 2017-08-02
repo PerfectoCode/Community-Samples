@@ -28,3 +28,4 @@ The following examples are included:
 |CommunityReadXlsx|This is a sample code in java for reading external xls/xlsx files.|[Reading External File in XLS/XLSX Formats](https://community.perfectomobile.com/series/32598/posts/1218177)|
 |CommunityReadXml|This is a sample code in java for reading external xml file.|[Reading External File in xml Formats](https://community.perfectomobile.com/series/32598/posts/1222317)|
 |EspressoEx| Sample code with Android project and Selenium project that runs the Espresso in the Android project| [Running Espresso Tests with Jenkins](https://community.perfectomobile.com/groups/30292/posts/1254777)
+|WebAppSwitchContextProject| Sample code of switching Context in iOS - Web App & iOS Settings| [Switching Context in iOS - Web App & iOS Settings](http://developers.perfectomobile.com/pages/viewpage.action?pageId=21433107)
