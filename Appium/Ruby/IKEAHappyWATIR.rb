@@ -1,5 +1,6 @@
 
-# This script launches the IKEA website, logs in, navigates to the Ireland country site and home store then iterates across all the special offers for that store to ensure that the links take you to the correct landing page.
+# This script launches the IKEA website, logs in, navigates to the Ireland country site and home store then iterates across all
+# the special offers for that store to ensure that the links take you to the correct landing page.
 #
 # At the end the script logs out of the site and then launches a local web browser to take you to the Single Test Report for that script run.
 #
