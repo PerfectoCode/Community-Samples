@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test name="Test iPhone6 Plus">
+		<parameter name="deviceID" value="178D3A398F2C6D562597E56DFC146851143B380A" />
+		<classes>
+			<class name="com.perfecto.demo.tests.eBay.ClearSafariHistoryTest" />
+		</classes>
+	</test>
+		<test name="Test iPhone6">
+		<parameter name="deviceID" value="4E529680175ABE8E1A6EBA73651E3D08998533CA" />
+		<classes>
+			<class name="com.perfecto.demo.tests.eBay.ClearSafariHistoryTest" />
+		</classes>
+	</test>
+		<test name="Test iPhone5">
+		<parameter name="deviceID" value="92BDC4BC0F439F99CB5FA7F80E255E5519BAC021" />
+		<classes>
+			<class name="com.perfecto.demo.tests.eBay.ClearSafariHistoryTest" />
+		</classes>
+	</test>
+</suite>
