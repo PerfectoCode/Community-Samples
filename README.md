@@ -31,3 +31,4 @@ The following examples are included:
 |EspressoEx| Sample code with Android project and Selenium project that runs the Espresso in the Android project| [Running Espresso Tests with Jenkins](https://community.perfectomobile.com/groups/30292/posts/1254777)|
 |WebAppSwitchContextProject| Sample code of switching Context in iOS - Web App & iOS Settings| [Switching Context in iOS - Web App & iOS Settings](http://developers.perfectomobile.com/pages/viewpage.action?pageId=21433107)
 |NativeAppSwitchContextProject| Sample code of iOS Native App Switch - Switching between App and Safari Browser| [iOS Native App Switch - Switching between App and Safari Browser](http://developers.perfectomobile.com/display/TT/iOS+Native+App+Switch+-+Switching+between+App+and+Safari+Browser)
+|ClearSafariHistoryData| Sample code of iOS Safari - Clear History Data| [iOS Safari - Clear History Data](http://developers.perfectomobile.com/display/TT/iOS+Safari+-+Clear+History+Data)
