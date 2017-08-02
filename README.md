@@ -23,10 +23,10 @@ The following examples are included:
 |TimerToExcelExtractor | Shows how to extract timers of run results to excel | [TimerToExcelExtractor](https://community.perfectomobile.com/posts/1223970) |
 |PerfectoSplunk | Samples for use with the Perfecto Connector for Splunk | [Perfecto Connector for Splunk](https://community.perfectomobile.com/series/32230/posts/1103159) |
 |PerfectoSplunk-ReportingCollectorRunner|Project combining the Perfecto Native Runner and the Perfecto Connector for Splunk|[Combining Perfecto Native Runner and Splunk](https://community.perfectomobile.com/posts/1231957-combining-perfecto-native-runner-and-splunk)|
-|DismissAPopupAdvertisement|Dismiss a popup advertisement while automating an app|[Dismiss a popup advertisement](http://developers.perfectomobile.com/display/TT/Dismiss+a+popup+advertisement+while+automating+an+app)|
+|DismissAPopupAdvertisement|Sample code of dismissing a popup advertisement while automating an app|[Dismiss a popup advertisement](http://developers.perfectomobile.com/display/TT/Dismiss+a+popup+advertisement+while+automating+an+app)|
 |CommunityReadCsv|This is a sample code in java for reading external csv file.|[Reading External File in csv Formats](https://community.perfectomobile.com/series/32598/posts/1218206)|
 |CommunityReadTxt|This is a sample code in java for reading external txt files.|[Reading External File in Txt Formats](https://community.perfectomobile.com/series/32598/posts/1219001)|
 |CommunityReadXlsx|This is a sample code in java for reading external xls/xlsx files.|[Reading External File in XLS/XLSX Formats](https://community.perfectomobile.com/series/32598/posts/1218177)|
 |CommunityReadXml|This is a sample code in java for reading external xml file.|[Reading External File in xml Formats](https://community.perfectomobile.com/series/32598/posts/1222317)|
-|EspressoEx| Sample code with Android project and Selenium project that runs the Espresso in the Android project| [Running Espresso Tests with Jenkins](https://community.perfectomobile.com/groups/30292/posts/1254777)
+|EspressoEx| Sample code with Android project and Selenium project that runs the Espresso in the Android project| [Running Espresso Tests with Jenkins](https://community.perfectomobile.com/groups/30292/posts/1254777)|
 |WebAppSwitchContextProject| Sample code of switching Context in iOS - Web App & iOS Settings| [Switching Context in iOS - Web App & iOS Settings](http://developers.perfectomobile.com/pages/viewpage.action?pageId=21433107)
