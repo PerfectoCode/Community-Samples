@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALMReportingBridge.exe" size="45048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ALMReportingBridge.exe" size="45560">
       <assemblyIdentity name="ALMReportingBridge" version="1.1.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z071VfmPMHwi2tEViMzBY3XZTDzfH9KHK9XreFNrKgU=</dsig:DigestValue>
+        <dsig:DigestValue>vD3oKb4OD53lUQ7gjXz9aNES0kANWQa9lwoyrC6FTaQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
