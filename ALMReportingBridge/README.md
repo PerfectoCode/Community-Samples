@@ -36,7 +36,7 @@ Should you receive this error, refer to **Requirements** section above for infor
 | recordrunresult    | Records a run result to a test instance. This command creates a new run for the test instance with the status provided. | 
 | createtestset      | Creates a new empty test set in the specified folder | 
 | updatetestsetfield | Updates the value of a test set field by its database name. | 
-| addtesttotestset   | Adds a test configuration to a test set. | 
+| addtesttotestset   | Adds a test configuration to a test set. Note that this function is not safe for parallelization across threads when adding test configurations of the same parent test. See the detailed note below. | 
 | attachtorun        | Uploads attachment to a run. The attachment can be a file or a URL. | 
 | attachtotestset    | Uploads attachment to a test set. The attachment can be a file or a URL. | 
 | test               | Tests the connection to the ALM server | 
@@ -267,3 +267,8 @@ The custom button should be created in the HP ALM project customization and set 
 - Do not add a test instance to a test set more than once if you plan on modifying the test instance via this tool. When there are multiple test instances with the same configuration ID, ALM makes it very difficult to distinguish between them.
 - When updating an entity field, make sure the data that is being entered conforms to the field's ALM configuration. The ALM OTA API enforces data types and field transition rules. However, it does not enforce string masks. 
 - When specifying test set paths in the Test Lab module, use the following format: `Root\My Folder\My Sub Folder`. All paths start with Root, use backslashes to denote folders, and lack a trailing slash.
+
+## Using addtesttotestset ##
+Because of a limitation in the HP ALM OTA API, using the **addtesttotestset** command in parallel threads can yield unpredictable results. Unfortunately, there is no method for adding a single test configuration to a test set. Instead, the parent test of a configuration must be added with all of its child test configurations. The Reporting Bridge logic then determines the test configurations that were not intended to be added and removes them. Running this command in parallel in multiple threads will result in an unpredictable results when adding test configurations with the same parent. 
+
+The recommended way to consume this function is at the beginning of the test suite execution. Simply iterate through the tests to be run and add them serially to the test set. 
