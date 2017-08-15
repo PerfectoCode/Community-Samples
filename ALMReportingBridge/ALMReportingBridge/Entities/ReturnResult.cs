@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Text;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace ALMReportingBridge.Entities
@@ -102,17 +104,20 @@ namespace ALMReportingBridge.Entities
 
         public void WriteToConsole()
         {
-            StringBuilder builder = new StringBuilder();
-            using (System.IO.TextWriter writer = new System.IO.StringWriter(builder))
-            {
-                xml.Save(writer);
-            }
-            Console.Out.WriteLine(builder.ToString());
+            var wr = new StringWriter();
+            xml.Save(wr);
+            string s = (wr.GetStringBuilder().ToString());
+            Console.Out.WriteLine(s.Replace("utf-16", "utf-8"));
         }
 
         public void AddErrorLine(string msg)
         {
             errorMessage = errorMessage + msg + "\n";
+        }
+
+        public class Utf8StringWriter : StringWriter
+        {
+            public override Encoding Encoding { get { return Encoding.UTF8; } }
         }
     }
 }
