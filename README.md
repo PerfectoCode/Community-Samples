@@ -3,7 +3,7 @@
 
 This Community-Samples repository contains Perfecto product and code samples that are delivered by the large Perfecto community and users. The projects and samples in this repository are not official Perfecto documentation.
 
-Your samples and contributions are welcome, contact asafs@perfectomobile.com to get write access.
+Your samples and contributions are welcome, contact lirona@perfectomobile.com to get write access.
 
 The following examples are included:
 
