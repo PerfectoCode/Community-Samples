@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="74717" started-at="2016-03-08T14:12:43Z" finished-at="2016-03-08T14:13:57Z">
+    <groups>
+    </groups>
+    <test name="Test Nexus5" duration-ms="52298" started-at="2016-03-08T14:12:43Z" finished-at="2016-03-08T14:13:35Z">
+      <class name="com.perfecto.demo.tests.eBay.LoginToeBayTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@3498ed]" name="beforeTest" is-config="true" duration-ms="14718" started-at="2016-03-08T19:42:43Z" finished-at="2016-03-08T19:42:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0441D6ED25239649]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginWithInvalidCredentials()[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@3498ed]" name="loginWithInvalidCredentials" duration-ms="24771" started-at="2016-03-08T19:42:57Z" finished-at="2016-03-08T19:43:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@3498ed]" name="afterTest" is-config="true" duration-ms="12794" started-at="2016-03-08T19:43:22Z" finished-at="2016-03-08T19:43:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0441D6ED25239649]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.perfecto.demo.tests.eBay.LoginToeBayTest -->
+    </test> <!-- Test Nexus5 -->
+    <test name="GalaxyS5" duration-ms="53643" started-at="2016-03-08T14:12:43Z" finished-at="2016-03-08T14:13:36Z">
+      <class name="com.perfecto.demo.tests.eBay.LoginToeBayTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@3cda1055]" name="beforeTest" is-config="true" duration-ms="16336" started-at="2016-03-08T19:42:43Z" finished-at="2016-03-08T19:42:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30EDD233]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginWithInvalidCredentials()[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@3cda1055]" name="loginWithInvalidCredentials" duration-ms="25358" started-at="2016-03-08T19:42:59Z" finished-at="2016-03-08T19:43:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@3cda1055]" name="afterTest" is-config="true" duration-ms="11945" started-at="2016-03-08T19:43:24Z" finished-at="2016-03-08T19:43:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30EDD233]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.perfecto.demo.tests.eBay.LoginToeBayTest -->
+    </test> <!-- GalaxyS5 -->
+    <test name="Test iPhone5" duration-ms="73310" started-at="2016-03-08T14:12:43Z" finished-at="2016-03-08T14:13:56Z">
+      <class name="com.perfecto.demo.tests.eBay.LoginToeBayTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@6108b2d7]" name="beforeTest" is-config="true" duration-ms="31895" started-at="2016-03-08T19:42:43Z" finished-at="2016-03-08T19:43:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[92BDC4BC0F439F99CB5FA7F80E255E5519BAC021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginWithInvalidCredentials()[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@6108b2d7]" name="loginWithInvalidCredentials" duration-ms="29780" started-at="2016-03-08T19:43:14Z" finished-at="2016-03-08T19:43:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@6108b2d7]" name="afterTest" is-config="true" duration-ms="11630" started-at="2016-03-08T19:43:44Z" finished-at="2016-03-08T19:43:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[92BDC4BC0F439F99CB5FA7F80E255E5519BAC021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.perfecto.demo.tests.eBay.LoginToeBayTest -->
+    </test> <!-- Test iPhone5 -->
+    <test name="Test iPhone6" duration-ms="74717" started-at="2016-03-08T14:12:43Z" finished-at="2016-03-08T14:13:57Z">
+      <class name="com.perfecto.demo.tests.eBay.LoginToeBayTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@30c7da1e]" name="beforeTest" is-config="true" duration-ms="23490" started-at="2016-03-08T19:42:43Z" finished-at="2016-03-08T19:43:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4E529680175ABE8E1A6EBA73651E3D08998533CA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginWithInvalidCredentials()[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@30c7da1e]" name="loginWithInvalidCredentials" duration-ms="22488" started-at="2016-03-08T19:43:06Z" finished-at="2016-03-08T19:43:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method status="PASS" signature="afterTest(java.lang.String)[pri:0, instance:com.perfecto.demo.tests.eBay.LoginToeBayTest@30c7da1e]" name="afterTest" is-config="true" duration-ms="28734" started-at="2016-03-08T19:43:29Z" finished-at="2016-03-08T19:43:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4E529680175ABE8E1A6EBA73651E3D08998533CA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.perfecto.demo.tests.eBay.LoginToeBayTest -->
+    </test> <!-- Test iPhone6 -->
+  </suite> <!-- Suite -->
+</testng-results>
