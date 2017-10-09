@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="cloud" value="demo.perfectomobile.com"/>
+  <parameter name="userN" value="guruswamy.bm@perfectomobile.com"/>
+  <parameter name="userPw" value="Perfecto@123"/>
+  <test name="IOS10 TEST(failed)" parallel="tests">
+    <parameter name="automationname" value="XCUITest"/>
+    <classes>
+      <class name="TestNG.xcuitest.SingleScriptXCUITest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- TestNG.xcuitest.SingleScriptXCUITest -->
+    </classes>
+  </test> <!-- IOS10 TEST(failed) -->
+</suite> <!-- Failed suite [Suite] -->

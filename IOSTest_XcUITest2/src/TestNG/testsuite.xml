@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+
+	<parameter name="cloud" value="CLOUD_ADDRESS"/>
+	<parameter name="userN" value="USERNAME"/>
+	<parameter name="userPw" value="PASSWORD"/>
+	
+  <test name="IOS9 TEST">
+    <parameter name="deviceid" value="DBF70BF4BE6919E583D19619B6DC773A37269561"/>
+    <parameter name="automationname" value="Appium"/>
+    <classes>
+      <class name="TestNG.xcuitest.SingleScriptXCUITest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="IOS11 TEST">
+    <parameter name="deviceid" value="F41FB514D76C4374B983F4285C7C1BE60DA12E36"/>
+    <parameter name="automationname" value="XCUITest"/>
+    <classes>
+      <class name="TestNG.xcuitest.SingleScriptXCUITest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="IOS10 TEST">
+    <parameter name="automationname" value="XCUITest"/>
+    <classes>
+      <class name="TestNG.xcuitest.SingleScriptXCUITest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

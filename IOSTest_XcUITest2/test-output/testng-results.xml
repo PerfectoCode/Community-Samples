@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="103957" started-at="2017-10-06T11:45:18Z" finished-at="2017-10-06T11:47:02Z">
+    <groups>
+    </groups>
+    <test name="IOS10 TEST" duration-ms="77" started-at="2017-10-06T11:45:18Z" finished-at="2017-10-06T11:45:18Z">
+      <class name="TestNG.xcuitest.SingleScriptXCUITest">
+        <test-method status="FAIL" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@192b07fd]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-10-06T17:15:18Z" finished-at="2017-10-06T17:15:18Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'deviceid' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\admin\workspace\IOSTest_XcUITest2\src\TestNG\testsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'deviceid' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\admin\workspace\IOSTest_XcUITest2\src\TestNG\testsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="f()[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@192b07fd]" name="f" duration-ms="0" started-at="2017-10-06T17:15:18Z" finished-at="2017-10-06T17:15:18Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'deviceid' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\admin\workspace\IOSTest_XcUITest2\src\TestNG\testsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'deviceid' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\admin\workspace\IOSTest_XcUITest2\src\TestNG\testsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@192b07fd]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-06T17:15:18Z" finished-at="2017-10-06T17:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.xcuitest.SingleScriptXCUITest -->
+    </test> <!-- IOS10 TEST -->
+    <test name="IOS9 TEST" duration-ms="73586" started-at="2017-10-06T11:45:18Z" finished-at="2017-10-06T11:46:32Z">
+      <class name="TestNG.xcuitest.SingleScriptXCUITest">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@2f686d1f]" name="beforeClass" is-config="true" duration-ms="13736" started-at="2017-10-06T17:15:18Z" finished-at="2017-10-06T17:15:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo.perfectomobile.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[guruswamy.bm@perfectomobile.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Perfecto@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DBF70BF4BE6919E583D19619B6DC773A37269561]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Appium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@2f686d1f]" name="f" duration-ms="45637" started-at="2017-10-06T17:15:32Z" finished-at="2017-10-06T17:16:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@2f686d1f]" name="afterClass" is-config="true" duration-ms="14202" started-at="2017-10-06T17:16:18Z" finished-at="2017-10-06T17:16:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.xcuitest.SingleScriptXCUITest -->
+    </test> <!-- IOS9 TEST -->
+    <test name="IOS11 TEST" duration-ms="103957" started-at="2017-10-06T11:45:18Z" finished-at="2017-10-06T11:47:02Z">
+      <class name="TestNG.xcuitest.SingleScriptXCUITest">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@29ca901e]" name="beforeClass" is-config="true" duration-ms="26626" started-at="2017-10-06T17:15:18Z" finished-at="2017-10-06T17:15:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demo.perfectomobile.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[guruswamy.bm@perfectomobile.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Perfecto@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[F41FB514D76C4374B983F4285C7C1BE60DA12E36]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@29ca901e]" name="f" duration-ms="49576" started-at="2017-10-06T17:15:45Z" finished-at="2017-10-06T17:16:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNG.xcuitest.SingleScriptXCUITest@29ca901e]" name="afterClass" is-config="true" duration-ms="27731" started-at="2017-10-06T17:16:34Z" finished-at="2017-10-06T17:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestNG.xcuitest.SingleScriptXCUITest -->
+    </test> <!-- IOS11 TEST -->
+  </suite> <!-- Suite -->
+</testng-results>
