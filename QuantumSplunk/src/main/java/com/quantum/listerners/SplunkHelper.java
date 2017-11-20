@@ -14,7 +14,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 import com.perfecto.reportium.client.ReportiumClient;
 import com.perfecto.reportium.client.ReportiumClientFactory;
 import com.perfecto.reportium.model.PerfectoExecutionContext;
@@ -34,9 +33,8 @@ import static com.qmetry.qaf.automation.core.ConfigurationManager.getBundle;
 
 public abstract class SplunkHelper {
 
-
 	public static SplunkReportingCollector getCollector() {
-		return ((SplunkReportingCollector)getBundle().getObject("splunkCollector"));
+		return ((SplunkReportingCollector) getBundle().getObject("splunkCollector"));
 	}
 
 	public static QAFExtendedWebDriver getQAFDriver() {
@@ -46,11 +44,10 @@ public abstract class SplunkHelper {
 	public static void testStepStart(String stepName, String stepDesc) throws Exception {
 		getCollector().startTransaction(stepName, stepDesc);
 	}
-	
-	public static String getMonitorTag()
-	{
+
+	public static String getMonitorTag() {
 		return ConfigurationManager.getBundle().getString("monitorTag");
-	}	
+	}
 
 	public static void testStepEnd(long sla, String stepName) throws Exception {
 		getCollector().endTransaction(sla, stepName, getUXTimer());
@@ -75,14 +72,34 @@ public abstract class SplunkHelper {
 
 	public static void setSplunk() {
 		SplunkReportingCollector reporting;
-		reporting = ReportingCollectorFactory.createInstance(Long.parseLong((String) getBundle().getProperty("globalSLA")), 
-				(String) getBundle().getProperty("splunkSchema"), (String) getBundle().getProperty("splunkHost"), (String) getBundle().getProperty("splunkPort"),
-				(String) getBundle().getProperty("splunkToken"));
+		try {
+			if (!((String) getBundle().getProperty("splunkChannel")).equalsIgnoreCase("")) {
+				reporting = ReportingCollectorFactory.createInstance(
+						Long.parseLong((String) getBundle().getProperty("globalSLA")),
+						(String) getBundle().getProperty("splunkSchema"),
+						(String) getBundle().getProperty("splunkHost"), (String) getBundle().getProperty("splunkPort"),
+						(String) getBundle().getProperty("splunkToken"),
+						(String) getBundle().getProperty("splunkChannel"));
+			} else {
+				reporting = ReportingCollectorFactory.createInstance(
+						Long.parseLong((String) getBundle().getProperty("globalSLA")),
+						(String) getBundle().getProperty("splunkSchema"),
+						(String) getBundle().getProperty("splunkHost"), (String) getBundle().getProperty("splunkPort"),
+						(String) getBundle().getProperty("splunkToken"));
+
+			}
+		} catch (Exception ex) {
+			reporting = ReportingCollectorFactory.createInstance(
+					Long.parseLong((String) getBundle().getProperty("globalSLA")),
+					(String) getBundle().getProperty("splunkSchema"), (String) getBundle().getProperty("splunkHost"),
+					(String) getBundle().getProperty("splunkPort"), (String) getBundle().getProperty("splunkToken"));
+		}
+
 		ReportingCollectorFactory.setReporting(reporting);
-		
-		getBundle(). setProperty("splunkCollector", reporting);
+
+		getBundle().setProperty("splunkCollector", reporting);
 	}
-	
+
 	public static String getDeviceInfo(String value) {
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("property", value);
