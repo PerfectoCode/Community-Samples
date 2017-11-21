@@ -96,7 +96,6 @@
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
-
 	</repositories>
 
 	<dependencies>
@@ -107,12 +106,13 @@
 			<version>4.1.2</version>
 		</dependency>
 
+	<dependency>
+	    <groupId>com.github.PerfectoCode</groupId>
+	    <artifactId>PerfectoSplunkConnector</artifactId>
+	    <version>master-SNAPSHOT</version>
+	</dependency>
 
-		<dependency>
-			<groupId>com.github.PerfectoCode</groupId>
-			<artifactId>PerfectoSplunk</artifactId>
-			<version>8e9425e</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>org.hamcrest</groupId>
