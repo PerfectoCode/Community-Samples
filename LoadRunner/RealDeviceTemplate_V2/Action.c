@@ -99,7 +99,7 @@ void checkExecutionStatus()
 	do {
 		lr_output_message(" ***** Pause for Report Generation [%ix] %i%% Completed", i, atoi(lr_eval_string("{progressPercentage}")));
 		lr_vuser_status_message("Running... %i%% Completed", atoi(lr_eval_string("{progressPercentage}")));
-		lr_think_time(30);
+		lr_think_time(5);
 		web_reg_save_param("status", "LB=status\":\"", "RB=\"", "ORD=1", LAST);
 		web_reg_save_param("reason", "LB=reason\":\"", "RB=\"", "ORD=1", "Notfound=warning", LAST);
 		web_reg_save_param("progressPercentage", "LB=progressPercentage\":\"", "RB=\"", "ORD=1", LAST);
@@ -115,7 +115,7 @@ void checkExecutionStatus()
 			reportCloudErrorStatus(lr_eval_string("{reason}"));
 
 		i++;
-	}while ( strcmp("Completed", lr_eval_string("{status}")) != 0 && i <24 );
+	}while ( strcmp("Completed", lr_eval_string("{status}")) != 0 && i <144 );
 	
 
 	if (24<i)
