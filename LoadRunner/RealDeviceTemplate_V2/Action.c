@@ -14,14 +14,23 @@ Action()
 	web_convert_param("scriptName", "SourceEncoding=PLAIN",
             "TargetEncoding=URL", LAST);
 	               
-	// create base URL
-	sprintf(url, "URL=https://%s/services/executions?operation=execute&scriptkey=%s.xml&responseformat=xml&param.DUT=%s&user=%s&password=%s%s",
-		lr_get_attrib_string( "PerfectoCloud" ),
-	    lr_eval_string( "{scriptName}" ),
-	    lr_get_attrib_string( "PerfectoDeviceDUT" ),
-	    lr_get_attrib_string( "PerfectoUserID" ),
-	    lr_decrypt(lr_get_attrib_string( "PerfectoPassword" )),
-	    lr_get_attrib_string( "PerfectoMoreParameters" ));
+// create base URL
+	if(lr_get_attrib_string("PerfectoMoreParameters") == NULL) {
+		sprintf(url, "URL=https://%s/services/executions?operation=execute&scriptkey=%s.xml&responseformat=xml&param.DUT=%s&user=%s&password=%s%s",
+			lr_get_attrib_string( "PerfectoCloud" ),
+		    lr_eval_string( "{scriptName}" ),
+		    lr_get_attrib_string( "PerfectoDeviceDUT" ),
+		    lr_get_attrib_string( "PerfectoUserID" ),
+		    lr_decrypt(lr_get_attrib_string( "PerfectoPassword" )));
+	} else {
+		sprintf(url, "URL=https://%s/services/executions?operation=execute&scriptkey=%s.xml&responseformat=xml&param.DUT=%s&user=%s&password=%s%s",
+			lr_get_attrib_string( "PerfectoCloud" ),
+		    lr_eval_string( "{scriptName}" ),
+		    lr_get_attrib_string( "PerfectoDeviceDUT" ),
+		    lr_get_attrib_string( "PerfectoUserID" ),
+		    lr_decrypt(lr_get_attrib_string( "PerfectoPassword" )),
+		    lr_get_attrib_string( "PerfectoMoreParameters" ));
+	}	
 
 //	    lr_save_string(url, "url");
 // URL-encode the url (turn space to %20 etc.)	
