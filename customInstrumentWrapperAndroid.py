@@ -12,7 +12,8 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--apk', type=str, help='apk File to Instrument', required=True)
     parser.add_argument('-o', '--output_file', type=str, help='Output apk File', required=True)
-    parser.add_argument('-t', '--token', type=str, help='Text File Containing a Valid Security Token', required=True)
+    parser.add_argument('-t', '--token', type=str, help='Text File containing a valid security token', required=False)
+    parser.add_argument('-T', '--tokenText', type=str, help='Text containing a valid security token', required=False)
     parser.add_argument('-u', '--url', type=str, help='Cloud URL', required=True)
     parser.add_argument('-v', '--version', type=str, help='Instrumentation Version', required=True)
     parser.add_argument('-ih', '--instrument_hybrid', action='store_true', help='Enable Hybrid Instrumentation = spy',
@@ -25,7 +26,10 @@ def get_args():
     parser.add_argument('-cp', '--certificatePassword', help='certificate password', required=False)
     parser.add_argument('-kp', '--keystorePassword', help='keystore password', required=False)
     parser.add_argument('-cf', '--certificateFile', help='certificateFile', required=False)
+    parser.add_argument('-dc', '--deleteCache', action='store_true', help='delete the cache after download',
+                        required=False)
     parser.add_argument('-cach', '--cache', help='add string to the cache', required=False)
+    parser.add_argument('-usn', '--unsigned', action='store_true', help='would return unsigned app', required=False)
     args = parser.parse_args()
     return args
 
@@ -55,6 +59,15 @@ def main():
         sys.exit(1)
 
     print("")
+
+    if params.token is None and params.tokenText is None:
+        print("need token parameter")
+        sys.exit(1)
+
+    if params.token is None and not(params.tokenText is None):
+        with open('token.txt', 'w') as token_file:
+            token_file.write(params.tokenText)
+        params.token = 'token.txt'
 
     with open(params.token, 'r') as my_file:
         # security_token="%s %s" % ("Bearer", my_file.read().replace('\n', ''))
