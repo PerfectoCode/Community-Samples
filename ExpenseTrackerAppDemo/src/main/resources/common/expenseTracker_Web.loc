@@ -1,0 +1,64 @@
+expenseTracker.label=xpath=//*[text()='Expense Tracker']
+username.text.box=xpath=//input[@name='login_email']
+password.text.box=xpath=//input[@name='login_password']
+login.button=name=login_login_btn
+signUp.button=id=login_signup_btn
+touchID_toggle=id=login_biometric
+
+expenses.label=xpath=(//mat-toolbar//*[text()='Expenses'])[1]
+about.button=id=list_about_menu
+logout.button=name=log-out
+logout.buttonW=xpath=
+
+# add expense
+add.buttonmobile=id=list_add_btn
+add.buttonweb=xpath=//*[@id='list_add_btn']
+
+save.button=id=add_save_btn
+
+head.dropdown=id=add_head
+ok.button=xpath=//*[text()="OK"]
+head.taxi.dropdown=xpath=//span[contains(text(),'Taxi')]
+head.flight.dropdown=xpath=//span[contains(text(),'Flight')]
+head.meals.dropdown=xpath=//span[contains(text(),'Meals')]
+head.shopping.dropdown=xpath=//span[contains(text(),'Shopping')]
+
+amount.text.boxW=xpath=//input[@name='add_amount']
+amount.text.box=id=add_amount
+
+currency.dropdown=id=add_currency
+currency.inr.dropdown=xpath=//span[@class='mat-option-text'][contains(text(),'INR')]
+currency.usd.dropdown=xpath=//span[@class='mat-option-text'][contains(text(),'USD')]
+
+date.picker=id=add_date
+date.picker.TodaysDate=class=mat-calendar-body-cell-content mat-calendar-body-selected mat-calendar-body-today
+
+category.dropdown=id=add_category
+category.personal.dropdown=xpath=(//mat-pseudo-checkbox)[1]
+category.business.dropdown=xpath=//*[text()=" Business "]
+category.miscellaneous.dropdown=xpath=(//mat-pseudo-checkbox)[3]
+
+attachReceipt.button=id=add_attach
+recurring.button=id=add_recurring_toggle
+#details.text.box=id=add_details
+details.text.box=xpath=//*[@id='add_details']/*
+add.attachment=id=add_attach
+camera.button=xpath=//*[text()="Use Camera"]
+attachment.link=id=add_attach
+
+# verify expense
+details.data.label=css=.field .field
+
+# delete expense
+back.button=id=view_back_btn
+expense.added=xpath=//*[contains(text(),'Business,Miscellaneous')]/parent::*
+expense.added.label=xpath=//*[contains(text(),'Business,Miscellaneous')]
+expense.added.recurring.label=xpath=//*[contains(text(),'Business,Miscellaneous')]/following-sibling::*[3]
+expense.added.checkbox=xpath=(//*[contains(text(),'Business,Miscellaneous')]/parent::*//mat-checkbox)[1]
+delete.button=xpath=//button[@class='mat-fab mat-warn ng-star-inserted']//mat-icon
+delete.confirm.message.label=xpath=//*[text()='Do you really want to delete?']
+delete.confirm.button=xpath=//*[text()='Confirm']
+delete.message.overlay.label=xpath=//span[contains(text(),'Deleted!')]
+
+addAttachmentAllow.btn=xpath=//*[@resource-id='com.android.packageinstaller:id/permission_allow_button']
+hamburger.menu.button=xpath=//*[@class="button ion-activatable hydrated"]
