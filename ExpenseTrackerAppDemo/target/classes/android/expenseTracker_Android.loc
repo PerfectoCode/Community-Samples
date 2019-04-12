@@ -1,0 +1,53 @@
+# login page
+perfecto.logo=id=io.perfecto.expense.tracker:id/img_icon
+username.text.box=id=io.perfecto.expense.tracker:id/login_email
+password.text.box=id=io.perfecto.expense.tracker:id/login_password
+login.button=id=io.perfecto.expense.tracker:id/login_login_btn
+signUp.button=id=io.perfecto.expense.tracker:id/login_signup_btn
+
+# signUp page
+back.button=name=Back
+signUp.label=id=app.perfecto.com.expencemanager:id/tv_login_head
+register.button=id=app.perfecto.com.expencemanager:id/signup_save_btn
+name.text.box=id=app.perfecto.com.expencemanager:id/signup_name
+email.text.box=id=app.perfecto.com.expencemanager:id/signup_email
+currency.amount=xpath=//*[@text="USD-$"]
+password.signup.text.box=id=app.perfecto.com.expencemanager:id/signup_password
+confirmpassword.signup.text.box=id=app.perfecto.com.expencemanager:id/signup_confirm_password
+error.emailExists.label=classname=XCUIElementTypeStaticText
+accountCreated.label=name=Account created
+
+TouchID.cancelButton=id=app.perfecto.com.expencemanager:id/fingerprint_dialog_cancel
+touchID_toggle=id=io.perfecto.expense.tracker:id/login_biometric_check_box
+
+pickerWheel1=xpath=//UIAPickerWheel|//XCUIElementTypePickerWheel
+pickerWheel2=xpath=//UIAPickerWheel[2]|//XCUIElementTypePickerWheel[2]
+pickerWheel3=xpath=//UIAPickerWheel[3]|//XCUIElementTypePickerWheel[3]
+
+# expenses page
+expenses.label=xpath=//*[@text="Expenses"]
+edit.button=name=list_edit_btn
+username.label=name=side_menu_name
+hamburger.menu.button=xpath=//*[@content-desc="Open Drawer"]
+logout.button=xpath=//*[@text="Logout"]
+ok.button=id=android:id/button1
+expense.list=id=app.perfecto.com.expencemanager:id/rv_expenses
+delete.expense=id=app.perfecto.com.expencemanager:id/action_delete
+noExpense.label=id=app.perfecto.com.expencemanager:id/tv_message
+
+
+# add expense
+add.label=id=io.perfecto.expense.tracker:id/list_add_btn
+save.button=id=io.perfecto.expense.tracker:id/add_save_btn
+head.text.box=id=io.perfecto.expense.tracker:id/add_head
+amount.text.box=id=io.perfecto.expense.tracker:id/add_amount
+amount.slider=id=app.perfecto.com.expencemanager:id/amount_seek_bar
+currency.text.box=id=io.perfecto.expense.tracker:id/signup_currency
+category.text.box=id=io.perfecto.expense.tracker:id/spinner_category
+date.text.box=id=io.perfecto.expense.tracker:id/add_date
+attachment.link=id=io.perfecto.expense.tracker:id/add_attach_btn
+recurring.button=id=io.perfecto.expense.tracker:id/add_recurring_toggle
+details.text.box=id=io.perfecto.expense.tracker:id/add_details
+camera.button=id=io.perfecto.expense.tracker:id/btn_attach_camera
+viewAttachment.button=id=io.perfecto.expense.tracker:id/view_view_attach_btn
+removeAttachment.button=id=io.perfecto.expense.tracker:id/removeAttachment

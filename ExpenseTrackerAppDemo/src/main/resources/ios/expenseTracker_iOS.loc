@@ -1,0 +1,51 @@
+# login page
+perfecto.logo=name=Logo
+username.text.box=name=login_email
+password.text.box=name=login_password
+login.button=name=login_login_btn
+signUp.button=name=login_signup_btn
+touchID_toggle=xpath=//XCUIElementTypeSwitch
+
+
+# signUp page
+back.button=name=Back
+signUp.label=name=Signup
+register.button=name=signup_save_btn
+name.text.box=name=signup_name
+email.text.box=xpath=//UIATextField[2]|//XCUIElementTypeTextField[2]
+currency.text.box=xpath=//UIATextField[3]|//XCUIElementTypeTextField[3]
+password.signup.text.box=name=signup_password
+confirmpassword.signup.text.box=name=signup_confirmpassword
+error.emailExists.label=classname=XCUIElementTypeStaticText
+accountCreated.label=name=Account created
+Ok.button=name=OK
+
+pickerWheel1=xpath=//UIAPickerWheel|//XCUIElementTypePickerWheel
+pickerWheel2=xpath=//UIAPickerWheel[2]|//XCUIElementTypePickerWheel[2]
+pickerWheel3=xpath=//UIAPickerWheel[3]|//XCUIElementTypePickerWheel[3]
+
+# expenses page
+hamburger.menu.button=name=list_left_menu_btn
+expenses.label=name=Expenses
+edit.button=name=list_edit_btn
+username.label=name=side_menu_name
+about.button=name=list_about_menu
+logout.button=name=list_logout_menu
+
+# add expense
+add.label=name=list_add_btn
+save.button=name=add_save_btn
+head.text.box=name=edit_head
+amount.text.box=name=edit_amount
+amount.slider=xpath=//UIASlider|//XCUIElementTypeSlider
+currency.text.box=name=edit_currency
+category.text.box=name=edit_category
+date.text.box=name=edit_date
+attachment.link=name=edit_attach
+recurring.button=name=edit_recurring
+details.text.box=name=edit_details
+expense.list=name=list_item
+camera.button=name=Camera
+capture.button=name=PhotoCapture
+usePhoto.button=name=Use Photo
+
