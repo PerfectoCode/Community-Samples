@@ -19,7 +19,7 @@ Install NodeJS dependencies with this command:
 
 ## Running the test
 
-You can run [spec_expenseTracker.js](spec/spec_expenseTracker.js) with this command:
+You can run [spec_expenseTracker.js](specs/spec_expenseTracker.js) with this command:
 
 > npm test
 
