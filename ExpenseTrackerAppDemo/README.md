@@ -1,46 +1,7 @@
 # Getting Started
 This starter kit is designed to get you up and running using the Quantum framework (powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
 
-Begin with installing the dependencies below, and continue with the Getting Started procedure below.
-
-### Dependencies
-There are several prerequisite dependencies you should install on your machine prior to starting to work with Quantum:
-
-* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-
-* An IDE to write your tests on - [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
-
-* [Maven](https://maven.apache.org/)
-
-Eclipse users should also install:
-
-1. [Maven Plugin](http://marketplace.eclipse.org/content/m2e-connector-maven-dependency-plugin)
-
-2. [TestNG Plugin](http://testng.org/doc/download.html)
-
-3. [QAF Cucumber Plugin](https://marketplace.eclipse.org/content/qaf-bdd-editors). Or go to  install new software option in eclipse, and download from https://qmetry.github.io/qaf/editor/bdd/eclipse/
-
-IntelliJ IDEA users should also install:
-
-1. [Maven Plugin for IDEA](https://plugins.jetbrains.com/plugin/1166)
-
-2. [Cucumber Plugin (Community version only)](https://plugins.jetbrains.com/plugin/7212)
-
-TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
- 
-**********************
-# Getting Started
-
-<a target="_blank" href="https://youtu.be/FOHrWCuNPWI"><img src="https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/img/QuantumIntroThumbnail.png" alt="Quantum Framework Introduction and Getting Started"/></a>
-
-This procedure leads you through the various Quantum framework's aspects:
-
-* [Running one of the samples](README.md#running-sample-as-is) in the Quantum project as is.
-* [Creating your first test](README.md#creating-your-first-test) using the Quantum-Starter-Kit
-* [Parallel execution](README.md#parallel-execution) of all Quantum samples.
-* [Diversifying test execution](README.md#diversifying-test-execution) by manipulating test suites.
-* [Viewing test execution results](README.md#viewing-test-execution-results-in-perfecto-reporting)
-* [Advanced Quantum features](README.md#advanced-quantum-features)
+Please refer to this link to know more about Quantum - https://github.com/Project-Quantum/Quantum-Starter-Kit
 
 About this project - 
 
