@@ -10,7 +10,7 @@ Install NodeJS dependencies with this command:
 
 ## project structure
 
-1. Update your Perfecto credentials (either securityToken or Username and Password) and deviceName in [conf_expenseTracker_jasmine.js](conf_expenseTracker_jasmine.js). The apps specified in the capabilities are available on demo cloud under same repository structure.
+1. Update your Perfecto credentials (either securityToken or Username and Password) and deviceName in [conf_expenseTracker_jasmine.js](config.js). The apps specified in the capabilities are available on demo cloud under same repository structure.
 2. App locators are found in properties file for each platform under locators folder under project's root folder
 3. The functions to test the app are written in (ExpenseTrackerPage.js) under pageObjects folder
 4. Jasmine spec file (spec_expenseTracker.js) calls the necessary function in ExpenseTrackerPage.js to run the test
