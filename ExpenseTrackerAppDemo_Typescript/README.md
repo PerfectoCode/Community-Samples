@@ -8,6 +8,10 @@ Install NodeJS dependencies with this command:
 
 > npm install
 
+Install TypeScript globally with this command:
+
+>npm install -g typescript
+
 ## project structure
 
 1. Update your Perfecto credentials (either securityToken or Username and Password) and deviceName in [config.ts](config.ts). The apps specified in the capabilities are available on demo cloud under same repository structure.
