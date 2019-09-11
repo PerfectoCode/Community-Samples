@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Expense Demo" parallel="tests">
+
+	<test name="Adding Expense" enabled="true">
+		<parameter name="platform" value="Android" />
+		
+		<parameter name="model" value="Galaxy S.*" />
+		<parameter name="deviceID" value="9EB54791" />
+		
+		<!-- <parameter name="deviceID" value="emulator-5554" />
+		<parameter name="port" value="4000" />
+		<parameter name="systemPort" value="4001" /> -->
+		<classes>
+			<class name="tests.smoke.addExpenseTest" />
+		</classes>
+	</test>
+
+	<test name="adding Expense 2" enabled="true">
+		<parameter name="platform" value="Android" />
+		
+		<parameter name="model" value="Galaxy S.*" />
+		<parameter name="deviceID" value="R38M604TNBZ" />
+		
+		<!-- <parameter name="deviceID" value="emulator-5556" />
+		<parameter name="port" value="5000" />
+		<parameter name="systemPort" value="5001" /> -->
+		<classes>
+			<class name="tests.smoke.addExpenseTest" />
+		</classes>
+	</test>
+	
+	<test name="adding Expense 3" enabled="false">
+		<parameter name="platform" value="Android" />
+		<parameter name="deviceID" value="33006d1c6403c30f" />
+		<parameter name="port" value="6000" />
+		<!-- <parameter name="systemPort" value="6001" /> -->
+		<classes>
+			<class name="tests.smoke.addExpenseTest" />
+		</classes>
+	</test>
+
+</suite>
+
