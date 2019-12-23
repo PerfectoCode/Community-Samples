@@ -9,7 +9,7 @@
 	<test name="iOS Native" enabled="true">
 
 		<parameter name="driver.name" value="perfectoDriver" />
-		<parameter name="driver.capabilities.deviceName" value="9C71D808D1C001F1B3DE289247CC4080B36C880D"/>
+		<parameter name="driver.capabilities.deviceName" value=""/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker\Native\InvoiceApp1.0.ipa"/> 
 		<parameter 	name="perfecto.capabilities.sensorInstrument" value="true"/>
 		<parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
@@ -30,7 +30,7 @@
 
 	<test name="Android Native" enabled="true">
 		<parameter name="driver.name" value="perfectoDriver" />
-		<parameter name="driver.capabilities.deviceName" value="A96F2F50"/>
+		<parameter name="driver.capabilities.deviceName" value=""/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
 		<parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
 		<parameter name="appPackageType" value="driver.capabilities.appPackage" />
@@ -52,7 +52,7 @@
 
 	<test name="Android Hybrid" enabled="true">
 		<parameter name="driver.name" value="perfectoDriver" />
-		<parameter name="driver.capabilities.deviceName" value="988667424653364E48"/>
+		<parameter name="driver.capabilities.deviceName" value=""/>
 		<parameter name="appType" value="Hybrid" />
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Hybrid/ExpenseHybridAppVer1.0.apk"/>
 		<parameter name="applicationType" value="Hybrid"/>
@@ -78,7 +78,7 @@
 
 	<!-- <test name="iOS Hybrid" enabled="false">
 		<parameter name="driver.name" value="perfectoDriver" />
-		<parameter name="driver.capabilities.deviceName" value="F41FB514D76C4374B983F4285C7C1BE60DA12E36"></parameter>
+		<parameter name="driver.capabilities.deviceName" value=""></parameter>
 		<parameter name="appType" value="Hybrid" />
 		<parameter name="driver.capabilities.app" value="PUBLIC:applications/InvoiceApp.ipa"></parameter>
 		<parameter name="applicationType" value="Hybrid"></parameter>
