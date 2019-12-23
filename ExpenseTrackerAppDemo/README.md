@@ -1,11 +1,13 @@
 # Getting Started
-This starter kit is designed to get you up and running using the Quantum framework (powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
+Expense tracker demo project is created upon Quantum framework. This project covers native, hybrid and web type of the Expense tracker application. 
+
+Details about Expense tracker app - https://developers.perfectomobile.com/display/PP/Perfecto+Demo+App+-+Expense+Tracker
 
 Please refer to this link to know more about Quantum - https://github.com/Project-Quantum/Quantum-Starter-Kit
 
 About this project - 
 
-Feature files are created to cater for any app type, i.e., it could be executed on Native, Hybrid or Web. 
+Feature files are created to cater for all app types, i.e., it could be executed on Native, Hybrid or Web. 
 
 ## Running sample scenario as is
 Run a single Quantum sample scenario from the samples provided in the project.
