@@ -9,10 +9,9 @@ About this project -
 
 Feature files are created to cater for all app types, i.e., it could be executed on Native, Hybrid or Web. 
 
-## Running sample scenario as is
-Run a single Quantum sample scenario from the samples provided in the project.
+## Running sample scenario
 
-The sample scenario is located under the _src/main/resources/scenarios_ folder.
+Expense tracker end to end scenario is present under the feature folder.
 
 1. Configure your cloud and credentials in the _application.properties_ file (under the top _resources/_ folder).
 2. Run your test via the TestNG.xml file (testng_expenseTracker.xml) with tags (@expenseTracker) in the project pane.
