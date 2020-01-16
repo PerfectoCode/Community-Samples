@@ -20,7 +20,7 @@
 		<repository>
 			<id>perfectomobile</id>
 			<name>Perfecto mobile</name>
-			<url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
+			<url>https://repo1.perfectomobile.com/public/repositories/maven</url>
 		</repository>
 		<repository>
 			<id>xframium</id>
@@ -35,7 +35,7 @@
 		<repository>
 			<id>central</id>
 			<name>Repo1</name>
-			<url>http://repo1.maven.org/maven2</url>
+			<url>https://repo1.maven.org/maven2</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -50,7 +50,7 @@
 		<pluginRepository>
 			<id>central</id>
 			<name>Repo1</name>
-			<url>http://repo1.maven.org/maven2</url>
+			<url>https://repo1.maven.org/maven2</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
