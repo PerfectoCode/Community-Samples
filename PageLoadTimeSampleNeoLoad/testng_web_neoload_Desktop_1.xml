@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Chrome Test" enabled="true">
+  <parameter name="platformName" value="Windows"/>
+    <classes>
+      <class name="TestNg.testng.NeoLoadPerfecto"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+    <test thread-count="5" name="Android Test" enabled="false">
+  <parameter name="platformName" value="Android"/>
+    <classes>
+      <class name="TestNg.testng.NeoLoadPerfecto"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+    <test thread-count="5" name="iOS Test" enabled="false">
+  <parameter name="platformName" value="iOS"/>
+    <classes>
+      <class name="TestNg.testng.NeoLoadPerfecto"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
