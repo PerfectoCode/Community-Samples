@@ -31,3 +31,5 @@ The following examples are included:
 |WebAppSwitchContextProject| Sample code of switching Context in iOS - Web App & iOS Settings| [Switching Context in iOS - Web App & iOS Settings](http://developers.perfectomobile.com/pages/viewpage.action?pageId=21433107)
 |NativeAppSwitchContextProject| Sample code of iOS Native App Switch - Switching between App and Safari Browser| [iOS Native App Switch - Switching between App and Safari Browser](http://developers.perfectomobile.com/display/TT/iOS+Native+App+Switch+-+Switching+between+App+and+Safari+Browser)
 |ClearSafariHistoryData| Sample code of iOS Safari - Clear History Data| [iOS Safari - Clear History Data](http://developers.perfectomobile.com/display/TT/iOS+Safari+-+Clear+History+Data)
+|Reserve an available device at runtime|It is possible to check device availability and reserve available devices during run time with the Perfecto REST API. |
+|Optimize your device reservation|The following simple class helps you with optimizing a device reservation, it may happen that a device gets reserved, but then the user who reserved it never uses making it unavailable for other user.|
