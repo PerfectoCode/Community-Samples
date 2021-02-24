@@ -1,0 +1,11 @@
+[t122]
+FileName1=t122.htm
+URL1=https://api.amplitude.com/
+Total=1
+RequestHeaderFile=t122_RequestHeader.txt
+RequestBodyFile=t122_RequestBody.txt
+ResponseHeaderFile=t122_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_122.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

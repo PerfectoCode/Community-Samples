@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+content-type: application/json
+cache-control: no-cache, no-store
+access-control-allow-origin: *
+server-timing: bon, total;dur=149.179121
+server: connector
+keep-alive: timeout=5
+date: Sun, 21 Feb 2021 18:42:03 GMT
+Set-Cookie: nlbi_2042947_2147483646=LDupHyL8Kjy3CsQN68CAIwAAAABJ61cwbOCDVwhaoTj6we28; path=/; Domain=.etihad.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=31536000
+X-CDN: Imperva
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+X-Iinfo: 14-30464859-30464998 NNYN CT(149 149 0) RT(1613932922187 1384) q(0 0 3 -1) r(5 6) U5
+

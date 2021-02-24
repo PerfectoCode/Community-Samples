@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Cteonnt-Length: 20331
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+Access-Control-Allow-Origin: *
+Access-Control-Request-Method: POST,GET,PUT,DELETE,OPTIONS
+Access-Control-Allow-Headers: X-Requested-With,Content-Type
+VM: EAWVOWNWMWB009P
+Content-Encoding: gzip
+Content-Length: 1594
+Cache-Control: max-age=900
+Expires: Sun, 21 Feb 2021 18:57:26 GMT
+Date: Sun, 21 Feb 2021 18:42:26 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+Set-Cookie: ak_bmsc=92ADEAE62979FED95BC6C78A56DC1AEB6873502F241C000092A932602F140631~plwzlycDGjDTWXC0jaR2rQB7L5yc9Ye3W8smpZyMZW/haJBV/rkzAKiBacbnZGAy5iQo4EcY2gGK6p/R4lFgpuHrj4uMFgvFs/oT/ptXNkd5cAE/SkjGhEWYGHpH0twkfHw8Tgn+wA7Nbo4ji1B/ZgrtcuXKH8L/QTw1QpAVqiVTljiRDjz5d+S8j0zo5mNUy09y6+Jr3de9n8dyR+QZJTXKNrHR0NCX7reICzYi9zMdM=; expires=Sun, 21 Feb 2021 20:42:26 GMT; max-age=7200; path=/; domain=.etihad.com; HttpOnly
+

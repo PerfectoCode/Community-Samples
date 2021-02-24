@@ -1,0 +1,17 @@
+[t84]
+FileName1=t84.txt
+URL1=https://www.facebook.com/tr/
+Total=4
+RequestHeaderFile=t84_RequestHeader.txt
+RequestBodyFile=t84_RequestBody.txt
+ResponseHeaderFile=t84_ResponseHeader.txt
+ContentType=text/plain
+SnapshotXmlFile=snapshot_84.xml
+FileName2=t84_RC0d3cea422d0441dab592032f659f99e4-source.min.html
+URL2=https://assets.adobedtm.com/8aea536f4a27/88ed4f88d8f6/b952b1e8a447/RC0d3cea422d0441dab592032f659f99e4-source.min.js
+FileName3=t84_s82190947405658.html
+URL3=https://smetrics.etihad.com/b/ss/etihaddotcomprod/10/JS-2.17.0-LBQ1/s82190947405658?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=21%2F1%2F2021%2020%3A40%3A11%200%20-120&d.&nsid=0&jsonv=1&.d&sdid=6A3F59C891286C9C-67A9CA130B15A327&mid=26185866700827066552622528666916780474&aamlh=6&ce=UTF-8&ns=etihadairways&cdp=2&pageName=book&g=https%3A%2F%2Fwww.etihad.com%2Fen-us%2Fbook&cc=AED&ch=eyey&server=etihad-adobe-aem-hosting&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&c1=D%3Dv1&v1=en-us&l2=home-_-flightsearch-_-return-_-20190821%2Chome-_-flightsearch-_-oneway-_-20190821%2C%2C&v13=AED&c15=D%3Dv15&v15=en-us%3Abook&c16=8%3A40%20PM%7CSunday&v16=8%3A40%20PM%7CSunday&c17=D%3Dv17&c22=D%3Dv22&v22=en-us&v27=book&c29=D%3Dv29&v29=D%3Dg&v54=1613932798754&c56=D%3Dv56&v56=desktop&v57=en&v58=D%3DpageName&v60=prod&c73=D%3Dv73&v73=7.0.0&v87=annonymous&v89=D%3Dmid&v127=%3A&v149=www.etihad.com&v150=launch&v199=False&v249=true&s=1440x900&c=24&j=1.6&v=N&k=Y&bw=1320&bh=725&mcorgid=15BD401053DAEC4A0A490D4C%40AdobeOrg&AQE=1
+FileName4=t84_favicon.webp
+URL4=https://www.etihad.com/content/dam/eag/etihadairways/etihadcom/Global/fav-icon/favicon.png
+[ProtocolInfo]
+ProtocolId=QTWeb

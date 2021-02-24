@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Sun, 07 Feb 2021 14:33:57 GMT
+Content-Type: application/json
+Content-Length: 669
+Connection: keep-alive
+Set-Cookie: AWSALB=0Jrmi3UgHUkWuDvXjIM3W3lumulPnxF/eLaPiNuP2xf5v1LBySeYE8GQq4XmvLSNHT7875Wh8Bupp2ICHuWT6VVlM0Txf8rQQLD26sYMxXHl7KJfvLeFXTKxQbnR; Expires=Sun, 14 Feb 2021 14:33:57 GMT; Path=/
+Set-Cookie: AWSALBCORS=0Jrmi3UgHUkWuDvXjIM3W3lumulPnxF/eLaPiNuP2xf5v1LBySeYE8GQq4XmvLSNHT7875Wh8Bupp2ICHuWT6VVlM0Txf8rQQLD26sYMxXHl7KJfvLeFXTKxQbnR; Expires=Sun, 14 Feb 2021 14:33:57 GMT; Path=/; SameSite=None; Secure
+Server: Apache
+Vary: Accept-encoding
+Last-Modified: Thu, 04 Feb 2021 08:46:07 GMT
+ETag: "29d-5ba7ebc0a71c0"
+Accept-Ranges: bytes
+Cache-Control: max-age=31536000
+Expires: Mon, 07 Feb 2022 14:33:56 GMT
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=31536000
+X-CDN: Incapsula
+X-Iinfo: 7-15414969-15415045 NNNN CT(206 205 0) RT(1612708435795 287) q(0 6 6 -1) r(9 9) U5
+

@@ -1,0 +1,13 @@
+[t92]
+FileName1=t92.html
+URL1=https://google.co.il/domainreliability/upload
+Total=2
+RequestHeaderFile=t92_RequestHeader.txt
+RequestBodyFile=t92_RequestBody.txt
+ResponseHeaderFile=t92_ResponseHeader.txt
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_92.xml
+FileName2=t92__Incapsula_Resource.html
+URL2=https://dxbooking.etihad.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3
+[ProtocolInfo]
+ProtocolId=QTWeb

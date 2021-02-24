@@ -1,0 +1,11 @@
+[t69]
+FileName1=t69_origin.json
+URL1=https://www.etihad.com/edge-services/ns/all-ond-auto/v210/en/origin.json
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_69.xml
+RequestHeaderFile=t69_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t69_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

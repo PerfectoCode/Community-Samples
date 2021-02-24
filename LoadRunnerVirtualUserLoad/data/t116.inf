@@ -1,0 +1,11 @@
+[t116]
+FileName1=t116.htm
+URL1=https://etihadairways.demdex.net/dest5.html?d_nsid=0
+Total=1
+RequestHeaderFile=t116_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t116_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_116.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t121]
+FileName1=t121.json
+URL1=https://dc.etihad.com/v4.3/ssw/products/air/search?execution=e1s1&jipcc=EYDX
+Total=1
+RequestHeaderFile=t121_RequestHeader.txt
+RequestBodyFile=t121_RequestBody.txt
+ResponseHeaderFile=t121_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_121.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

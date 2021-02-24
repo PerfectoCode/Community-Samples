@@ -1,0 +1,13 @@
+HTTP/2.0 200
+Status: 200
+date: Mon, 22 Feb 2021 18:15:29 GMT
+content-type: application/json;charset=UTF-8
+vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+timing-allow-origin: *
+cache-control: no-cache
+access-control-allow-origin: https://dxbooking.etihad.com
+access-control-allow-credentials: true
+x-request-id: fe9de8134cb94449a63fabf262ec04c5
+pragma: no-cache
+content-encoding: gzip
+

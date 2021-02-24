@@ -1,0 +1,11 @@
+[t20]
+FileName1=t20.json
+URL1=https://www.etihad.com/staticweb/f90d78bf285ti1737f7ce52339909539c
+Total=1
+RequestHeaderFile=t20_RequestHeader.txt
+RequestBodyFile=t20_RequestBody.txt
+ResponseHeaderFile=t20_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_20.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

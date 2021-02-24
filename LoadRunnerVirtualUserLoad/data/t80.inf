@@ -1,0 +1,11 @@
+[t80]
+FileName1=t80_0.html
+URL1=https://bat.bing.com/action/0?ti=4017239&Ver=2&mid=9efc6fd9-1b65-4ebc-9e62-ff4af90f9b14&sid=38efc2d0747411eb824c037565713347&vid=38f49e70747411eb84608354d038f035&vids=1&pi=1200101525&lg=en-US&sw=1440&sh=900&sc=24&tl=Book%20your%20flights%20with%20Etihad%20Airways%20USA&p=https%3A%2F%2Fwww.etihad.com%2Fen-us%2Fbook&r=&lt=11833&evt=pageLoad&msclkid=N&sv=1&rn=70807
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_80.xml
+RequestHeaderFile=t80_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t80_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Content-Length: 20
+Cache-Control: private, max-age=3600
+Expires: Sun, 07 Feb 2021 15:31:12 GMT
+Date: Sun, 07 Feb 2021 14:31:12 GMT
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000
+Content-Type: application/json
+Set-Cookie: bm_sv=8A92CDC323E22B56CCC79E819E836ADE~nBSdWQiKnFazP33HnTnZz0yvWhtlCjJZSqH8jDOCiCtAEkQRU9tYUntPeQ81PQBYTtGb7hJPUsBRfxUalm6Q11rwh8BjETQ3CdBHlS7cvC0gn1oF75ED/9FyryXXxkEdUNd9H+YYlDC0J/UoCXvKo0PEtUC0DC4WT1u67dcUBh4=; Domain=.etihad.com; Path=/; Max-Age=7200; HttpOnly
+

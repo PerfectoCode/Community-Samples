@@ -1,0 +1,15 @@
+[t45]
+FileName1=t45_init.html
+URL1=https://dc.etihad.com/v4.3/ssw/products/init?jipcc=EYDX
+Total=3
+ContentType=application/font-woff
+SnapshotXmlFile=snapshot_45.xml
+RequestHeaderFile=t45_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t45_ResponseHeader.txt
+FileName2=t45_spark-icon-fill.html
+URL2=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/fonts/spark-icon-fill.woff
+FileName3=t45_tag.html
+URL3=https://config1.veinteractive.com/tags/D9D2B911/A3A0/4FA4/8F93/08084164B50A/tag.js
+[ProtocolInfo]
+ProtocolId=QTWeb

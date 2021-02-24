@@ -1,0 +1,4 @@
+"{\"entries\":[{\"http_response_code\":200,\"network_changed\":false,\"protocol\":\"QUIC\",\"re"
+"quest_age_ms\":71845,\"request_elapsed_ms\":183,\"sample_rate\":0.05,\"server_ip\":\"216.58.20"
+"4.70:443\",\"status\":\"ok\",\"url\":\"https://4338867.fls.doubleclick.net/\",\"was_proxied\":"
+"false}],\"reporter\":\"chrome\"}"

@@ -1,0 +1,11 @@
+[t60]
+FileName1=t60_AE.json
+URL1=https://webmodule.etihad.com/v5/brandedfare.svc/BLR/AUH/IN/AE
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_60.xml
+RequestHeaderFile=t60_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t60_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

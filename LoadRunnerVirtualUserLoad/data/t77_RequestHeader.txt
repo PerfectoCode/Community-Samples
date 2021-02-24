@@ -1,0 +1,16 @@
+GET /id?d_visid_ver=3.4.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&d_orgid=15BD401053DAEC4A0A490D4C%40AdobeOrg&d_nsid=0&d_mid=26185866700827066552622528666916780474&ts=1613932803869 HTTP/1.1
+Host: dpm.demdex.net
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Origin: https://www.etihad.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.etihad.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+

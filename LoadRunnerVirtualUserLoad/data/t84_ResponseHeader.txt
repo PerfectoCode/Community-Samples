@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Access-Control-Allow-Origin: https://www.etihad.com
+Access-Control-Allow-Credentials: true
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cross-Origin-Resource-Policy: cross-origin
+Server: proxygen-bolt
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Date: Sun, 21 Feb 2021 18:40:55 GMT
+Connection: keep-alive
+Content-Length: 0
+

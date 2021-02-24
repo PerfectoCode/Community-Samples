@@ -1,0 +1,11 @@
+[t126]
+FileName1=t126.html
+URL1=https://dtrc.veinteractive.com/FormMappings
+Total=1
+RequestHeaderFile=t126_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t126_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_126.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

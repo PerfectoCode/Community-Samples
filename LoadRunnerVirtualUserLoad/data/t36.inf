@@ -1,0 +1,11 @@
+[t36]
+FileName1=t36_seatSelectionConfiguration.json
+URL1=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/data/features/seatSelectionConfiguration.json
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_36.xml
+RequestHeaderFile=t36_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t36_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

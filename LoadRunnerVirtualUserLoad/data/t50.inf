@@ -1,0 +1,11 @@
+[t50]
+FileName1=t50.json
+URL1=https://dc.etihad.com/v4.3/ssw/products/air/search?execution=e1s1&jipcc=EYDX
+Total=1
+RequestHeaderFile=t50_RequestHeader.txt
+RequestBodyFile=t50_RequestBody.txt
+ResponseHeaderFile=t50_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_50.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

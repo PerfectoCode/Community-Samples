@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: max-age=21600
+Content-Encoding: gzip
+Content-Type: text/html
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Last-Modified: Thu, 21 Jan 2021 11:34:57 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Accept-Encoding, User-Agent
+X-TID: QLeNidtBQNM=
+Content-Length: 2785
+Connection: keep-alive
+

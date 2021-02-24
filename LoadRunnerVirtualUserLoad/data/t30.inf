@@ -1,0 +1,11 @@
+[t30]
+FileName1=t30_metadata.json
+URL1=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/data/global/metadata.json
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_30.xml
+RequestHeaderFile=t30_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t30_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

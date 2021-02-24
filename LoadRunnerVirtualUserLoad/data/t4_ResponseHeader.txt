@@ -1,0 +1,28 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Encoding: gzip
+Content-Type: text/html; charset=UTF-8
+ETag: "7c57a-5babfaa40740a-gzip"
+Last-Modified: Sun, 07 Feb 2021 14:14:01 GMT
+Server: Apache
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Dispatcher: PR-dispatcher1eucentral1
+X-Frame-Options: SAMEORIGIN
+X-Vhost: publish
+X-XSS-Protection: 1; mode=block
+X-Akamai-Transformed: 9 48565 0 pmb=mTOE,3
+Cache-Control: max-age=875
+Expires: Sun, 07 Feb 2021 14:45:41 GMT
+Date: Sun, 07 Feb 2021 14:31:06 GMT
+Transfer-Encoding:  chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+Set-Cookie: ak_bmsc=A61D4020B6244E0F4B9B1F594D4D62226873502F55430000AAF91F6078E81B28~plh7GLvMESfyRVhxVVDAu5a5g0jM9QAlDi+Mf1RlMY74cc2jg1CbMWfay+zwp2+FPdnWz4zHkfE4kVE+VwP/gjq6qTrvWRfrevqxjtZ02H/4IiBN3/BPWx/VIRSflXoedqlwopC+tKHoFi7I0M+52ya+Rbdf1Hx7Tvm5/lKlUhh4hafFXYyn1tDvt2wOors2C0x0OBaifoMifMFfWO/VHZcR4Yr+eBj/crp2pVH3ZrFqo=; expires=Sun, 07 Feb 2021 16:31:06 GMT; max-age=7200; path=/; domain=.etihad.com; HttpOnly
+Set-Cookie: akacd_PR1=3790161065~rv=92~id=741e57b36a9cd5b21d2ea53f8d0e65a3; path=/;; Secure; SameSite=None
+Strict-Transport-Security: max-age=31536000
+x-ey-er: 2
+Set-Cookie: bm_mi=12BA863514DC699F8D65F0083FECDAC6~mWf3rbYd4EhxdcUiIZtQ58A2teWGRbMk4JDQoATPHrCJ3L33CEA87Iy0Fb9MRCCguCQrwLeGHl/tXG6vvMgZSUvuOqK80u258ELPmF5qT45ldtroq5oI3Pwzh4R0JBoBgGYS2lEYuNj6Cb7w9QgS6+piKEv2Buu6NgPvnZdSXMjcroDl4kLzr+158c/SyyexRIhk+spkXHeZV6FSuX3fpRU1WlLs/WSsno6oOGC4OYk=; Domain=.etihad.com; Path=/; Max-Age=0; HttpOnly
+Set-Cookie: bm_sz=5ED2897A510FDCC303BADDB107217548~YAAQL1BzaDbj3mp3AQAAwkLnfAp+C/33KL7dXis3NfLr6oQHUoCX53G5ncH0tXGwa2POd0KA3H1g+PjmV9OFHekNrBN9PGUnJZQ5CvacSBvc8Yol1fsbU4QJbYVH6ZqanV5e8BgNrAcAYtBZgGvggtYuPBskBNvTzyHEPXBaxYRuVlLbxN8s1bFjhEaZj4QQ; Domain=.etihad.com; Path=/; Expires=Sun, 07 Feb 2021 18:31:06 GMT; Max-Age=14400; HttpOnly
+Set-Cookie: _abck=3A45C5203ABF375E11A427E1BFE30CAB~-1~YAAQL1BzaDfj3mp3AQAAwkLnfAUlP3SDM8kKqz7N4dROOdAPckAfGn8JR52TDMsgXIx3RrB5SqhC4jDxx2sbyELBaormcrFArQxeX/SdOOy/3eXgP6AcLKQx5Cnjk9/Npr8qyLHwKKRnLQ1L1FI6CXr5BwHxsOKODMItkYChn6PcPC23+n/KSWPuYr4pnNtfBCi93BNFDrRd6WHCy0GmV0XkJ/Ph0wRb616omlM9/CNlwF0h4DZbTluUyvcgMUbpHSR7DkTiC9KeIDbJT3mlwtZ6xj40fzzXZDpxkZuub8NFzQw0OltzB9dT~-1~-1~-1; Domain=.etihad.com; Path=/; Expires=Mon, 07 Feb 2022 14:31:06 GMT; Max-Age=31536000; Secure
+

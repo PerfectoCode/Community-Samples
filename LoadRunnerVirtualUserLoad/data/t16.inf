@@ -1,0 +1,13 @@
+[t16]
+FileName1=t16.htm
+URL1=https://adservice.google.com/ddm/fls/i/dc_pre=CJmrm7_-1-4CFdNjFQgdT6gFdg;src=4338867;type=Count-;cat=Etiha-;ord=3044095249131;gtm=2wg1r0;auiddc=576410771.1612708256;u57=book;u59=1994364360;u40=en;u61=us;u63=Desktop;u64=www.etihad.com;~oref=https%3A%2F%2Fwww.etihad.com%2Fen-us%2Fbook
+Total=2
+RequestHeaderFile=t16_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t16_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_16.xml
+FileName2=t16_189054868133229.html
+URL2=https://connect.facebook.net/signals/config/189054868133229?v=2.9.33&r=stable
+[ProtocolInfo]
+ProtocolId=QTWeb

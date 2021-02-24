@@ -1,0 +1,15 @@
+[t87]
+FileName1=t87.htm
+URL1=https://tracking.bd4travel.com/cdn/guid-app/latest/
+Total=3
+RequestHeaderFile=t87_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t87_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_87.xml
+FileName2=t87_dropdown_notch.svg
+URL2=https://www.etihad.com/etc/designs/eag/eag-commons/images/dropdown_notch.svg
+FileName3=t87_close-btn.svg
+URL3=https://www.etihad.com/etc/designs/eag/eag-commons/images/close-btn.svg
+[ProtocolInfo]
+ProtocolId=QTWeb

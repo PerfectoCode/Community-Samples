@@ -1,0 +1,15 @@
+GET /ddm/fls/i/dc_pre=CPLO8I7_1-4CFVdGFQgdAd4L_A;src=4338867;type=Count-;cat=eys2u0;ord=1;num=7911264677294;gtm=2wg1r0;auiddc=576410771.1612708256;u4=one-way;u57=eydx%3Aflight-selection;u1=blr%3Aauh;u9=04-30-2021%3A--;u8=1;u40=en;u41=undefined;u42=blr%3Aauh;u43=blr;u44=auh;u2=economy;u12=undefined;u73=2021-04-30;u74=undefined;u47=1;u48=0;u49=0;u13=81;u59=31792678445830147073658447768017664572;u61=gb;u62=booking;u63=Desktop;u64=dxbooking.etihad.com;u45=04-30-2021;u46=--;u75=2021-04-30;~oref=https%3A%2F%2Fdxbooking.etihad.com%2Fdx%2FEYDX%2F HTTP/1.1
+Host: adservice.google.co.il
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: iframe
+Referer: https://adservice.google.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+

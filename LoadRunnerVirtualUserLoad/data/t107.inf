@@ -1,0 +1,11 @@
+[t107]
+FileName1=t107_0.html
+URL1=https://bat.bing.com/action/0?ti=4017239&Ver=2&mid=64f67633-7d49-4bf4-9870-70b4b3f091c7&sid=38efc2d0747411eb824c037565713347&vid=38f49e70747411eb84608354d038f035&vids=0&pi=1200101525&lg=en-US&sw=1440&sh=900&sc=24&tl=Etihad%20Airways%20-%20Flight%20selection&p=https%3A%2F%2Fdxbooking.etihad.com%2Fdx%2FEYDX%2F%23%2Fflight-selection%3FjourneyType%3Done-way%26ADT%3D1%26CHD%3D0%26INF%3D0%26class%3DEconomy%26origin%3DAUH%26destination%3DBLR%26date%3D04-30-2021&r=https%3A%2F%2Fdxbooking.etihad.com%2Fdx%2FEYDX%2F&lt=4486&evt=pageLoad&msclkid=N&sv=1&rn=603373
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_107.xml
+RequestHeaderFile=t107_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t107_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

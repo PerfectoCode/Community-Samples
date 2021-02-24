@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>PerfectoUserExperience</ScriptName>
+  <Protocol>Java Vuser</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.java" Filter="2" />
+    <FileEntry Name="Actions.java" Filter="2" />
+    <FileEntry Name="vuser_end.java" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="PerfectoUserExperience.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="Action.c" Filter="1" />
+    <FileEntry Name="Actions.class" Filter="1" />
+    <FileEntry Name="Actions.java.sed" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="JavaReplayGalaxyS4_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayGalaxyS4_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplayGalaxy_S4_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayGalaxy_S4_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplayiPhone7Plus_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayiPhone7Plus_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplayiPhone_7_Plus_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayiPhone_7_Plus_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplayiPhone_X_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayiPhone_X_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplayJavaVuser1_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayJavaVuser1_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplayPerfectoUserExperience_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplayPerfectoUserExperience_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="JavaReplay_log_java_process_child.log" Filter="1" />
+    <FileEntry Name="JavaReplay_log_java_process_child_err.log" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrveKV.127.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="MFJavaServerLog55600.log" Filter="1" />
+    <FileEntry Name="MFJavaServerLog55601.log" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="process_name.log" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="systemProperties.log" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="vuser_end.c" Filter="1" />
+    <FileEntry Name="vuser_init.c" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

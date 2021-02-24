@@ -1,0 +1,11 @@
+[t89]
+FileName1=t89.txt
+URL1=https://www.facebook.com/tr/
+Total=1
+RequestHeaderFile=t89_RequestHeader.txt
+RequestBodyFile=t89_RequestBody.txt
+ResponseHeaderFile=t89_ResponseHeader.txt
+ContentType=text/plain
+SnapshotXmlFile=snapshot_89.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

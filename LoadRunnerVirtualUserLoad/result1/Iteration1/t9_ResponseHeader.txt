@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 0
+Date: Mon, 22 Feb 2021 18:14:59 GMT
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000
+Access-Control-Allow-Origin: https://www.etihad.com
+

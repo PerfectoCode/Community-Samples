@@ -1,0 +1,13 @@
+HTTP/1.1 201 Created
+Content-Length: 17
+Date: Sun, 21 Feb 2021 18:40:45 GMT
+Connection: keep-alive
+Content-Type: application/json
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://www.etihad.com
+Access-Control-Allow-Headers: Content-Type
+Strict-Transport-Security: max-age=31536000
+Access-Control-Allow-Origin: https://www.etihad.com
+Set-Cookie: _abck=47ACA25003F1D5F4A04DC7C4F295531C~-1~YAAQL1BzaMbL87V3AQAAMNvkxQW9xpRMpWGVTxnrUv5/NtyRSOxFiNe6ZSfOxMmSBccPufxGIoFOPI7ac9imC249SUnC5ZVYpUu6JD+PISV2kkpfBdu3ysVckiko/UmHhLcjiHE2QobbpZOkviIkf97O8VaJ7pABAXwMDtg0N3cZYeA4I+jiD1Q7BxyPfCKJSU9YF/XaKgJCqnad9cya7FRKQidPtOLCoVg/gMttuDnOWUojVOxky9O11zanty8mzc+u+7wjWFdJbJRSkNAe3oikUbawM0y7COCkMcklr+qtEiH0BtBdYAQlXgYSUX3GDUAzG9pRz38=~-1~||1-UTAPzAFFlv-1-10-1000-2||~-1; Domain=.etihad.com; Path=/; Expires=Mon, 21 Feb 2022 18:40:45 GMT; Max-Age=31536000; Secure
+

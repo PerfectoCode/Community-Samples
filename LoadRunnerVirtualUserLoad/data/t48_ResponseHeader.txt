@@ -1,0 +1,17 @@
+HTTP/1.1 200 
+Date: Sun, 07 Feb 2021 14:34:04 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+Timing-Allow-Origin: *
+Cache-Control: no-cache
+Access-Control-Allow-Origin: https://dxbooking.etihad.com
+Access-Control-Allow-Credentials: true
+X-Request-ID: 0df5961d01664b0f8a42f39079d0021e
+P3P: CP="NOI DSP CURa OUR STP COM"
+Set-Cookie: mboxSession=3f062dbad6a24b699a800fdda9874f25; Max-Age=1860; Expires=Sun, 07-Feb-2021 15:05:04 GMT; Domain=etihadairways.tt.omtrdc.net; Path=/m2/etihadairways; Secure; HttpOnly; SameSite=None
+Set-Cookie: mboxPC=3f062dbad6a24b699a800fdda9874f25.37_0; Max-Age=63244800; Expires=Thu, 09-Feb-2023 14:34:04 GMT; Domain=etihadairways.tt.omtrdc.net; Path=/m2/etihadairways; Secure; HttpOnly; SameSite=None
+Pragma: no-cache
+Content-Encoding: gzip
+

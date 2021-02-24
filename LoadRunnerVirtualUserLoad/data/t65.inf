@@ -1,0 +1,8 @@
+[t65]
+FileName1=t65_seed.html
+URL1=https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=88
+Total=2
+ContentType=application/octet-stream
+SnapshotXmlFile=snapshot_65.xml
+FileName2=t65_client_model_v5_variation_6.html
+URL2=https://ssl.gstatic.com/safebrowsing/csd/client_model_v5_variation_6.pb

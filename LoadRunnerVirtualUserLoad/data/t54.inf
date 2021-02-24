@@ -1,0 +1,13 @@
+[t54]
+FileName1=t54.htm
+URL1=https://config1.veinteractive.com/scripts/shared/iframeStorage-5.0.0.html?iframeid=ve-storage-iframe&journeyCode=d9d2b911-a3a0-4fa4-8f93-08084164b50a&journeyId=4687
+Total=2
+RequestHeaderFile=t54_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t54_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_54.xml
+FileName2=t54_ifs-5.0.0.html
+URL2=https://config1.veinteractive.com/scripts/shared/ifs-5.0.0.js
+[ProtocolInfo]
+ProtocolId=QTWeb

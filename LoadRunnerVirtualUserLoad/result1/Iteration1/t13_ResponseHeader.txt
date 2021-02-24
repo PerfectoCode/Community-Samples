@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://www.etihad.com
+Cache-Control: no-cache,no-store,must-revalidate,max-age=0,proxy-revalidate,no-transform,private
+Content-Encoding: gzip
+Content-Type: application/json;charset=utf-8
+DCS: dcs-prod-irl1-v089-0ab3e7175.edge-irl1.demdex.com 5.80.6.20210202104731 3ms (+1ms)
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+P3P: policyref="/w3c/p3p.xml", CP="NOI NID CURa ADMa DEVa PSAa PSDa OUR SAMa BUS PUR COM NAV INT"
+Pragma: no-cache
+Set-Cookie: demdex=33719254850371780382428983040912317546;Path=/;Domain=.demdex.net;Expires=Sat, 21-Aug-2021 18:15:02 GMT;Max-Age=15552000;Secure;SameSite=None
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Origin
+Vary: Accept-Encoding, User-Agent
+X-TID: SPQe0C7EQ6Q=
+Content-Length: 518
+Connection: keep-alive
+

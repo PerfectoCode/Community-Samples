@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\guruswamy.bm\Documents\VuGen\Scripts\LoadRunnerVirtualUserLoad
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\guruswamy.bm\documents\vugen\scripts\loadrunnervirtualuserload\\logfile.log
+c:\users\guruswamy.bm\documents\vugen\scripts\loadrunnervirtualuserload\\combined_LoadRunnerVirtualUserLoad.c
+c:\users\guruswamy.bm\documents\vugen\scripts\loadrunnervirtualuserload\\pre_cci.c

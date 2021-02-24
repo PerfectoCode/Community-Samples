@@ -1,0 +1,11 @@
+[t90]
+FileName1=t90.htm
+URL1=https://dxbooking.etihad.com/dx/EYDX/
+Total=1
+RequestHeaderFile=t90_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t90_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_90.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

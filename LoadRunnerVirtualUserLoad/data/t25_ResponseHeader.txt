@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: application/json
+ETag: "53588dcb8d0ba5ff1954c059edb693a3:1612423051.67788"
+Last-Modified: Thu, 04 Feb 2021 06:54:33 GMT
+Server: AkamaiNetStorage
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Cache-Control: max-age=900
+Expires: Sun, 07 Feb 2021 14:47:50 GMT
+Date: Sun, 07 Feb 2021 14:32:50 GMT
+Content-Length: 15880
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: bm_sv=DAE13CD9F9F2DBF50A192A420CC2573C~nBSdWQiKnFazP33HnTnZz3fcPLKki0muIpIZISJ6X+xJTPIi8TuFtvH6Exp306Q4dJAbIEE0aKiTTZhVe/71ZJ70ogUOf2WIn86gKPnDw+9js0BcAv7ZQ2uWSUo3ZyY5gBkcGvpUGxnKNTo983LYVRVSLNRmQrF6y0cvFlB+Ru8=; Domain=.etihad.com; Path=/; Max-Age=7102; HttpOnly
+

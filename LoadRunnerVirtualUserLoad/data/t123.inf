@@ -1,0 +1,11 @@
+[t123]
+FileName1=t123_D9D2B911-A3A0-4FA4-8F93-08084164B50A.json
+URL1=https://cookiee1.veinteractive.com/api/Set/D9D2B911-A3A0-4FA4-8F93-08084164B50A?ifs=false&offset=-120&referrer=dxbooking.etihad.com&status=-2&ttl=0&uid=&version=5.0.0
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_123.xml
+RequestHeaderFile=t123_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t123_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

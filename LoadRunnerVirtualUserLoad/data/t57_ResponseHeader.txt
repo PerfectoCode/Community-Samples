@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Date: Sun, 07 Feb 2021 14:34:09 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Set-Cookie: opt-out=True; domain=.veinteractive.com; path=/; secure; samesite=none
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://dxbooking.etihad.com
+P3P: policyref="/w3c/policy/p3p.xml", CP="NOI DSP COR ADM PSAo PSDo OURo SAMo UNRo OTRo BUS COM NAV DEM STA PRE"
+Arr-Disable-Session-Affinity: true
+Strict-Transport-Security: max-age=15724800
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Encoding: gzip
+

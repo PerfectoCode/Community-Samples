@@ -1,0 +1,11 @@
+[t79]
+FileName1=t79.txt
+URL1=https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j88&tid=UA-36260312-1&cid=686669418.1613932802&jid=1260145807&gjid=498338028&_gid=1288094177.1613932802&_u=aEDAAUAAAAAAAC~&z=1245816121
+Total=1
+RequestHeaderFile=t79_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t79_ResponseHeader.txt
+ContentType=text/plain
+SnapshotXmlFile=snapshot_79.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

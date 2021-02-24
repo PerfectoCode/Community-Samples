@@ -1,0 +1,15 @@
+GET /api/Set/D9D2B911-A3A0-4FA4-8F93-08084164B50A?ifs=false&offset=-120&referrer=dxbooking.etihad.com&status=-2&ttl=0&uid=&version=5.0.0 HTTP/1.1
+Host: cookiee1.veinteractive.com
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"
+Accept: application/json, text/javascript
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36
+Origin: https://dxbooking.etihad.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://dxbooking.etihad.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+

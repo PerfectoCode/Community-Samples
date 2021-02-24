@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Im: x-bm
+X-Content-Type-Options: nosniff
+X-Country: il
+X-Frame-Options: SAMEORIGIN
+X-Seed-Signature: MEQCIHyt1XibnqAS9JgEGqSXRKRMOJ7O8SIycmar78vsymUJAiANbakBl98XxWUfxs8zbzg/1CfvG5Nvt5p1I05vrsjo+A==
+X-Xss-Protection: 0
+Date: Sun, 07 Feb 2021 14:29:41 GMT
+Content-Length: 273
+Content-Type: application/octet-stream
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+

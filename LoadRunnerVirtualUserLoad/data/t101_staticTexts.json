@@ -1,0 +1,83 @@
+{
+  "global": {
+    ".a.valid.selector": {
+      "before": "key.in.dot.notation",
+      "after": "key.in.dot.notation"
+    }
+  },
+  "/home": {
+    ".a.valid.selector": {
+      "before": "key.in.dot.notation",
+      "after": "key.in.dot.notation"
+    }
+  },
+  "/passengers": {
+    "div.dxp-passenger-info": {
+      "before": "passengers.nameGuideline",
+      "after": ""
+    },
+    ".secure-flight-dob-gender-row": {
+      "before": "passengers.sections.secureFlightInfo",
+      "after": "passengers.secureFlightDescription"
+    },
+    ".field.redressNumber": {
+      "before": "passengers.redressDescription"
+    }
+  },
+  "/exchange/passengers": {
+    "div.dxp-passenger-info": {
+      "before": "passengers.nameGuideline",
+      "after": ""
+    },
+    ".field.redressNumber": {
+      "before": "passengers.exchangeRedressDescription"
+    }
+  },
+  "/exchange/search": {
+    "div.dxp-change-flight-view-panel-navigation": {
+      "before": "changeFlight.disclaimer",
+      "after": ""
+    }
+  },
+  "/exchange/seat-selection": {
+    ".seat-map-caption": {
+      "before": "seatSelection.seatMapDescription"
+    }
+  },
+  "/flight-selection": {
+    "[data-translation=\"flightSelection.selectYourReturningFlight\"]": {
+      "before": "",
+      "after": "flightSelection.outboundDisclaimer"
+    },
+    "div.dxp-selected-flight": {
+      "before": "flightSelection.mismatchCabin",
+      "after": ""
+    },
+    "div#dxp-calendar-ribbons": {
+      "before": "flightSelection.milesCalendarDisclaimer",
+      "after": ""
+    }
+  },
+  "/confirmation": {
+    "div.confirmation-holder": {
+      "before": "",
+      "after": "confirmation.hotelBanner"
+    }
+  },
+  "/payment": {
+    ".dxp-travel-bank .note": {
+      "before": "",
+      "after": "payment.travelBank.disclaimer"
+    }
+  },
+  "/ancillaries": {
+    ".ancillaries-container": {
+      "before": "ancillaries.insuranceDisclaimer"
+    }
+  },
+  "/seat-selection": {
+    ".seat-map-caption": {
+      "before": "seatSelection.seatMapDescription"
+    }
+  }
+}

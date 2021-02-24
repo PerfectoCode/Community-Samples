@@ -1,0 +1,11 @@
+[t44]
+FileName1=t44_json.json
+URL1=https://etihadairways.tt.omtrdc.net/m2/etihadairways/mbox/json?mbox=target-global-mbox&mboxSession=3f062dbad6a24b699a800fdda9874f25&mboxPC=3f062dbad6a24b699a800fdda9874f25.37_0&mboxPage=692a3b3e5211435c9a42070803108e3d&mboxRid=07314f832d654407804068617543505b&mboxVersion=1.7.0&mboxCount=1&mboxTime=1612715624062&mboxHost=dxbooking.etihad.com&mboxURL=https%3A%2F%2Fdxbooking.etihad.com%2Fdx%2FEYDX%2F%23%2Fflight-selection%3FjourneyType%3Done-way%26ADT%3D1%26CHD%3D0%26INF%3D0%26class%3DEconomy%26origin%3DBLR%26destination%3DAUH%26date%3D04-30-2021&mboxReferrer=https%3A%2F%2Fdxbooking.etihad.com%2Fdx%2FEYDX%2F&mboxXDomain=enabled&browserHeight=744&browserWidth=1339&browserTimeOffset=120&screenHeight=900&screenWidth=1440&colorDepth=24&devicePixelRatio=1&screenOrientation=landscape&webGLRenderer=Google%20SwiftShader&flowType=booking&language=en&products=flights%3B%3B1%3B0&tntaction=load&dxPageName=flight-selection&at_property=864a2d44-7fb8-1f02-f8d0-d680f344979c&journeyType=one-way&siteEdition=en-us&FlightADTPax=1&FlightCHDPax=0&FlightINFPax=0&dx-searchOND=economy%3Ablr%3Aauh&oneappsource=&redemptionflow=&bookingCurrency=&Analyticspagename=eydx%3Aflight-selection&Inbound_days_left=&dx-searchdnrDates=30%2F04%2F2021&inBoundCabinClass=&Outbound_days_left=81&outBoundCabinClass=&mboxMCSDID=33EBA89A4E7EA8F5-15BBA884BAFB2135&vst.trk=metrics.etihad.com&vst.trks=smetrics.etihad.com&mboxMCGVID=31792678445830147073658447768017664572&mboxAAMB=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&mboxMCGLH=6
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_44.xml
+RequestHeaderFile=t44_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t44_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

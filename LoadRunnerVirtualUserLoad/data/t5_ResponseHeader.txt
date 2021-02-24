@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-zwhAfcJIjnXR2O29jIKnnA' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/download-dt/1
+Content-Security-Policy: script-src 'report-sample' 'nonce-mAwINMN8O1Xvja0iC1K08g' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/download-dt/1
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Date: Sun, 07 Feb 2021 14:31:06 GMT
+Expires: Sun, 07 Feb 2021 14:31:06 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+

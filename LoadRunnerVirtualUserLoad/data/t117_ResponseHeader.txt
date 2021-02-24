@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Sun, 21 Feb 2021 18:42:18 GMT
+Content-Type: text/html;charset=utf-8
+Content-Length: 7
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST
+Strict-Transport-Security: max-age=15768000
+

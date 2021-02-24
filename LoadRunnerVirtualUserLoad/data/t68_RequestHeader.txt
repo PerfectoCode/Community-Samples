@@ -1,0 +1,15 @@
+GET /edge-services/countryCode HTTP/1.1
+Host: www.etihad.com
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"
+Accept: application/json, text/plain, */*
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.etihad.com/en-us/book
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: akacd_PR1=3791385640~rv=78~id=80ce77c845782df5ebf4730ebf77d530; bm_sz=325B51BE6EBB36655AF63A49E555E7A4~YAAQL1BzaL7L87V3AQAAuMrkxQrBo8SLQvRDmDy8XF0hOtBs87Uff/VgXpyC3bv0YWm5bzXEaOBy9RlToErhEjXonUt9goIDmAuj+muEPfp8jY+JdnWQBGE9Q5kexYUQgleioXJlG8HWUbV8wkxTU+t8vDV4wGqkl2njtLHGwbVlY0rN4NHIxp6sNRBX+H/y; _abck=47ACA25003F1D5F4A04DC7C4F295531C~-1~YAAQL1BzaL/L87V3AQAAuMrkxQUMThvqnLIgmuL+gsU6h+Nf48vTGcswi5MAJugFOgHwy63qGBHASRcDVjhQSMS4FoHA7UItl7oVQIZulBUunlXXK1nkUA641L0A7I7XvH/JWS5VFy5CwnfhKXU2Jek2pOI9u8SVzdNfCJVw2RDpzgtzdphKo+UTSdhMRm8dXvJobb515Z+hFZcIHnCHpO9EmLtCZiHoYb3rjWJfndHauGLvYdsJfk5lkRuxhlAPn3MPiVGcr5GYdXD0LUO/Qn1ku+X7j5TEp46/g3Kfu2r5bl2lq/cT5gpa~-1~-1~-1; AMCV_15BD401053DAEC4A0A490D4C%40AdobeOrg=1994364360%7CMCIDTS%7C18680%7CvVersion%7C3.4.0; ak_bmsc=A9F9127680F343DD461B5FC9E5463D586873502F241C000029A9326087F17029~plj7sIZ3p334zOe1MHxum8ykVpNGxDN3CbUR6txoy2zIHshdDLfIiEhO4YCwh5/zK8ye33oJ7lyF/lGKyRy1bQuPLRThq/5vESTBOYP1r/Gvar8gECqXxxr3WEh8k/PE1JMnpMTg7KMApB+SgCEcRJqHH4J+B/RAOgwOTn9E9wlGJHx8sX/uN/I30fJHHXpOkny+SNCnHdwxB++0irDS4j4JJ6R/N1Xe+OZeyAWCK3bi/xOX8Cht6rQQpYyIm6wIFmujNI/IuWifRkayCCA/CUoFvpbe44TGkRQTRF+PnTsH/6qbYsQLn6FhfEUkVdWLluks1I5vkvS1nEETXnBIhzpg==; check=true; mbox=session#acfdcd4c076546849d13a0a9b5f1f504#1613934660; Etihad.com_AEM_SiteEdition=en-us
+

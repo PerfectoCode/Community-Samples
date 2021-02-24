@@ -1,0 +1,10 @@
+HTTP/2.0 200
+Status: 200
+content-type: text/html
+cache-control: no-cache, no-store
+content-length: 856
+x-iinfo: 14-39421092-0 NNNN RT(1614017714120 0) q(0 -1 -1 0) r(2 -1) B10(14,0,0) U5
+strict-transport-security: max-age=31536000
+set-cookie: visid_incap_2042947=LTS9eg3WQk+7kkA7XL8yxbL0M2AAAAAAQUIPAAAAAAByVeLbHMiw9WVZ/OYSHf+6; expires=Tue, 22 Feb 2022 16:42:35 GMT; HttpOnly; path=/; Domain=.etihad.com; Secure; SameSite=None
+set-cookie: incap_ses_1168_2042947=tvjPb8Kd1hCmeSNRE5I1ELL0M2AAAAAADZhL0vbnixL+hrq9k4rnEA==; path=/; Domain=.etihad.com; Secure; SameSite=None
+

@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: https://www.etihad.com
+Strict-Transport-Security: max-age=10886400; includeSubDomains; preload
+Date: Sun, 07 Feb 2021 14:31:18 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+Content-Type: text/plain
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 7
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+

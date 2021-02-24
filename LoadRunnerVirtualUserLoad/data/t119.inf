@@ -1,0 +1,11 @@
+[t119]
+FileName1=t119_passengerConfiguration.json
+URL1=https://dxbooking.etihad.com/dx/EYDX/4.5.60-151.MMCOPY4.5.60-150/data/features/passengerConfiguration.json
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_119.xml
+RequestHeaderFile=t119_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t119_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

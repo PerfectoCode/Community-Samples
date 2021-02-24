@@ -1,0 +1,6 @@
+[t64]
+FileName1=t64_seed.html
+URL1=https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=88
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_64.xml

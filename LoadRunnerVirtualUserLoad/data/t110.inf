@@ -1,0 +1,11 @@
+[t110]
+FileName1=t110_countrycode.json
+URL1=https://www.etihad.com/edge-services/countrycode
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_110.xml
+RequestHeaderFile=t110_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t110_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

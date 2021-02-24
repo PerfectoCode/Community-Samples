@@ -1,0 +1,29 @@
+HTTP/1.1 204 No Content
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://dxbooking.etihad.com
+Access-Control-Expose-Headers: Execution
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Cnection: close
+Conversation-ID: ckkv8yjxuwiwth9qr3rwslen0
+Date: Sun, 07 Feb 2021 14:34:02 GMT
+Execution: e1s1
+Expires: 0
+Message-ID: 1wvz4dfhz
+P3P: CP="NON DSP COR CURa ADM ADMa OUR STP IDC IND PHY ONL COM STA"
+Pragma: no-cache
+Set-Cookie: JSESSIONID=0B96FCA7FFCEC08B3A0F098AD1C44472; Path=/; Secure; HttpOnly; SameSite=None
+Set-Cookie: WLPCOOKIE=sswhlp23637; Expires=Sun, 07-Feb-2021 16:34:03 GMT; Path=/; Secure; HttpOnly; SameSite=None
+Set-Cookie: WLPCOOKIE=sswhlp23637; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/SSW2010; Secure; HttpOnly
+Set-Cookie: JSESSIONID=0B96FCA7FFCEC08B3A0F098AD1C44472; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/SSW2010/; Secure; HttpOnly
+Total-Time: 32
+Vary: Origin
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+content-encoding: gzip
+Server: Sabre Gateway
+Strict-Transport-Security: max-age=31536000
+X-CDN: Incapsula
+X-Iinfo: 11-27504763-27504781 NNNY CT(0 0 0) RT(1612708441527 439) q(0 2 2 1) r(6 6) U5
+

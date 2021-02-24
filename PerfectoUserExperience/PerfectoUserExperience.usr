@@ -1,0 +1,57 @@
+[General]
+Type=General-Java
+DefaultCfg=default.cfg
+LastActiveAction=Actions
+MajorVersion=2021
+MinorVersion=0
+ParameterFile=
+GlobalParameterFile=
+RunType=Java-Interpreter
+NewFunctionHeader=1
+ActionLogicExt=action_logic
+ScriptLanguage=JAVA
+DevelopTool=Vugen
+LastModifyVer=2021.0.0.0
+ActiveTypes=General-Java
+AdditionalTypes=General-Java
+GenerateTypes=General-Java
+ParamLeftBrace={
+ParamRightBrace=}
+LastCodeGenerationVer=
+DisableRegenerate=0
+Encoding=
+Description=
+ScriptLocale=en-IL
+[Actions]
+vuser_init=vuser_init.java
+Actions=Actions.java
+vuser_end=vuser_end.java
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[RunLogicFiles]
+Default Profile=default.usp
+[Modified Actions]
+vuser_init=0
+Actions=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Actions=0
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Actions=1
+vuser_end=1
+[Interpreters]
+vuser_init=Java-Interpreter
+Actions=Java-Interpreter
+vuser_end=Java-Interpreter
+[TransactionsOrder]
+Order=
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=
+ActiveRunName=

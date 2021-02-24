@@ -1,0 +1,26 @@
+HTTP/2.0 200
+Status: 200
+access-control-allow-credentials: true
+access-control-allow-headers: authorization, conversation-id
+access-control-allow-methods: GET,POST,OPTIONS,HEAD,PUT,DELETE
+access-control-allow-origin: https://dxbooking.etihad.com
+access-control-expose-headers: Execution
+access-control-max-age: 86400
+x-cnection: close
+date: Mon, 22 Feb 2021 18:15:27 GMT
+p3p: CP="NON DSP COR CURa ADM ADMa OUR STP IDC IND PHY ONL COM STA"
+vary: Origin
+x-frame-options: SAMEORIGIN
+referrer-policy: origin-when-cross-origin
+strict-transport-security: max-age=31536000
+x-content-type-options: nosniff
+content-security-policy: default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';
+x-xss-protection: 1; mode=block
+content-length: 0
+server: Sabre Gateway
+set-cookie: visid_incap_2042951=7M4PLVSgQ8eUcmtlfjrSAL/0M2AAAAAAQUIPAAAAAACPX0HhLM2QF70i5s3uBgpZ; expires=Tue, 22 Feb 2022 16:42:35 GMT; HttpOnly; path=/; Domain=.etihad.com; Secure; SameSite=None
+set-cookie: nlbi_2042951=vVwGF0NKxCy3uKqEMzxorgAAAABgDPp/IXiq8hJ8CyCAeubY; path=/; Domain=.etihad.com; Secure; SameSite=None
+set-cookie: incap_ses_1168_2042951=ygsnGdzt7kFvfyNRE5I1EL/0M2AAAAAAeK8SHGiQUzmfVKaRiY0WaQ==; path=/; Domain=.etihad.com; Secure; SameSite=None
+x-cdn: Imperva
+x-iinfo: 14-39422789-39422790 NNNN CT(177 357 0) RT(1614017727180 0) q(0 2 6 0) r(8 8) U5
+

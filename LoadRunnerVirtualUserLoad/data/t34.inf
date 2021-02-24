@@ -1,0 +1,11 @@
+[t34]
+FileName1=t34_staticTexts.json
+URL1=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/data/static-texts/staticTexts.json
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_34.xml
+RequestHeaderFile=t34_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t34_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

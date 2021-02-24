@@ -1,0 +1,396 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: json",
+                "infFile": "t2.inf",
+                "time": 1614017644421
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: book",
+                "infFile": "t3.inf",
+                "time": 1614017650208
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: countryCode",
+                "infFile": "t4.inf",
+                "time": 1614017650378
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: origin.json",
+                "infFile": "t5.inf",
+                "time": 1614017650657
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: book_2",
+                "infFile": "t6.inf",
+                "time": 1614017652289
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: id",
+                "infFile": "t7.inf",
+                "time": 1614017653279
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Custom Request: c6ed2e6ff94ti174ef6d9b189a16c414b",
+                "infFile": "t8.inf",
+                "time": 1614017653575
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: pixel_7ce4ad12",
+                "infFile": "t9.inf",
+                "time": 1614017654892
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Custom Request: c6ed2e6ff94ti174ef6d9b189a16c414b_2",
+                "infFile": "t10.inf",
+                "time": 1614017655158
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: collect",
+                "infFile": "t11.inf",
+                "time": 1614017655429
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: json_2",
+                "infFile": "t12.inf",
+                "time": 1614017656574
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: id_2",
+                "infFile": "t13.inf",
+                "time": 1614017658817
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: dc_pre=CJ6o77DQ--4CFZLj7Qod-gwFOw;src=4338867;type=Count-;cat=Etiha-;ord=4336956492503;gtm=2wg2a1;auiddc=706136819.1613932803;u57=book;u59=1994364360;u40=en;u61=us;u63=Desktop;u64=www.etihad.com;~oref=https%3A%2F%2Fwww.etihad.com%2Fen-us%2Fbook",
+                "infFile": "t14.inf",
+                "time": 1614017659635
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: collect_2",
+                "infFile": "t15.inf",
+                "time": 1614017660103
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: 0",
+                "infFile": "t16.inf",
+                "time": 1614017660299
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: dest5.html",
+                "infFile": "t17.inf",
+                "time": 1614017662266
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: i",
+                "infFile": "t18.inf",
+                "time": 1614017662848
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Custom Request: c6ed2e6ff94ti174ef6d9b189a16c414b_3",
+                "infFile": "t19.inf",
+                "time": 1614017663477
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Submit Data: tr",
+                "infFile": "t20.inf",
+                "time": 1614017664201
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Custom Request: json_3",
+                "infFile": "t21.inf",
+                "time": 1614017665296
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Custom Request: collect_3",
+                "infFile": "t22.inf",
+                "time": 1614017666097
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: latest",
+                "infFile": "t23.inf",
+                "time": 1614017666422
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Url: AUH.json",
+                "infFile": "t24.inf",
+                "time": 1614017666726
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Submit Data: tr_2",
+                "infFile": "t25.inf",
+                "time": 1614017667104
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: EYDX",
+                "infFile": "t26.inf",
+                "time": 1614017670016
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Custom Request: upload",
+                "infFile": "t27.inf",
+                "time": 1614017670637
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Custom Request: upload_2",
+                "infFile": "t28.inf",
+                "time": 1614017671166
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Custom Request: 0_2",
+                "infFile": "t29.inf",
+                "time": 1614017671484
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Custom Request: upload-nel",
+                "infFile": "t30.inf",
+                "time": 1614017672812
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Custom Request: vnkinder-as-it-doe-as-to-a-clips-with-so-frauenl",
+                "infFile": "t31.inf",
+                "time": 1614017673463
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Url: EYDX_2",
+                "infFile": "t32.inf",
+                "time": 1614017678316
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Custom Request: vnkinder-as-it-doe-as-to-a-clips-with-so-frauenl_2",
+                "infFile": "t33.inf",
+                "time": 1614017678864
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Url: metadata.json",
+                "infFile": "t34.inf",
+                "time": 1614017679156
+            },
+            {
+                "stepId": "STEP34",
+                "stepName": "Url: routes.json",
+                "infFile": "t35.inf",
+                "time": 1614017679462
+            },
+            {
+                "stepId": "STEP35",
+                "stepName": "Url: en-GB.json",
+                "infFile": "t36.inf",
+                "time": 1614017679827
+            },
+            {
+                "stepId": "STEP36",
+                "stepName": "Url: staticTexts.json",
+                "infFile": "t37.inf",
+                "time": 1614017680163
+            },
+            {
+                "stepId": "STEP37",
+                "stepName": "Url: brandBonusesConfiguration.json",
+                "infFile": "t38.inf",
+                "time": 1614017680464
+            },
+            {
+                "stepId": "STEP38",
+                "stepName": "Url: flightSelectionConfiguration.json",
+                "infFile": "t39.inf",
+                "time": 1614017680729
+            },
+            {
+                "stepId": "STEP39",
+                "stepName": "Url: upsellConfiguration.json",
+                "infFile": "t40.inf",
+                "time": 1614017681006
+            },
+            {
+                "stepId": "STEP40",
+                "stepName": "Custom Request: login",
+                "infFile": "t41.inf",
+                "time": 1614017682015
+            },
+            {
+                "stepId": "STEP41",
+                "stepName": "Url: seatSelectionConfiguration.json",
+                "infFile": "t42.inf",
+                "time": 1614017682699
+            },
+            {
+                "stepId": "STEP42",
+                "stepName": "Url: 0_3",
+                "infFile": "t43.inf",
+                "time": 1614017682929
+            },
+            {
+                "stepId": "STEP43",
+                "stepName": "Url: json_4",
+                "infFile": "t44.inf",
+                "time": 1614017683790
+            },
+            {
+                "stepId": "STEP44",
+                "stepName": "Url: latest_2",
+                "infFile": "t45.inf",
+                "time": 1614017683976
+            },
+            {
+                "stepId": "STEP45",
+                "stepName": "Url: countrycode",
+                "infFile": "t46.inf",
+                "time": 1614017684225
+            },
+            {
+                "stepId": "STEP46",
+                "stepName": "Custom Request: init",
+                "infFile": "t47.inf",
+                "time": 1614017684800
+            },
+            {
+                "stepId": "STEP47",
+                "stepName": "Custom Request: collect_4",
+                "infFile": "t48.inf",
+                "time": 1614017686078
+            },
+            {
+                "stepId": "STEP48",
+                "stepName": "Url: json_5",
+                "infFile": "t49.inf",
+                "time": 1614017687062
+            },
+            {
+                "stepId": "STEP49",
+                "stepName": "Custom Request: search",
+                "infFile": "t50.inf",
+                "time": 1614017687957
+            },
+            {
+                "stepId": "STEP50",
+                "stepName": "Url: dest5.html_2",
+                "infFile": "t51.inf",
+                "time": 1614017688576
+            },
+            {
+                "stepId": "STEP51",
+                "stepName": "Custom Request: api.amplitude.com",
+                "infFile": "t52.inf",
+                "time": 1614017690868
+            },
+            {
+                "stepId": "STEP52",
+                "stepName": "Url: iframeStorage-5.0.0.html",
+                "infFile": "t53.inf",
+                "time": 1614017691790
+            },
+            {
+                "stepId": "STEP53",
+                "stepName": "Url: passengerConfiguration.json",
+                "infFile": "t54.inf",
+                "time": 1614017692170
+            },
+            {
+                "stepId": "STEP54",
+                "stepName": "Url: countries-mapping.json",
+                "infFile": "t55.inf",
+                "time": 1614017692475
+            },
+            {
+                "stepId": "STEP55",
+                "stepName": "Custom Request: api.amplitude.com_2",
+                "infFile": "t56.inf",
+                "time": 1614017693113
+            },
+            {
+                "stepId": "STEP56",
+                "stepName": "Url: D9D2B911-A3A0-4FA4-8F93-08084164B50A",
+                "infFile": "t57.inf",
+                "time": 1614017693660
+            },
+            {
+                "stepId": "STEP57",
+                "stepName": "Url: appsmanagerinit",
+                "infFile": "t58.inf",
+                "time": 1614017694651
+            },
+            {
+                "stepId": "STEP58",
+                "stepName": "Custom Request: api.amplitude.com_3",
+                "infFile": "t59.inf",
+                "time": 1614017694979
+            },
+            {
+                "stepId": "STEP59",
+                "stepName": "Custom Request: FormMappings",
+                "infFile": "t60.inf",
+                "time": 1614017695565
+            },
+            {
+                "stepId": "STEP60",
+                "stepName": "Custom Request: FormMappings_2",
+                "infFile": "t61.inf",
+                "time": 1614017695816
+            },
+            {
+                "stepId": "STEP61",
+                "stepName": "Url: IN",
+                "infFile": "t62.inf",
+                "time": 1614017697052
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "Vu_LaunchApp_transaction",
+                "rawStartTime": 1614017643926,
+                "rawEndTime": 1614017664216,
+                "thinkTime": 0.0,
+                "wastedTime": 1.6339268684387208
+            },
+            {
+                "transactionName": "Vu_FlightSelection_transaction",
+                "rawStartTime": 1614017666433,
+                "rawEndTime": 1614017666739,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04659318923950195
+            },
+            {
+                "transactionName": "Vu_SearchFlight_transaction",
+                "rawStartTime": 1614017666749,
+                "rawEndTime": 1614017697068,
+                "thinkTime": 0.0,
+                "wastedTime": 2.6957600116729738
+            }
+        ]
+    }
+]

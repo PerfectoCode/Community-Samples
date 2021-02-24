@@ -1,0 +1,11 @@
+[t78]
+FileName1=t78.htm
+URL1=https://adservice.google.com/ddm/fls/i/dc_pre=CJ6o77DQ--4CFZLj7Qod-gwFOw;src=4338867;type=Count-;cat=Etiha-;ord=4336956492503;gtm=2wg2a1;auiddc=706136819.1613932803;u57=book;u59=1994364360;u40=en;u61=us;u63=Desktop;u64=www.etihad.com;~oref=https%3A%2F%2Fwww.etihad.com%2Fen-us%2Fbook
+Total=1
+RequestHeaderFile=t78_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t78_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_78.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

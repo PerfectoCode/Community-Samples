@@ -1,0 +1,2174 @@
+.header-item-panel .manage-links {
+    display: none;
+}
+
+.dxp-header-view .header-item-group .header-item > .header-item-body > .header-item-divider {
+    display: none;
+}
+
+button.sabre-dx-component-button.go-back.text-button {
+    display: none;
+}
+
+.dxp-seat-map .seat-map .seat-map-caption {
+    display: none;
+}
+
+.hotelBanner {
+    width: 670px;
+    height: 320px;
+    background: url(../images/hotel8extrar.jpg) 50% 50% no-repeat rgb(249, 249, 249);
+}
+
+#mixed-cabin-header {
+    margin: auto;
+    color: #0a0a0a;
+    text-align: left;
+    font-size: 1.5rem !important;
+}
+
+#mixed-cabin {
+    display: none;
+    font-size: 1.5rem !important;
+    background-color: #fefefe;
+    color: #bd8b13;
+    margin: auto;
+    padding: 10px !important;
+    text-align: right;
+    width: 100%;
+}
+
+.spark-icon-search:before {
+    content: "Modify Search" !important;
+    color: #4a5767;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#mixed-cabin-text-content {
+    text-align: left;
+    font-size: 1rem !important;
+}
+
+#close-mixed-cabin {
+    background-color: #bd8b13;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.dxp-ancillaries-view .spark-step-indicator__edit-button {
+    display: none !important;
+}
+
+.dxp-seat-selection-view .spark-step-indicator__edit-button {
+    display: none !important;
+}
+
+.dxp-payment-view .spark-step-indicator__edit-button {
+    display: none !important;
+}
+
+.dxp-seat-overlay .overlay-content .seat-info .image {
+    display: none !important;
+}
+
+.dxp-seat-overlay .overlay-content .seat-info .buttons {
+    text-align: right !important;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .hotelBanner {
+        width: 100%;
+        background: url(../images/hotel8extrar.jpg) 100% 40%;
+    }
+}
+
+.ssr-disclaimer-ADT {
+    font-size: 1rem;
+}
+
+.ssr-disclaimer-CHD {
+    font-size: 1rem;
+}
+
+#app .spark-step-indicator__item--current .spark-step-indicator__icon {
+    display: none;
+}
+
+@media (max-width: 544px) {
+    #app .sabre-dx-component-breadcrumbs.has-trip-button .spark-step-indicator__body--dropdown .spark-step-indicator__item--dropdown__header {
+        width: calc(100% - 13rem);
+    }
+}
+
+#app .dxp-breadcrumbs-container .dxp-breadcrumbs .spark-step-indicator__body .spark-step-indicator__cart.expanded:after {
+    transform: none;
+}
+
+#app .dxp-passenger-additional-info .dxp-panel .field-phone-input.field-error {
+    border-color: #ac0000;
+}
+
+@keyframes CalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#app .dx-flight-selection-ribbon .dxp-price span {
+    animation-name: CalFadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+#app .dx-flight-selection-ribbon.hide-price .dxp-price span {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+#app .dx-flight-selection-ribbon-item.selected.show-price .dxp-price span {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+#app .sign-in-section .header-item-panel:last-child .dxp-link {
+    display: none;
+}
+
+.dxp-sign-in .bottom .links-container .forgot {
+    display: inline-block !important;
+}
+
+@media (min-width: 1048px) {
+    .credit-card-fieldset .credit-card-fields-container .credit-card-details-field-holder-name-overlay, .credit-card-fieldset .credit-card-fields-container .credit-card-detection {
+        -ms-flex-preferred-size: 25% !important;
+    }
+}
+
+.dxp-bulkhead {
+    border-bottom: none !important;
+}
+
+.dxp-flight-selection .dxp-selected-flights .header-row .change-flight > button {
+    height: 2rem;
+}
+
+#app .ducp-component-passenger-summary-seats-extras .segment-extras .ancillaries, #app .ducp-component-passenger-summary .dxp-modal-window .ducp-component-passenger-summary-seats-extras .segment-extras .ancillaries, .dxp-modal-window .ducp-component-passenger-summary .ducp-component-sectional-information:last-child {
+    display: block !important;
+}
+
+.seat-selection-container .left-container .dxp-legend .legend-box .seats-list .legend-seat-type .legend-label .legend-price .dxp-price .strike-through {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.dxp-seat-container .dxp-seat-sale {
+    display: none !important;
+}
+
+.dxp-seat-overlay .overlay-content .seat-info .general .price .discounted {
+    font-size: 1.5rem !important;
+}
+
+.dxp-seat-overlay .overlay-content .seat-info .general .seat-discount-info {
+    font-size: 1.5rem !important;
+}
+
+.legend-seat-type .legend-label .seat-type {
+    width: 30%;
+    display: inline-block;
+}
+
+
+.legend-seat-type .legend-label .legend-price {
+    width: 50%;
+    text-align: right;
+}
+
+.seat-selection-container .left-container .dxp-legend {
+    max-width: inherit;
+}
+
+.ducp-component-price .strike-through {
+    margin-right: 0px !important;
+}
+
+.dxp-ancillary-sale {
+    display: none !important;
+}
+
+.payment-card-details {
+    display: none;
+}
+
+[data-translation="seatSelection.seat.exit-paid-1"], [data-translation="seatSelection.seat.exit-paid-0"] {
+    display: none;
+}
+
+[lang=ar] .dxp-fare-rules-tabs {
+    direction: rtl !important;
+}
+
+[lang=ar] .dxp-fare-rules-tab-icon {
+    right: -1rem !important;
+}
+
+.passenger-bag-row .each-cell .bag-weight-container .strike-through {
+    font-size: 1.5rem !important;
+}
+
+#app .dxp-legend .dxp-seat {
+    top: -1.4rem;
+}
+
+#ie-test {
+    display: none;
+}
+
+@media all and (-ms-high-contrast: none) {
+
+    *::-ms-backdrop, .payment-types-toggle-option:nth-of-type(3) {
+        display: block !important;
+    }
+
+    *::-ms-backdrop, .payment-types-toggle-option:nth-of-type(4) {
+        display: block !important;
+    }
+
+    *::-ms-backdrop, .payment-types-toggle-option:nth-of-type(5) {
+        display: block !important;
+    }
+
+    *::-ms-backdrop, #ie-test {
+        display: block !important;
+    }
+
+    *::-ms-backdrop, #BG-ancillary-price-summary {
+        width: 100% !important;
+    }
+
+    *::-ms-backdrop, .cvc-help > .spark-icon-question-mark {
+        margin-left: 0 !important;
+    }
+
+    *::-ms-backdrop, .tax-cart-items .right-content .cart-item-price{
+        min-width: 100% !important;
+        margin-right: 0 !important;
+    }
+
+    /* cart fare section passenger fare doesn't fit*/
+    *::-ms-backdrop, .cart-flight-details .passenger-cart-item  .right-content {
+        flex-direction: column;
+    }
+
+    /* IE11 */
+}
+
+@media (max-width: 796px) {
+    [lang=ar] .itinerary-part-offer-price .itinerary-part-offer-price-button {
+        padding: 1rem;
+        width: 135px !important;
+    }
+}
+
+.dxp-flight-status-flight-status-ribbon .flight-status-ribbon-title {
+    display: inline-block;
+}
+
+.dxp-flight-status-table .details {
+    width: 85% !important;
+    margin-top: 10px;
+}
+
+.details .dxp-flight-status-details {
+    text-align: center !important;
+}
+
+.dxp-flight-status-table .details + .details {
+    border-top: 1px solid #dddddd !important;
+}
+
+.dxp-flight-status-table-headers {
+    border-bottom: 1px solid #CCC !important;
+}
+
+.dxp-flight-status-table-headers tr th {
+    font-weight: bold !important;
+    color: rgb(51, 51, 51) !important;
+    background: #FFF !important;
+}
+
+.dxp-summary-bar--is-fixed .dxp-summary-bar-spacer {
+    display: none !important;
+}
+
+.dxp-summary-bar-container {
+    background: #d6d6d6 !important;
+}
+
+.dxp-summary-bar-container, .dxp-summary-bar-container-airport-city, .dxp-summary-bar-container-airports-separator, .dxp-summary-bar-container-travel-full-date div {
+    color: #4e4c4a !important;
+    font-weight: bold !important;
+}
+
+.dxp-summary-bar-container-separator-bar {
+    border-right: solid 0.08333rem #4e4c4a !important;
+}
+
+.title-wrapper {
+    margin-top: 4rem;
+}
+
+.dxp-summary-bar-container-edit-button .spark-icon-pencil::before {
+    content: "Modify" !important;
+    color: #4a5767;
+    padding: 0.75rem;
+    font-size: 1.3333rem !important;
+    font-weight: bold !important;
+    position: relative;
+    top: -7px;
+    font-family: etihad_altismedium, secondary_medium, sans-serif !important;
+}
+
+.dxp-summary-bar-container-edit-button .spark-icon-pencil::after {
+    content: "Search" !important;
+    color: #4a5767;
+    padding: 0.75rem;
+    font-size: 1.3333rem !important;
+    font-weight: bold !important;
+    position: relative;
+    top: 10px;
+    left: -69px;
+    font-family: etihad_altismedium, secondary_medium, sans-serif !important;
+}
+
+.dxp-summary-bar-container-inner-wrapper {
+    max-width: 1340px !important;
+}
+
+.dxp-flight-schedule-table tr {
+    border: 1px solid #dddddd !important;
+}
+
+.dxp-flight-schedule-flight-schedule-ribbon .flight-schedule-ribbon-title {
+    display: inline-block;
+}
+
+.dxp-flight-schedule-table .details {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.details .dxp-flight-schedule-details {
+    text-align: center !important;
+}
+
+.dxp-flight-schedule-table .details + .details {
+    border-top: 1px solid #dddddd !important;
+}
+
+.dxp-flight-schedule-table-headers {
+    border-bottom: 1px solid #CCC !important;
+}
+
+.dxp-flight-schedule-table-headers tr th {
+    font-weight: bold !important;
+    color: rgb(51, 51, 51) !important;
+    background: #FFF !important;
+}
+
+#app .dxp-logo a {
+    background-image: url(../images/logo.png) !important;
+}
+
+#app .dxp-logo .dxp-link {
+    margin-left: 0;
+    min-width: 250px !important;
+}
+
+.dxp-toggle-button .toggle-button.selected {
+    background: #bd8b13 !important;
+}
+
+.dxp-summary-bar-container-airport-code {
+    overflow: inherit !important;
+    white-space: nowrap;
+}
+
+@media (max-width: 544px) {
+    .dxp-edit-panel .dxp-edit-panel-buttons-container {
+        max-width: 1440px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 2rem !important;
+        justify-content: center !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    #dxp-flight-status .flight-status-form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+}
+
+.dxp-flight-selection-itinerary-part-route-details__ancillaries {
+    display: none;
+}
+
+.dxp-flight-selection-table-header {
+    background-color: #ededec !important;
+    color: #4e4c4a !important;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.dxp-flight-selection-table-header-checkbox .radio-button-label {
+    color: #333 !important;
+    font-weight: bold !important;
+}
+
+.dxp-flight-details .header::before {
+    margin-right: 1rem;
+    position: absolute;
+    width: 1.167rem;
+    height: 1.167rem;
+    content: '';
+    background-color: #bd8b13 !important;
+    border-radius: 100%;
+    display: block;
+}
+
+.brand-offer-price .from {
+    display: none;
+}
+
+.dxp-passenger-additional-info .passenger-extra-contact-info-section {
+    display: none;
+}
+
+.dxp-trip-airports h2 {
+    font-size: 1.40rem;
+}
+
+.dxp-search-flight-view .dxp-title {
+    text-shadow: none !important;
+}
+
+.note {
+    display: none;
+}
+
+.flights-operated-by {
+    padding-top: 30px;
+}
+
+.itinerary-part-offer-brand-comparison .shadow-box .brand-selection-button-container .brand-select-button.spark-btn--md {
+    display: block !important;
+    padding-bottom: 3px !important;
+    padding-top: 9px !important;
+}
+
+.manage-links {
+    display:none;
+}
+
+.limitsTable.clearfix.dxp-panel>div:last-child{
+    display:none;
+}
+
+.dxp-payment-view .dxp-third-party-payment-title{
+    font-size: 1.45rem;
+}
+
+.fareRefund-cart .main-content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex !important;
+}
+
+.fareRefund-cart .main-content .right-content {
+    padding-right: 3rem;
+    align-items: center;
+    display: flex !important;
+}
+
+.fareRefund-cart .main-content .left-content {
+    align-items: center;
+    display: flex !important;
+}
+
+.fareRefund-cart .main-content .left-content .cart-item-label {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.fareRefund-cart::before {
+    content: " ";
+    display: block;
+    border-top: 1px dashed #ccc;
+    padding: 0;
+    margin: 1rem 0;
+    width: 90%
+}
+
+.fareRefund-cart::after {
+    content: " ";
+    display: block;
+    border-top: 1px dashed #ccc;
+    padding: 0;
+    margin: 1rem 0;
+    width: 90%
+}
+
+.taxRefund-cart .main-content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex !important;
+}
+
+.taxRefund-cart .main-content .right-content {
+    padding-right: 3rem;
+    align-items: center;
+    display: flex !important;
+}
+
+.taxRefund-cart .main-content .left-content {
+    align-items: center;
+    display: flex !important;
+}
+
+.taxRefund-cart .main-content .left-content .cart-item-label {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.taxRefund-cart::before {
+    content: " ";
+    display: block;
+    border-top: 1px dashed #ccc;
+    padding: 0;
+    margin: 1rem 0;
+    width: 90%
+}
+
+.taxRefund-cart::after {
+    content: " ";
+    display: block;
+    border-top: 1px dashed #ccc;
+    padding: 0;
+    margin: 1rem 0;
+    width: 90%
+}
+
+.dxp-exchange-passenger-view .page-actions .page-actions-buttons-container {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.dxp-flight-selection-itinerary-part-route-description__origin{
+    display:inline !important;
+}
+
+/* Exchange Branding work - Start */
+
+.spark-message--success.spark-message--lg .spark-message__icon {
+    border: 4px solid transparent !important;
+    background-color: #7A9A01;
+}
+
+.ducp-component-trip-messages .message-container .ducp-component-message {
+    background-color: #E4EBCC;
+}
+
+.ducp-component-record-locator .record-locator-container .record-locator-value {
+    color:#4E4C4A !important;
+    font-family:'etihad_altisbook' !important;
+}
+
+.spark-icon-suitcase::before{
+    display:none !important;
+}
+
+.no-extras .ducp-component-icon {
+    background-image: url(../images/suitcase-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#app .ducp-component-toolbar .spark-toolbar__item {
+    color: #005F96 !important;
+}
+
+.spark-toolbar .spark-toolbar__item::before {
+    text-transform:none !important;
+}
+
+.ducp-component-panel-details-toggle .show-details.text-button:focus {
+    box-shadow: 0 0 0 0.1875rem #005F96 !important;
+}
+
+.ducp-component-panel-details-toggle .show-details.text-button {
+    color: #005F96 !important;
+    text-transform: none !important;
+}
+
+.ducp-component-passenger-name-item .full-name .passenger-type {
+    font-style: normal !important;
+}
+
+.spark-panel--expand .spark-panel__header::after {
+    color: #4E4C4A !important;
+}
+
+.spark-step-indicator__item * {
+    text-align: center;
+}
+
+.spark-icon--sm::before{
+    font-size: 1.25rem !important;
+}
+
+.dxp-view .no-image .title-wrapper .dxp-view-title {
+    font-size: 32px !important;
+}
+
+.spark-icon-airplane-depart:before {
+    display:none !important;
+}
+
+.dxp-flight-selection-itinerary-part-route-view-details__toggle__label {
+    text-transform: capitalize !important;
+}
+
+.dxp-flight-selection-itinerary-part-route-details__route {
+    width: 22.33333% !important;
+}
+
+.dxp-flight-selection-itinerary-part-route-details {
+    padding-left: 21px;
+}
+
+.dxp-button:disabled, .dxp-button.btn-disabled {
+    background-color: #DCDBDB !important;
+    color: #4e4c4a !important;
+}
+
+.dxp-checkbox .dxp-checkbox-box {
+    border: 1px solid #000000 !important;
+}
+
+.dxp-checkbox .dxp-checkbox-box::before {
+    border-bottom: 0.333rem solid #ffffff !important;
+    border-left: 0.333rem solid #ffffff !important;
+}
+.dxp-checkbox .dxp-checkbox-input:checked ~ .dxp-checkbox-box {
+    background-color:#bd8b13 !important;
+    border: #bd8b13 !important
+}
+
+.dxp-checkbox:hover .dxp-checkbox-box {
+    background-color: #fff !important;
+    border: 1px solid #bd8b13 !important;
+}
+
+.dxp-operated-by .flight-number {
+    color: #4E4C4A !important;
+}
+
+#app .dxp-selected-flights .selected-itinerary-part-offer .header-row .header-info .direction, .dxp-modal-window .dxp-selected-flights .selected-itinerary-part-offer .header-row .header-info .direction {
+    font-size: 32px !important;
+}
+
+.flight-offer-itinerary-breakdown .action-buttons .toggle-itinerary-breakdown .expand-details {
+    text-transform: none !important;
+    color: #005F96 !important;
+}
+
+.flight-offer-itinerary-part-details .segment-details .arrival .layover {
+    font-size: 20px;
+    color: #4E4C4A !important;
+    letter-spacing: 0;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: left;
+    background-color: #E1EAF6 !important;
+}
+
+.selected-itinerary-part-offer .header-row .header-info .direction {
+    text-transform:none !important;
+}
+
+.dxp-selected-flights .selected-itinerary-part-offer .header-row .header-info .date {
+    font-size: 32px !important;
+}
+
+.selected-itinerary-part-offer .header-row .header-info .header-icon .spark-icon {
+    color: #7A9A01 !important;
+}
+/* [AZURE TICKET 2618] CHANGE FLIGHT should be in Sentence case. */
+/* AK [19JAN] Previously the text was forced to be capitalized in custom.css itself, hence we changed it to text-transform: none on 20 JAN 2021 SAT release DXCSS1*/
+/* AK [27JAN] AZURE TICKET 2724 : Making the text apear more prominent with bigger text by adding font:initial in 27 JAN 2021 SAT release DXCSS2*/
+/* AK [3FEB] AZURE TICKET 2757 : Changing the legend text to be in link blue #006ba8 - part of 03 FEB 2021 SAT release DX CSS3 - Mobile is on line #1427 */
+
+.ducp-component-button .button-label, .ducp-component-button > span {
+    text-transform: none !important;
+    font:initial;
+}
+/* [AZURE TICKET 2618] End */
+
+/* Cancel changes start */
+
+.dxp-cancel-flight-review .page-title {
+    font-size: 32px !important;
+}
+
+.dxp-inline-message.success .icon {
+    background-color: #7A9A01 !important;
+    border: #7A9A01 !important;
+}
+
+.ducp-component-breadcrumbs .spark-step-indicator__body .spark-step-indicator__cart {
+    font-family: etihad_altismedium !important;
+}
+
+#app .ducp-component-page-button-wrapper .ducp-component-button.secondary-button:not(:disabled){
+    color: #4E4C4A; !important;
+}
+
+#app .ducp-component-button:not(.text-button):not(.secondary-button):not(.view-more-button):not(.negative):not(.decrement-button):not(.increment-button):not(:disabled):hover {
+    background: #976F0F !important;
+    color: #FFFFFF !important;
+    text-align: center;
+}
+
+/* Cancel changes end */
+
+/* Footer change start */
+
+@media (min-width: 1025px) {
+
+    #app .dxp-footer .centered-content .content .links {
+        margin: 0 0.177rem !important;
+        justify-content: flex-start !important;
+        width: 100%;
+    }
+
+    .dxp-footer .centered-content .content .links li {
+        padding: 0 !important;
+    }
+
+    [data-translation="footer.terms"]:after {
+        margin: 0.25em;
+        content: '|';
+    }
+
+    [data-translation="footer.privacyPolicy"]:after {
+        margin: 0.25em;
+        content: '|';
+    }
+
+    .copyright {
+        margin-right: 1px;
+    }
+
+    #app .dxp-footer .centered-content .content .copyright a {
+        font-size: 1.33333rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #app .dxp-footer .centered-content .content .copyright a {
+        font-size: 1.02rem !important;
+        margin-right: 5px;
+    }
+
+    #app .dxp-footer .centered-content .content .copyright {
+        align-items: flex-start !important;
+    }
+
+    #app .dxp-payment-complete .dxp-panel .page-actions .dxp-button {
+        margin-left: 0rem !important;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #app .dxp-footer .centered-content .content .copyright a {
+        font-size: 1.02rem !important;
+    }
+}
+
+/* Footer change - End */
+
+#app .ducp-component-page-button-wrapper .ducp-component-button.secondary-button:not(:disabled){
+    border: 1px solid #4E4C4A !important;
+}
+
+#app .ducp-component-page-button-wrapper .ducp-component-button.secondary-button:not(:disabled):hover{
+    color: #FFFFFF !important;
+    letter-spacing: 0.2px;
+    text-align: center;
+    background-color: #4E4C4A;
+}
+
+#app .dxp-button.secondary:not(:disabled):focus {
+    font-size: 17px !important;
+    line-height: 19px !important;
+    letter-spacing: 0.2px !important;
+}
+
+#app .dxp-footer {
+    background-color: #fff !important;
+    color: #fff !important;
+}
+
+.travel-bank-disclaimer {
+    font-size: 1.333rem !important;
+}
+
+.travel-bank-summary .applied-funds .dxp-price {
+    font-size: 100% !important;
+}
+
+/* IE11 - Wrap column*/
+@media all and (-ms-high-contrast: none) {
+    .ducp-component-cart-item .main-content, .ducp-component-cart-item .main-content .left-content {
+        flex-basis: 100%;
+    }
+}
+
+/*Redemption Flow */
+
+.dx-flight-selection-ribbon-item .ducp-component-price .connection{
+    padding: 0.75rem;
+}
+.DucpComponentToggle .toggle-item .toggle-input:checked~.toggle-label:nth-child(n){
+    border-color: #bd8b13;
+    background-color: #bd8b13;
+    color: #fff;
+}
+.points-currency-toggle .points-currency-toggle-title {
+    margin-bottom: 0;
+    font-size: 2.333rem;
+    margin-top: 20px;
+}
+.legend-seat-type .legend-label .ducp-component-price{
+    font-family: Oswald,sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #333;
+    margin-right:10px;
+}
+.summary-content .spark-panel__content .ancillary-price{
+    line-height: 3rem;
+}
+
+.dxp-passenger-bags-by-weight .spark-panel__content .passenger-bag-row .each-cell .bag-weight-container .bag-item-price .ducp-component-price{
+    line-height:2rem;
+}
+
+[lang=ar] .dxp-flight-selection .flight-selection-title .flight-selection-header-actions{
+    float: left !important;
+}
+.dxp-flight-selection .flight-selection-header-actions{
+    margin : 1rem !important;
+}
+.dxp-shared-flight-selection .dxp-rbe-flow-sign-in-panel {
+    margin-bottom: 7rem;
+    display: none;
+}
+
+.dxp-shared-flight-selection .ducp-component-title{
+    overflow: inherit;
+}
+
+.dxp-flight-selection-view .main-content .title-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-bottom: 7rem;
+    margin-left: 0px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(21,21,21,.15);
+}
+
+.dxp-flight-selection-view .dxp-dynamic-disclaimer {
+    margin-bottom: 7rem;
+    margin-top: 0rem;
+}
+
+.mobile-app .dxp-footer {
+    display: none;
+}
+
+.mobile-app .dxp-header-view {
+    display: none;
+}
+
+.mobile-app .spark-step-indicator__edit {
+    display: none;
+}
+
+.mobile-app .dxp-summary-bar-container-edit-button {
+    display: none;
+}
+
+.dxp-upgrade-payment-view [data-translation="awardBooking.creditAndAwardsDescription"]{
+    display:none;
+}
+
+@media (min-width: 768px) {
+    .award-payment-successful .dxp-payment-award .dxp-award-payment-balance-price.column.success {
+        text-align: right;
+        margin-left: 20rem;
+        margin-top: -6rem;
+    }
+}
+
+.dxp-upgrade-payment-view .payment-fops .dxp-payment .payment-summary .dxp-award-payment-details-summary .ducp-component-button{
+    display:none;
+}
+
+.legend-seat-type .legend-label .legend-price {
+    width: 75%;
+    text-align: right;
+}
+
+#ancillaries-disclaimer {
+    display: none;
+}
+
+.ancillaries-disclaimer-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.ancillaries-disclaimer-content {
+    font-size: 1.1rem;
+    margin-top: 6px;
+}
+
+.dxp-seat-selection-view .dxp-inline-message.info {
+    display: none;
+}
+
+.dxp-shared-seat-selection .seat-map-content .row .seat-map-description {
+    display: none;
+}
+
+.dxp-payment-component .dxp-award-payment-balance-price .balance-price-amount {
+    display: block;
+    font-size: 1.666rem;
+    line-height: 2rem;
+}
+
+.itinerary-part-offer-price .itinerary-part-offer-price-button .big-price-container .big-price .currency {
+    font-size: 75%;
+}
+
+@media all and (-ms-high-contrast: none) {
+    .summary-content .spark-panel__content .ancillary-price{
+        line-height: 3rem;
+        font-size: 1rem;
+    }
+}
+
+#milesCalendarDisclaimer {
+    display: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#app .payment-types-toggle-options-container .payment-types-toggle-options .payment-types-toggle-option {
+    margin: 0 1rem 1rem 0;
+}
+
+@media (max-width: 796px) {
+    .dxp-passenger-bags-by-weight .spark-panel__content .passenger-bag-row .each-passenger-bag .bag-weight-container {
+        width:10px;
+        margin-right: 6rem !important;
+    }
+}
+.spark-popover__list{
+    margin: 0px !important;
+}
+.react-tel-input{
+    width : 100% !important;
+}
+.field-phone .react-tel-input input[type='tel']{
+    width : 100% !important;
+}
+
+#dxp-upgrade-confirmation-view .dxp-shopping-cart .dxp-shopping-cart-fare-rules{
+    display:none;
+}
+
+#dxp-page-cancel-action-button {
+    display: none;
+}
+
+.dxp-exchange-flight-selection-view .additional-button {
+    display: none;
+}
+
+.dxp-cancel-flight-review-view .dxp-button.medium.secondary.back {
+    display: none;
+}
+
+#app .dxp-upgrade-payment-view .dxp-shopping-cart .dxp-shopping-cart-fare-rules{
+    display:none;
+}
+
+.dxp-upgrade-payment-view .dxp-fare-rules-tabs {
+    direction: ltr;
+    display: none;
+}
+.dxp-upgrade-payment-view [data-translation="fareRules.title"]{
+    display:none;
+}
+#wait-listed-upgrades{
+    display:none;
+}
+
+.dxp-upgrade-payment-view .upgrade-quick-view-tabs-panel .view-details-link {
+    display: inline-block;
+    float: right;
+    margin-top: 2.5rem;
+    margin-left: -10rem;
+}
+
+.dxp-upgrade-view .upgrade-itinerary-parts .upgrade-travel-part .dxp-price .ducp-component-price{
+    font-family: Oswald,sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 4rem;
+    color: #333;
+}
+
+@media (max-width: 414px) {
+    .itinerary-part-summary-details .flights-operated-by .flight-number-operated-by {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        margin-top: 2rem;
+    }
+}
+
+/* MYB_HUB_CHANGE */
+
+.dxp-myb-hub-view .dxp-confirmation-passengers{
+    display:none;
+}
+
+.dxp-myb-hub-view .ducp-component-flight-summary .ducp-component-button.text-button{
+    display:none;
+}
+
+.dxp-myb-hub-view .dxp-shopping-cart{
+    display:none;
+}
+
+
+.dxp-myb-hub-view .dxp-flight-summary .ducp-component-accordion.spark-panel--expand>.spark-panel__header.has-right-content{
+    display:none;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .field-autocomplete.field-active .Select-value, .field-autocomplete.field-default .Select-value, .field-autocomplete.field-success .Select-value {
+        margin-top: .1rem;
+    }
+}
+
+.rbe-flow-sign-in .spark-message--info {
+    background-color: transparent;
+    color: #333;
+    display: none;
+}
+
+/* Page navigation buttons to be in centre for mobile screens */
+@media (max-width: 600px){
+    .dxp-change-flight-view .dxp-flow-step-actions {
+        float: inherit !important;
+    }
+
+    .dxp-exchange-seat-selection-view .dxp-flow-step-actions {
+        float: inherit !important;
+    }
+}
+
+.spark-panel__content .ducp-component-sectional-information:last-child {
+    display: none;
+}
+
+/* Airline icon on ipad pro landscape gets hidden */
+#app .ducp-component-cart-panel .spark-panel__header .ducp-component-title > .spark-icon {
+    min-width: 39px;
+}
+.passenger-bag-row:not(:first-child) .bag-weight-container {
+    visibility: visible !important;
+}
+
+.dxp-shared-seat-selection .seat-map-content .right-container {
+    padding-bottom: 15rem
+}
+
+/* Airline tail icon on exchange PNR flight details page to be visible */
+.dxp-image.logo {
+    display: inline-flex !important;
+}
+
+/*Mozilla firefox css start*/
+
+@-moz-document url-prefix() {
+
+    /*Alignment fix on insurance additional disclaimer*/
+    .dxp-ancillary-footer.row .additional-disclaimer li{
+        margin-left: 1.5rem !important;
+    }
+
+    /*to remove top-down arrows from bag input field*/
+    /* ASAIM-9884 mozilla to have same width for bag input*/
+    .each-passenger-bag .spark-number-selector__item input {
+        -moz-appearance: textfield !important;
+        max-width: 33% !important;
+    }
+
+    /*to fix credit card image position on firefox*/
+    .credit-card-number-container .credit-card-image {
+        height: 23px !important;
+    }
+
+    /*to fix position of text in zipCode text field*/
+    .zipCode:not(.field-active):not(.field-error) label{
+        padding: 1.6667rem 0rem !important;
+        text-align: center !important;
+    }
+
+    /*minus sign diplayed in discount header*/
+    .price-info .negative-symbol{
+        display: none;
+    }
+
+    /* confirmation page, the 3 fields in payment details in mozilla are not aligned*/
+    #app .payment-details .payment-details-list .third-party-reference-number, #app .payment-details .payment-details-list .third-party-transaction-id {
+        margin-left: 5rem !important;
+    }
+
+    div.spark-popover__content.spark-popover-header.active {
+        width: 30% !important;
+    }
+
+    @media (max-width: 768px) {
+        div.spark-popover__content.spark-popover-header.active {
+            width: 80% !important;
+        }
+    }
+}
+
+/*Mozilla firefox css end*/
+
+/* TB details hyperlink hided to sync with PROD */
+.travel-bank-details .dxp-link {
+    display: none;
+}
+
+.travel-bank-balance .dxp-link {
+    display: none;
+}
+
+/* End */
+.dx-flight-selection-ribbon-item{
+
+    min-height :9rem !important;
+}
+
+/* Payment list on confirmation page. */
+#app .payment-details .payment-details-list li{
+    margin-right: 3rem !important;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+}
+.payment-details .payment-details-list{
+    display: flex;
+    flex-direction: column;
+}
+[dir=rtl] #app .payment-details .payment-details-list li{
+    margin-left: 3rem !important;
+    margin-right: 0rem !important;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+}
+/*END*/
+
+.dxp-shopping-cart .dxp-shopping-cart-fare-rules{
+    display: inline-block;
+    margin : 0rem !important;
+}
+
+/*Number selector on extras page*/
+.dxp-passenger-bags-by-weight .spark-panel__content .passenger-bag-row{
+    flex-direction: column;
+    align-items: center;
+}
+.passenger-bag-row .bag-items-container{
+    flex : auto !important;
+    width : 100%
+}
+.spark-number-selector .spark-number-selector__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Changed the border-color and background color to #4e4c4a as per the Azure ticket 2631 by Ayaz (eCommerce - EY) */
+.ducp-component-number-selector .number-input{
+    flex: 1;
+    order: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-color: #4e4c4a !important;
+    background-color: #4e4c4a !important;
+    color: #fff !important;
+}
+.ducp-component-number-selector .decrement-button{
+    flex: 1;
+    order: 1;
+    position: relative !important;
+    left: 0;
+    right: 0 !important;
+    top: 0;
+    bottom: 0 !important;
+}
+.ducp-component-number-selector .increment-button{
+    flex: 1;
+    order: 2;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+[dir=rtl] .spark-number-selector .spark-number-selector__item input{
+    right : 0rem !important;
+}
+.spark-number-selector label{
+    display: none !important;
+}
+.dxp-passenger-bags-by-weight .spark-panel__content .passenger-bag-row .each-passenger-bag .bag-weight-container{
+    width : 100% !important;
+}
+.dxp-passenger-bags-by-weight .unavailable-message{
+    display : none; !important;
+}
+.dxp-passenger-spinner-list .unavailable-message{
+    display : none; !important;
+}
+/*END*/
+
+
+/* cart items with miles + currency should let right content go on next line */
+.ducp-component-cart-panel-list .spark-panel__header {
+    flex-wrap: wrap !important;
+}
+
+[dir=rtl] .ducp-component-cart-panel-list .spark-panel__header .right-content{
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* END - arabic - cart items with miles + currency should let right content go on next line */
+
+.dx-flight-selection-ribbon .spark-carousel__item {
+    min-width: 11.66667rem !important;
+}
+.itinerary-part-offer .itinerary-part-offer-prices{
+    justify-content: center;
+    padding: 0 !important;
+}
+.ducp-component-filmstrip-carousel.spark-carousel .spark-carousel__controls button{
+    align-items: center;
+}
+
+@media (max-width: 1140px){
+    .dx-flight-selection-ribbon .spark-carousel__item{
+        width: unset !important;
+    }
+}
+.dxp-upgrade-payment-view .agreement-separator{
+    display:none;
+}
+
+/* FIX: CVC tooltip takes more width than required*/
+.spark-popover__content.spark-popover-header.active {
+    width: auto !important;
+}
+
+.passenger-disclosure-container .carousel-item-container .spark-panel__content {
+    color: #333;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Hide link for frequent flyer information on confirmation page*/
+.dxp-confirmation-view .dxp-confirmation-passengers .passenger-summary-header .items-container a{
+    display: none !important;
+}
+
+/*ASAIM-9835*/
+
+/*.dxp-cancel-flight-payment-view .trip-total, .dxp-confirmation-view .cancel .trip-total{*/
+/*    padding-bottom: 2rem !important;*/
+/*}*/
+/*ASAIM-9838*/
+.time-operating-carrier-details .flight-depart{
+    display: flex;
+    align-items: flex-end;
+
+}
+.time-operating-carrier-details .flight-depart .time-airport-separator{
+    margin-bottom : 5px;
+}
+
+.time-operating-carrier-details .arrival-time{
+    text-align : right;
+}
+/*ASAIM-9838 END*/
+
+/* ASAIM-9837 start flight timetable logo and number in one line*/
+.dxp-flight-schedule-view .operating-carrier-flight-number {
+    display: flex !important;
+}
+/* ASAIM-9837 end*/
+
+/*ASAIM-9847 ASAIM-9871 font size in upgrade section not proper*/
+.ducp-component-cart-flight-segment .flight-segment-title {
+    font-size: 100% !important;
+}
+/* ASAIM-9847 end*/
+
+/* ASAIM-9736 start */
+.dxp-upgrade-payment-view .upgrade-quick-view {
+    display: none !important;
+}
+/* ASAIM-9736 End */
+
+/* ASAIM-9846 Start */
+.login-banner .available-points {
+    color: #333 !important;
+}
+
+.login-banner .member-information {
+    color: #333 !important;
+}
+
+/* ASAIM-9846 End */
+
+/* ASAIM-9871 start */
+
+.field:not(.boarding-pass-field).field-error {
+    outline: none !important;
+}
+
+.tax-breakdown-items .ducp-component-cart-item{
+    margin-left: 0px !important;
+}
+
+.tax-breakdown-items .ducp-component-cart-item .cart-item-label{
+    padding-right: 0px !important;
+    line-height: 2rem !important;
+}
+
+.dxp-shopping-cart .dxp-shopping-cart-fare-rules {
+    margin: 8px 0 !important;
+}
+
+.ducp-component-cart-panel {
+    padding-bottom: 1rem !important;
+}
+
+.dx-flight-selection-ribbon-item .flight-price.available{
+    margin-top: 0px !important;
+}
+
+/*.ducp-component-price{*/
+/*    line-height: 1rem !important;*/
+/*}*/
+/**What's this button is not required**/
+.dxp-award-payment-details-header .using-miles{
+    display : none !important;
+}
+
+/**No back button on FSR page**/
+
+.dxp-flight-selection .dxp-page-navigation-buttons #dxp-page-navigation-back-button{
+    display : none;
+}
+
+/**Margin of language change Icon*/
+#app .dxp-menu .toggle{
+    margin-top : 1.3rem !important;
+}
+.dxp-header-view .header-item-group .header-item{
+    height : auto !important;
+}
+
+/* ASAIM-9879 select seat link to be black and not underlined */
+/* AZURE-2757 [AK 3 FEB] Colour is changed to link blue #006ba8 - Desktop is on line #721 */
+.seat-selection-container .left-container button {
+    color: #006ba8 !important;
+    text-decoration: none !important;
+}
+/* AZURE-2757 END */
+/* ASAIM-9879 END*/
+
+/*Depart icon in exchange flow*/
+/* [AZURE TICKET 2716] Remove aircraft icon from the Exchange flow "Your outbound flight" and "Your inbound flight" sections */
+/* AK[19 Jan] As per the XD request the aircraft icon needs to be hidden hence we are updating below to none */
+.dxp-flight-selection-itinerary-part-route-description__icon.spark-icon-airplane-depart:after{
+    content : "\f102" !important;
+    font-family: "spark-icon-line";
+    display: none;
+}
+/* [AZURE TICKET 2716] Ends */
+
+/*White background on page actions on passenger page*/
+#app .dxp-passenger-view .page-actions{
+    width : 100% !important;
+}
+
+/*Price container button*/
+@media only screen and (min-width: 545px) {
+
+    #app .itinerary-part-offer-price .itinerary-part-offer-price-button .big-price-container .big-price .price:nth-child(1):after {
+        content: '\f10f';
+        margin-left: 1rem !important;
+        font-family: "spark-icon-line";
+        font-size: 1.333rem;
+        width: 100%;
+        margin-top: 0.5rem !important;
+    }
+
+    #app .itinerary-part-offer-price .itinerary-part-offer-price-button.selected .big-price-container .big-price .price:nth-child(1):after {
+        content: '\f112';
+        margin-left: 1rem !important;
+        font-family: "spark-icon-line";
+        font-size: 1.333rem;
+        width: 100%;
+
+    }
+}
+
+.itinerary-part-offer-price .itinerary-part-offer-price-button .big-price-container .big-price:not(.brand-offer-price) .alternative:last-child:after {
+    display: none !important;
+}
+
+/*Seatmap header*/
+.dxp-shared-seat-selection .seat-map-content .seatmap-header{
+    background: #555 !important;
+    color: #fff !important;
+}
+
+/*Minimum miles in payment page*/
+.dxp-payment-component .payment-fops .dxp-award-payment-details-summary{
+    padding-top : 1.333rem;
+}
+
+/*Hide depart icon in exchange flow*/
+.dxp-flight-selection-table .dxp-panel-accordion .dxp-panel-accordion-content>div>h4>.spark-icon-airplane-arrive:before{
+    display:none !important;
+}
+
+#dxp-upgrade-confirmation-view .confirmation-component .ducp-component-account-dashboard .travel-bank .ducp-component-icon{
+    display:none;
+}
+
+/* ASAIM-9879 changes 2nd part*/
+.dxp-seat-selection-view .left-side-panel .seat-map-caption .seat-map-instructions {
+    outline: none !important;
+    border: none !important;
+}
+/* ASAIM-9879 end */
+
+/*ASAIM-9915 ASAIM-9914*/
+
+[dir=rtl] .credit-card-fieldset .credit-card-fields-container .expiration-cvc-container .fieldset-date {
+    direction: rtl;
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+
+[dir=rtl] #app .itinerary-part-offer-price .itinerary-part-offer-price-button .big-price-container .big-price .price:nth-child(1):after {
+    display: none;
+}
+
+/*ASAIM-9915 ASAIM-9914 end*/
+/*ASAIM-9932 #4*/
+.ducp-component-flight-details-flight .flight-detail-column{
+    border-color : #bd8b13 !important;
+}
+.ducp-component-flight-details-flight .flight-detail-column:before{
+    background: #bd8b13 !important;
+}
+#app .ducp-component-flight-details-flight{
+    border-color: #bd8b13 !important;
+
+}
+[dir=rtl] .ducp-component-flight-details-flight .flight-detail-column{
+    border-left : none !important;
+}
+[dir=rtl]
+.dxp-flight-summary .main-container .main-trip-details .ducp-component-flight-details-flight .flight-detail-column:before{
+    right:  3.5rem !important;
+}
+[dir=rtl] .dxp-flight-summary .main-container .main-trip-details .ducp-component-flight-details-flight .flight-detail-column .destination-arrival~.airport:after{
+    right : 3.5rem !important
+}
+.ducp-component-flight-details-flight .destination-arrival~.airport:after{
+    background: #bd8b13 !important;
+}
+[dir=rtl] .dxp-flight-summary .main-trip-details .ducp-component-flight-details-flight{
+    border-color : #000 !important;
+}
+/*ASAIM-9932 #4 END*/
+/*ASAIM-9932 #7*/
+[dir=rtl] .page-actions{
+    width : 100% !important;
+}
+/*ASAIM-9932 #7 END*/
+/*ASAIM-9932 #8*/
+#dxp-exchange-flights-form  div.group.dates input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none !important;
+}
+/*ASAIM-9932 #8 END*/
+/*ASAIM-9932 #10*/
+[dir=rtl] .exchange .dxp-flow-step-actions{
+    width : 100% !important;
+}
+/*ASAIM-9932 #10 END*/
+
+
+
+/*ASAIM-9932 issue number 13*/
+[dir=rtl] .dxp-flight-selection .currency-points-toggle .toggle-points .toggle-label{
+    border-width: 1px 0 2px 1px !important;
+}
+
+/*ASAIM-9932 issue number 14*/
+@media (max-width: 796px) {
+    [dir=rtl] .dxp-flight-selection-view .dxp-page-navigation-buttons {
+        margin-left: 0 !important;
+        width: auto !important;
+    }
+}
+
+/* Arabic confirmation page payment section rework*/
+[dir=rtl] .dxp-confirmation-view .payment-details .payment-details-list{
+    margin-right: 0 !important;
+}
+
+[dir=rtl] .trip-total{
+    margin-left: 3rem !important;
+    margin-right: 0.5rem !important;
+}
+
+[dir=rtl] .dxp-confirmation-view .payment-details .payment-details-list .credit-card-image {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    background-position-x: right !important;
+}
+
+/* Completed */
+[dir=rtl] .dxp-search-flight-view .dxp-change-flight-view-panel-navigation{
+    width : 100% !important;
+}
+[dir=rtl] .dxp-exchange-passenger-view .page-actions .page-actions-buttons-container{
+    float: left !important;
+}
+.dxp-payment-component .agreement-checkbox .ducp-component-icon {
+    display: none;
+}
+
+/*ASAIM-9959 - hide the outline for opt out email*/
+[data-translation="dynamicDisclaimers.GDPROptOutInfo"] a{
+    outline: none !important;
+}
+@media (max-width: 796px){
+    [dir=rtl] .dxp-page-navigation-buttons {
+        margin-left : 1rem !important;
+    }
+}
+[dir=rtl] #app .dxp-payment-complete .dxp-panel .page-actions{
+    justify-content: flex-end;
+}
+
+/*ASAIM-9958*/
+.dxp-flight-selection-view .brand-selection-button-container .brand-select-button {
+    padding: 9px 24px 3px !important;
+}
+
+/*ASAIM-9985 - outline not coming on continue due to overflow-y:auto*/
+@media (min-width: 543px){
+    .dxp-search-flight-view .dxp-change-flight-view-panel-navigation {
+        overflow-y: inherit !important;
+    }
+}
+
+/* ASAIM-9320 start */
+body[dir="rtl"] .spark-tabs__list.dxp-shared-seat-selection-tabs .flight-index{
+    margin-left: 1rem;
+}
+/* ASAIM-9320 end */
+
+[dir=rtl] .dxp-business-loyalty .dxp-panel .panel-header {
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+[dir=rtl] .confirmation-business-loyalty .dxp-panel .panel-header {
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+[dir=rtl] .business-loyalty-button {
+    margin-left: 0.5rem;
+}
+
+/* ASAIM-10509 start hide fare rules on confirmation page*/
+.dxp-confirmation-view .dxp-shopping-cart-fare-rules, .dxp-confirmation-view .top-fare-rules{
+    display:none !important;
+}
+/* ASAIM-10509 end */
+
+/*ASAIM-10582 start */
+.brand-comparison-table .amenity-item-row.baggage .brand-comparison-legend,
+.brand-comparison-table .amenity-item-row.baggage .brand-amenity-value{
+    height: 70px !important;
+}
+.brand-comparison-table .amenity-item-row.refund .brand-comparison-legend,
+.brand-comparison-table .amenity-item-row.refund .brand-amenity-value{
+    height: 75px !important;
+}
+.brand-comparison-table .amenity-item-row.changeTravel .brand-comparison-legend,
+.brand-comparison-table .amenity-item-row.changeTravel .brand-amenity-value{
+    height: 70px !important;
+}
+.brand-comparison-table .amenity-item-row.upgrade .brand-comparison-legend,
+.brand-comparison-table .amenity-item-row.upgrade .brand-amenity-value{
+    height: 70px !important;
+}
+
+/*ASAIM-10582 end */
+
+/* [AZURE TICKET 2601] Changed the CamelCase text to proper case text on the DX FSR page */
+
+#app .itinerary-part-offer-brand-comparison .shadow-box .legend-value, .dxp-modal-window .itinerary-part-offer-brand-comparison .shadow-box .legend-value{
+    text-transform:none !important;
+}
+/* [AZURE TICKET 2601] END */
+
+/* [AZURE TICKET 2615] For Flight pricing change gold text to charcoal grey #4E4C4A */
+#app .dxp-breadcrumbs-container .dxp-breadcrumbs .spark-step-indicator__body .spark-step-indicator__cart .dxp-price .price, .dxp-modal-window .dxp-breadcrumbs-container .dxp-breadcrumbs .spark-step-indicator__body .spark-step-indicator__cart .dxp-price .price {
+    color: #4E4C4A !important;
+}
+/* [AZURE TICKET 2615] END */
+
+/* [AZURE TICKET 2717] One date change free for Economy and Business Choice fares */
+/*//=== Desktop - EN */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(en)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (One date change free)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(en)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (One date change free)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - AR */
+div.amenity-item-row.changeTravel .brand-amenity-value.economy.YV .amenity-value:lang(ar)::after
+{
+margin-left: 0px;
+white-space: pre-wrap;
+content: ' (يمكن تغيير التاريخ مجاناً لمرة واحدة) ';
+position: absolute;
+margin-top: 39px;
+}
+div.amenity-item-row.changeTravel .brand-amenity-value.business.JS .amenity-value:lang(ar)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (يمكن تغيير التاريخ مجاناً لمرة واحدة) ';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - DE */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(de)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Eine kostenlose Datumsänderung ist möglich)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(de)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Eine kostenlose Datumsänderung ist möglich)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - FR */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(fr)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Un changement de date est gratuit)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(fr)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Un changement de date est gratuit)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - IT */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(it)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Un cambio di data è gratuito)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(it)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Un cambio di data è gratuito)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - ES */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(es)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Un cambio de fecha es gratis)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(es)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Un cambio de fecha es gratis)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - EL */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(el)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Μία δωρεάν αλλαγή ημερομηνίας)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(el)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Μία δωρεάν αλλαγή ημερομηνίας)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - NL */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(nl)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Eén datumwijziging is gratis)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(nl)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Eén datumwijziging is gratis)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - JA */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(ja)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' （日付変更は1回まで無料）';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(ja)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' （日付変更は1回まで無料）';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - KO */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(ko)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (날짜 변경 1회 무료)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(ko)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (날짜 변경 1회 무료)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - PT */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(pt)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Uma alteração de data é gratuita)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(pt)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Uma alteração de data é gratuita)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - RU */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(ru)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Одно изменение даты бесплатно)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(ru)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Одно изменение даты бесплатно)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - TH */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(th)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (เปลี่ยนวันที่หนึ่งวันฟรี)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(th)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (เปลี่ยนวันที่หนึ่งวันฟรี)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - TR */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(tr)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Bir kez tarih değişikliği ücretsizdir)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(tr)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (Bir kez tarih değişikliği ücretsizdir)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - ZH */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(zh)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' （可免费更改一次日期）';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(zh)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' （可免费更改一次日期）';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - ZT */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(zt)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (一次免費變更日期)';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(zt)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (一次免費變更日期)';
+    position: absolute;
+    margin-top: 39px;
+}
+/*//=== Desktop - HE */
+div.amenity-item-row.changeTravel div.brand-amenity-value.economy.YV span.amenity-value:lang(he)::after {
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (שינוי תאריך אחד ללא עלות) ';
+    position: absolute;
+    margin-top: 39px;
+}
+div.amenity-item-row.changeTravel div.brand-amenity-value.business.JS span.amenity-value:lang(he)::after
+{
+    margin-left: 0px;
+    white-space: pre-wrap;
+    content: ' (שינוי תאריך אחד ללא עלות) ';
+    position: absolute;
+    margin-top: 39px;
+}
+
+/*//=== Mobile - EN */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(en)::after {
+    content: "(One date change free)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(en)::after {
+    content: "(One date change free)";
+}
+/*//=== Mobile - AR */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ar)::after {
+    content: "(يمكن تغيير التاريخ مجاناً لمرة واحدة)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ar)::after {
+    content: "(يمكن تغيير التاريخ مجاناً لمرة واحدة)";
+}
+/*//=== Mobile - DE */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(de)::after {
+    content: "(Eine kostenlose Datumsänderung ist möglich)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(de)::after {
+    content: "(Eine kostenlose Datumsänderung ist möglich)";
+}
+/*//=== Mobile - FR */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(de)::after {
+    content: "(Un changement de date est gratuit)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(de)::after {
+    content: "(Un changement de date est gratuit)";
+}
+/*//=== Mobile - IT */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(it)::after {
+    content: "(Un cambio di data è gratuito)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(it)::after {
+    content: "(Un cambio di data è gratuito)";
+}
+/*//=== Mobile - ES */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(es)::after {
+    content: "(Un cambio de fecha es gratis)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(es)::after {
+    content: "(Un cambio de fecha es gratis)";
+}
+/*//=== Mobile - EL */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(el)::after {
+    content: "(Μία δωρεάν αλλαγή ημερομηνίας)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(el)::after {
+    content: "(Μία δωρεάν αλλαγή ημερομηνίας)";
+}
+/*//=== Mobile - NL */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(nl)::after {
+    content: "(Eén datumwijziging is gratis)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(nl)::after {
+    content: "(Eén datumwijziging is gratis)";
+}
+/*//=== Mobile - JA */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ja)::after {
+    content: "（日付変更は1回まで無料）";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ja)::after {
+    content: "（日付変更は1回まで無料）";
+}
+/*//=== Mobile - KO */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ko)::after {
+    content: "(날짜 변경 1회 무료)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ko)::after {
+    content: "(날짜 변경 1회 무료)";
+}
+/*//=== Mobile - PT */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(pt)::after {
+    content: "(Uma alteração de data é gratuita)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(pt)::after {
+    content: "(Uma alteração de data é gratuita)";
+}
+/*//=== Mobile - RU */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ru)::after {
+    content: "(Одно изменение даты бесплатно)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(ru)::after {
+    content: "(Одно изменение даты бесплатно)";
+}
+/*//=== Mobile - TH */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(th)::after {
+    content: "(เปลี่ยนวันที่หนึ่งวันฟรี)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(th)::after {
+    content: "(เปลี่ยนวันที่หนึ่งวันฟรี)";
+}
+/*//=== Mobile - TR */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(tr)::after {
+    content: "(Bir kez tarih değişikliği ücretsizdir)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(tr)::after {
+    content: "(Bir kez tarih değişikliği ücretsizdir)";
+}
+/*//=== Mobile - ZH */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(zh)::after {
+    content: "（可免费更改一次日期）";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(zh)::after {
+    content: "（可免费更改一次日期）";
+}
+/*//=== Mobile - ZT */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(zt)::after {
+    content: "(一次免費變更日期)";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(zt)::after {
+    content: "(一次免費變更日期)";
+}
+/*//=== Mobile - HE */
+div.brand-comparison-mobile-price.YV .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(he)::after {
+    content: " (שינוי תאריך אחד ללא עלות) ";
+}
+div.brand-comparison-mobile-price.JS .dxp-brand-amenities .amenity.changeTravel .amenity-value:lang(he)::after {
+    content: " (שינוי תאריך אחד ללא עלות) ";
+}
+/* [AZURE TICKET 2717] END */
+
+/* [AZURE TICKET 2619] Total Fare on the Summary , change style to H3 colour #4e4c4a */
+.ducp-component-cart-panel-footer .label {
+    color: #4e4c4a !important;
+}
+/* [AZURE TICKET 2619] END */
+
+/* [AZURE TICKET 2628]  For Add Loyalty Program number and Add special services – change plus button and text to grey #4e4c4a.*/
+#app .additional-information-section .passenger-additional-info-buttons .passenger-additional-info-button, .dxp-modal-window .additional-information-section .passenger-additional-info-buttons .passenger-additional-info-button {
+    color: #4e4c4a !important;
+}
+#app .dxp-button.primary.small:not(:disabled), #app .dxp-button.primary.x-small:not(:disabled), .dxp-modal-window .dxp-button.primary.small:not(:disabled), .dxp-modal-window .dxp-button.primary.x-small:not(:disabled) {
+    background: #4e4c4a !important;
+}
+.business-loyalty-button-container{
+    color: #4e4c4a !important;
+}
+/* [AZURE TICKET 2628] END */
+
+/* [AZURE TICKET XXXX] AFOP Headings to be proper format as headings and hide duplicate log-in and Seat-map legend text to be link blue. */
+#app .dxp-third-party-payment-header-container .dxp-third-party-payment-title, .dxp-modal-window .dxp-third-party-payment-header-container .dxp-third-party-payment-title {
+    font-size: 28px !important;
+}
+.dxp-third-party-payment-service-logo-wrapper{
+display: none !important;
+}
+.dxp-sign-in-fieldset.dxp-fieldset .title {
+    font-size: 25px !important;
+    font-weight: bold !important;
+    font-size: x-large !important;
+}
+/* [AZURE TICKET XXXX] END */
+
+/* [AZURE TICKET 2796] Mobile view FSR page Cash/Miles toggle to be centre aligned. */
+.flight-selection-header-actions {
+    shape-outside: border-box;
+    text-align-last: center;
+    inline-size: -webkit-fill-available;
+  }
+  @media (max-width: 543px) .points-currency-toggle {
+    margin-top: -1.5rem !important;
+    width: 100%;
+    margin-bottom: 1rem !important;
+  }
+/* [AZURE TICKET 2796] END */
+
+/* [AZURE TICKET 2748] FSR page - All uppercase or camel-case text needs to change to sentence case. */
+.dxp-itinerary-offers-header.spark-panel>.spark-panel__content .flight-selection-header-row .offer-labels .offer-label {
+text-transform: none !important;
+}
+.toggle-label{
+text-transform: none !important;
+}
+/* [AZURE TICKET 2748] END */
+
+/* [AZURE TICKET 2757] 115. Change select fare button color to primary gold color. */
+.ducp-component-button.view-details.spark-btn--sm.text-button span.text span{
+color: #006ba8;
+}
+/* [AZURE TICKET 2757] END */
+
+/* [AZURE TICKET 2621] 15. Change icon for one way / return trip, in booking flow/ Flight status, as it is very pixelated/blur from browser view. */
+span.spark-icon.spark-icon-arrows-left-right.spark-icon--sm.ducp-component-icon {
+    -webkit-text-stroke-width: thick;
+}
+span.spark-icon.spark-icon-arrow-basic-right.spark-icon--sm.ducp-component-icon {
+    -webkit-text-stroke-width: thick;
+}
+span.spark-icon.spark-icon-arrow-basic-right.dxp-summary-bar-container-airports-separator.ducp-component-icon {
+    -webkit-text-stroke-width: thick;
+}
+
+/* [AZURE TICKET 2621] END */
+
+/* [AZURE TICKET 2651] 65. Dep time, Stops and Duration should be in Sentence case. */
+span.flight-status-ribbon-title {
+ text-transform: none;
+}
+
+span.flight-number {
+    color: #333333;
+}
+/* [AZURE TICKET 2651] END */
+
+#app .ducp-component-button.secondary-button, #app .ducp-component-upcoming-trips-carousel .spark-carousel__item .spark-carousel__item--content .ducp-component-tile .data-container .trip-details-button, #app .email-boarding-pass-container .email-button-container .ducp-component-button.cancel-email-button, #app .sabre-dx-component-check-in-documents .footer>button.go-back, #app .spark-btn--secondary, .ducp-component-upcoming-trips-carousel .spark-carousel__item .spark-carousel__item--content .ducp-component-tile .data-container #app .trip-details-button, .ducp-component-upcoming-trips-carousel .spark-carousel__item .spark-carousel__item--content .ducp-component-tile .data-container .dxp-modal-window .trip-details-button, .dxp-modal-window .ducp-component-button.secondary-button, .dxp-modal-window .ducp-component-upcoming-trips-carousel .spark-carousel__item .spark-carousel__item--content .ducp-component-tile .data-container .trip-details-button, .dxp-modal-window .email-boarding-pass-container .email-button-container .ducp-component-button.cancel-email-button, .dxp-modal-window .sabre-dx-component-check-in-documents .footer>button.go-back, .dxp-modal-window .spark-btn--secondary, .email-boarding-pass-container .email-button-container #app .ducp-component-button.cancel-email-button, .email-boarding-pass-container .email-button-container .dxp-modal-window .ducp-component-button.cancel-email-button, .sabre-dx-component-check-in-documents #app .footer>button.go-back, .sabre-dx-component-check-in-documents .dxp-modal-window .footer>button.go-back {
+    border-color: #4e4c4a;
+    color: #4e4c4a;
+
+}
+
+#app .dxp-passenger-bags-by-weight .MessagePopup .modal-content .passenger-bag-row .each-cell .spark-number-selector button:disabled, #app .dxp-passenger-bags-by-weight .spark-panel__content .passenger-bag-row .each-cell .spark-number-selector button:disabled, .dxp-modal-window .dxp-passenger-bags-by-weight .MessagePopup .modal-content .passenger-bag-row .each-cell .spark-number-selector button:disabled, .dxp-modal-window .dxp-passenger-bags-by-weight .spark-panel__content .passenger-bag-row .each-cell .spark-number-selector button:disabled, .MessagePopup #app .dxp-passenger-bags-by-weight .modal-content .passenger-bag-row .each-cell .spark-number-selector button:disabled, .MessagePopup .dxp-modal-window .dxp-passenger-bags-by-weight .modal-content .passenger-bag-row .each-cell .spark-number-selector button:disabled {
+    background-color: white;
+}

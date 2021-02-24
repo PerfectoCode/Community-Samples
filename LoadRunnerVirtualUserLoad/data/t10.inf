@@ -1,0 +1,13 @@
+[t10]
+FileName1=t10.json
+URL1=https://www.etihad.com/staticweb/f90d78bf285ti1737f7ce52339909539c
+Total=2
+RequestHeaderFile=t10_RequestHeader.txt
+RequestBodyFile=t10_RequestBody.txt
+ResponseHeaderFile=t10_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_10.xml
+FileName2=t10_RC193adf3997624cfdb67c2e73b971e795-source.min.html
+URL2=https://assets.adobedtm.com/8aea536f4a27/88ed4f88d8f6/f5659e9ef223/RC193adf3997624cfdb67c2e73b971e795-source.min.js
+[ProtocolInfo]
+ProtocolId=QTWeb

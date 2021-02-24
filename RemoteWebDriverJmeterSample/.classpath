@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/Users/admin/Downloads/apache-jmeter-5.4/lib/ext/ApacheJMeter_core.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/Downloads/apache-jmeter-5.4/lib/ext/ApacheJMeter_junit.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/pm-webdriver-18.6.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/reportium-java-2.3.3.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/selenium-api-3.141.59.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/selenium-remote-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/selenium-support-3.141.59.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/guava-23.0.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/commons-lang3-3.7.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/Downloads/apache-jmeter-5.4/lib/jorphan.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/http-client-18.5.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/httpclient-4.5.5.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/httpcore-4.4.9.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/jackson-annotations-2.9.4.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/jackson-core-2.9.4.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/jackson-databind-2.9.4.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/java-client-7.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/jcl-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/json-20160810.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/logback-classic-1.1.11.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/logback-core-1.1.11.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/.p2/pool/plugins/com.perfectomobile.eclipse_18.6.0.000/lib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,13 @@
+[t32]
+FileName1=t32_routes.json
+URL1=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/data/global/routes.json
+Total=2
+ContentType=application/json
+SnapshotXmlFile=snapshot_32.xml
+RequestHeaderFile=t32_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t32_ResponseHeader.txt
+FileName2=t32_beacon.gif
+URL2=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/images/beacon.gif?actions=SET_SELECTED_TRIP_OPTION,APP_LOAD_INIT,GLOBAL_CONFIGURATION_REQUEST&a_GLOBAL_CONFIGURATION_t=77&ipcc=EYDX&buildNo=0&version=&releaseName=4.5.60-149.MMCOPY4.5.60-148&page=undefined&url=undefined&flow=BOOKING
+[ProtocolInfo]
+ProtocolId=QTWeb

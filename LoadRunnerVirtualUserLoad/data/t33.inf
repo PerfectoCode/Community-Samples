@@ -1,0 +1,13 @@
+[t33]
+FileName1=t33_en-GB.json
+URL1=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/data/translations/en-GB.json
+Total=2
+ContentType=application/json
+SnapshotXmlFile=snapshot_33.xml
+RequestHeaderFile=t33_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t33_ResponseHeader.txt
+FileName2=t33_en-gb.html
+URL2=https://dxbooking.etihad.com/dx/EYDX/4.5.60-149.MMCOPY4.5.60-148/js/moment/locale/en-gb.js
+[ProtocolInfo]
+ProtocolId=QTWeb

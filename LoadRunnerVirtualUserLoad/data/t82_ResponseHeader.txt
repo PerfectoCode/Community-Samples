@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Server: nginx/1.17.3
+Date: Sun, 21 Feb 2021 18:40:54 GMT
+Content-Type: text/html
+Content-Length: 672
+Set-Cookie: sc_at=v2|H4sIAAAAAAAAAAXBgRGAMAgDwIm4C5RYM44VmYLh/a84THVZ+ZElse3ZHabXiWqA+mb88qUVN3PwAw1SSsoyAAAA;SameSite=None;Version=1;Comment=;Domain=.snapchat.com;Path=/;Max-Age=33696000;Secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Via: 1.1 google
+Alt-Svc: h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+

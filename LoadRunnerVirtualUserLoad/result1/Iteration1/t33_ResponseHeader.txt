@@ -1,0 +1,14 @@
+HTTP/2.0 200
+Status: 200
+content-type: application/json
+cache-control: no-cache, no-store
+access-control-allow-origin: *
+server-timing: bon, total;dur=6.580629999999999
+server: connector
+date: Mon, 22 Feb 2021 18:15:23 GMT
+set-cookie: nlbi_2042947_2147483646=yGJaDp+E1S9SRKNr68CAIwAAAACIfrXrQAzqk2hoIQmc/Mh2; path=/; Domain=.etihad.com; Secure; SameSite=None
+strict-transport-security: max-age=31536000
+x-cdn: Imperva
+content-encoding: gzip
+x-iinfo: 14-39422415-39421236 PNYN RT(1614017724367 0) q(0 0 0 -1) r(2 2) U5
+

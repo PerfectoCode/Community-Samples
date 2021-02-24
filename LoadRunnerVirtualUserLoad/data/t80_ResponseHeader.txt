@@ -1,0 +1,9 @@
+HTTP/1.1 204 No Content
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Set-Cookie: MUID=3CD6FEE531BC64163D05F10030C165B5; domain=.bing.com; expires=Fri, 18-Mar-2022 18:40:52 GMT; path=/; SameSite=None; Secure;
+Access-Control-Allow-Origin: *
+X-MSEdge-Ref: Ref A: 23BDC2B66B9F4DFF91D0746F027F6F29 Ref B: TLV30EDGE0118 Ref C: 2021-02-21T18:40:52Z
+Date: Sun, 21 Feb 2021 18:40:52 GMT
+

@@ -1,0 +1,17 @@
+POST /actionp/0?ti=4017239&Ver=2&mid=9efc6fd9-1b65-4ebc-9e62-ff4af90f9b14&sid=38efc2d0747411eb824c037565713347&vid=38f49e70747411eb84608354d038f035&vids=1&evt=pageHide HTTP/1.1
+Host: bat.bing.com
+Connection: keep-alive
+Content-Length: 0
+sec-ch-ua: "Chromium";v="88", "Google Chrome";v="88", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36
+Content-Type: text/plain;charset=UTF-8
+Accept: */*
+Origin: https://www.etihad.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+Referer: https://www.etihad.com/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+

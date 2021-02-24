@@ -1,0 +1,8 @@
+"{\"entries\":[{\"failure_data\":{\"custom_error\":\"net::ERR_CERT_COMMON_NAME_INVALID\"},\"net"
+"work_changed\":false,\"protocol\":\"\",\"request_age_ms\":67489,\"request_elapsed_ms\":600,\"s"
+"ample_rate\":1.0,\"server_ip\":\"\",\"status\":\"ssl.cert.name_invalid\",\"url\":\"https://ads"
+"ervice.google.co.il/\",\"was_proxied\":false},{\"failure_data\":{\"custom_error\":\"net::ERR_C"
+"ERT_COMMON_NAME_INVALID\"},\"network_changed\":false,\"protocol\":\"\",\"request_age_ms\":4644"
+"4,\"request_elapsed_ms\":1199,\"sample_rate\":1.0,\"server_ip\":\"\",\"status\":\"ssl.cert.nam"
+"e_invalid\",\"url\":\"https://adservice.google.co.il/\",\"was_proxied\":false}],\"reporter\":\""
+"chrome\"}"

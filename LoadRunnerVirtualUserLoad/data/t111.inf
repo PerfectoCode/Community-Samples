@@ -1,0 +1,11 @@
+[t111]
+FileName1=t111.html
+URL1=https://dc.etihad.com/v4.3/ssw/products/init?jipcc=EYDX
+Total=1
+RequestHeaderFile=t111_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t111_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_111.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,13 @@
+[t12]
+FileName1=t12.htm
+URL1=https://www.etihad.com/akam/11/pixel_7ce4af1a
+Total=2
+RequestHeaderFile=t12_RequestHeader.txt
+RequestBodyFile=t12_RequestBody.txt
+ResponseHeaderFile=t12_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_12.xml
+FileName2=t12_ChRDaHJvbWUvODguMC40MzI0LjE1MBIzCSxQakX-OlYOEgUN8rj3OhIFDZFhlU4SBQ0o7i3wEgUNkWGVThIFDSVNuHgSBQ2mBLaP.txt
+URL2=https://content-autofill.googleapis.com/v1/pages/ChRDaHJvbWUvODguMC40MzI0LjE1MBIzCSxQakX-OlYOEgUN8rj3OhIFDZFhlU4SBQ0o7i3wEgUNkWGVThIFDSVNuHgSBQ2mBLaP?alt=proto
+[ProtocolInfo]
+ProtocolId=QTWeb

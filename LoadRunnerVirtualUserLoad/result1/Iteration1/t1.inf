@@ -1,0 +1,16 @@
+[t1]
+SnapshotXmlFile=snapshot_1.xml
+ContentType=application/x-gzip
+StepName=Url: seed
+Total=2
+FileName1=t1.gz
+FileName2=t1_0_client_model_v5_variation_6.UNK
+RequestHeaderFile=t1_RequestHeader.txt
+SaveSnapshotResources=1
+ResponseHeaderFile=t1_ResponseHeader.txt
+RawStepEndTime=1614017643881
+RawStepName=seed
+RequestBodyFile=t1_RequestBody.txt
+RawStepStartTime=1614017642743
+URL1=file:
+URL2=https://ssl.gstatic.com/safebrowsing/csd/client_model_v5_variation_6.pb

@@ -1,0 +1,2 @@
+// For license information, see `https://assets.adobedtm.com/8aea536f4a27/88ed4f88d8f6/b952b1e8a447/RCfc6163c4bb5b4350ab5acf74053f9164-source.js`.
+_satellite.__registerScript('https://assets.adobedtm.com/8aea536f4a27/88ed4f88d8f6/b952b1e8a447/RCfc6163c4bb5b4350ab5acf74053f9164-source.min.js', "window.changeFlightClick=!1;");

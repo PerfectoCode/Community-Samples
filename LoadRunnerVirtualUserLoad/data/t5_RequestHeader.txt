@@ -1,0 +1,9 @@
+GET /tools/pso/ping?as=chrome&brand=GCEU&pid=&hl=en&rep=2&rlz=C1:1C1GCEU_enIL936IL937,C2:1C2GCEU_enIL936,C7:1C7GCEU_enIL936 HTTP/1.1
+Host: clients1.google.com
+Connection: keep-alive
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+
