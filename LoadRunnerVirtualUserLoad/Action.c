@@ -615,6 +615,8 @@ Action()
 		LAST);
 
 	lr_end_transaction("Vu_LaunchApp_transaction",LR_AUTO);
+	
+	lr_think_time(3);
 
 	web_revert_auto_header("Origin");
 
@@ -697,6 +699,8 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
+	lr_think_time(3);
+		
 	lr_start_transaction("Vu_FlightSelection_transaction");
 
 	web_add_auto_header("Sec-Fetch-Site", 
@@ -718,6 +722,7 @@ Action()
 		LAST);
 
 	lr_end_transaction("Vu_FlightSelection_transaction",LR_AUTO);
+	lr_think_time(5);
 
 	lr_start_transaction("Vu_SearchFlight_transaction");
 
@@ -739,7 +744,7 @@ Action()
 	web_add_auto_header("Upgrade-Insecure-Requests", 
 		"1");
 
-	lr_think_time(20);
+	lr_think_time(2);
 
 	web_submit_data("tr_2", 
 		"Action=https://www.facebook.com/tr/", 

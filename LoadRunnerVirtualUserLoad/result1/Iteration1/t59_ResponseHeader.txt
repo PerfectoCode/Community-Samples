@@ -1,9 +1,0 @@
-HTTP/2.0 200
-Status: 200
-date: Mon, 22 Feb 2021 18:15:40 GMT
-content-type: text/html;charset=utf-8
-content-length: 7
-access-control-allow-origin: *
-access-control-allow-methods: GET, POST
-strict-transport-security: max-age=15768000
-

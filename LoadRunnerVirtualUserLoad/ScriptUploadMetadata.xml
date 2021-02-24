@@ -18,15 +18,22 @@
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="custom_body_variables.txt" Filter="1" />
-    <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="LoadRunnerVirtualUserLoad.c.pickle" Filter="1" />
     <FileEntry Name="LoadRunnerVirtualUserLoad.ci" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv1rq.351.log" Filter="1" />
+    <FileEntry Name="mdrv6e2.85.log" Filter="1" />
     <FileEntry Name="mdrvAQS.341.log" Filter="1" />
     <FileEntry Name="mdrvbyP.467.log" Filter="1" />
+    <FileEntry Name="mdrvdJj.839.log" Filter="1" />
+    <FileEntry Name="mdrvEdt.829.log" Filter="1" />
+    <FileEntry Name="mdrvh7x.905.log" Filter="1" />
+    <FileEntry Name="mdrvLgd.257.log" Filter="1" />
+    <FileEntry Name="mdrvlJ4.339.log" Filter="1" />
+    <FileEntry Name="mdrvp35.293.log" Filter="1" />
+    <FileEntry Name="mdrvr4W.997.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
@@ -36,7 +43,6 @@
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
-    <FileEntry Name="data\" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

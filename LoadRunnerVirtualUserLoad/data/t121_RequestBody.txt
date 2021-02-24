@@ -1,4 +1,0 @@
-"{\"cabinClass\":\"Economy\",\"awardBooking\":\"false\",\"promoCodes\":[],\"searchType\":\"BRAN"
-"DED\",\"itineraryParts\":[{\"from\":{\"useNearbyLocations\":false,\"code\":\"AUH\"},\"to\":{\""
-"useNearbyLocations\":false,\"code\":\"BLR\"},\"when\":{\"date\":\"2021-04-30\"}}],\"passengers"
-"\":{\"ADT\":1}}"

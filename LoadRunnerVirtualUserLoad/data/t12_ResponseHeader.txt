@@ -1,9 +1,0 @@
-HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 0
-Date: Sun, 07 Feb 2021 14:31:14 GMT
-Connection: keep-alive
-Set-Cookie: ak_bmsc=A61D4020B6244E0F4B9B1F594D4D62226873502F55430000AAF91F6078E81B28~plcFKUeRdOc2TJlBOHteMWSPf4jXZxvAlvkdaEPHAiSqUbLm4/Qzqe3UsrOM0yOvTymZC8m8N++FpyHd00yvwSicjZnya57VXZcYyGZZH93BJ56l+DQDsMVYTwnMEmTxRE6Wr2O0AelYWfiugxGzdPgaYLjep3NdXdcsCiQOi53WVng0kjXAYQOm54fB7HTSkty8zUACWbcYLTjJ61D5xMVyXy+igXQoN/CDF3XV8ORhJHauN1IW32TdGWRD8ibWIi; expires=Sun, 07 Feb 2021 16:31:06 GMT; max-age=7192; path=/; domain=.etihad.com; HttpOnly
-Strict-Transport-Security: max-age=31536000
-Access-Control-Allow-Origin: https://www.etihad.com
-

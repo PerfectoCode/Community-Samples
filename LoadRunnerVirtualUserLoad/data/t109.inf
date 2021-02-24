@@ -1,9 +1,0 @@
-[t109]
-FileName1=t109.html
-URL1=https://tracking.bd4travel.com/cdn/guid-app/latest/
-Total=1
-RequestHeaderFile=t109_RequestHeader.txt
-RequestBodyFile=NONE
-ResponseHeaderFile=t109_ResponseHeader.txt
-ContentType=
-SnapshotXmlFile=snapshot_109.xml

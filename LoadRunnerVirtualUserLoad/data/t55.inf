@@ -1,9 +1,0 @@
-[t55]
-FileName1=t55.html
-URL1=https://etihadairways.demdex.net/dest5.html?d_nsid=0
-Total=1
-RequestHeaderFile=t55_RequestHeader.txt
-RequestBodyFile=NONE
-ResponseHeaderFile=t55_ResponseHeader.txt
-ContentType=
-SnapshotXmlFile=snapshot_55.xml

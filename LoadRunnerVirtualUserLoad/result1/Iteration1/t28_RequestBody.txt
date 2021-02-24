@@ -1,7 +1,0 @@
-"{"entries":[{"failure_data":{"custom_error":"net::ERR_CERT_COMMON_NAME_INVALID"},"network_chan"
-"ged":false,"protocol":"","request_age_ms":67473,"request_elapsed_ms":681,"sample_rate":1.0,"se"
-"rver_ip":"","status":"ssl.cert.name_invalid","url":"https://adservice.google.co.il/","was_prox"
-"ied":false},{"failure_data":{"custom_error":"net::ERR_CERT_COMMON_NAME_INVALID"},"network_chan"
-"ged":false,"protocol":"","request_age_ms":50768,"request_elapsed_ms":940,"sample_rate":1.0,"se"
-"rver_ip":"","status":"ssl.cert.name_invalid","url":"https://adservice.google.co.il/","was_prox"
-"ied":false}],"reporter":"chrome"}"
