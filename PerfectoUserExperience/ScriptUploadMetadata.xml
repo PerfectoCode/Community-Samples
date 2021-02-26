@@ -13,6 +13,7 @@
     <FileEntry Name="default.usp" Filter="4" />
     <FileEntry Name="Action.c" Filter="1" />
     <FileEntry Name="Actions.class" Filter="1" />
+    <FileEntry Name="Actions.java.bak" Filter="1" />
     <FileEntry Name="Actions.java.sed" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
@@ -34,6 +35,7 @@
     <FileEntry Name="JavaReplay_log_java_process_child.log" Filter="1" />
     <FileEntry Name="JavaReplay_log_java_process_child_err.log" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrveKV.127.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="MFJavaServerLog55600.log" Filter="1" />

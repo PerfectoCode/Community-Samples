@@ -78,7 +78,7 @@ public class Library {
 	public long step(long threshold, String description, String name)
 	{
 		long timer = getUXTimer();
-		WindTunnelUtils.reportTimer(driver, timer, threshold, description, name);
+		reportTimer(driver, timer, threshold, description, name);
 		return timer;
 		
 	}
@@ -275,5 +275,21 @@ public void clearHistoryiOS(RemoteWebDriver driver) throws InterruptedException 
 		params.put("property", deviceProperty);
 		return (String) driver.executeScript("mobile:device:info", params);
 	}
+	
+    /**
+ * Adds a timer report to the Wind Tunnel report.
+ * Example:
+ * reportTimer(driver, loginScreenTimer, 5000, "Timer for login screen", "");
+ */
+public String reportTimer(RemoteWebDriver driver, long result, long threshold,
+                                 String description, String name) {
+    Map<String, Object> params = new HashMap<String, Object>(7);
+    params.put("result", result);
+    params.put("threshold", threshold);
+    params.put("description", description);
+    params.put("name", name);
+    String status = (String) driver.executeScript("mobile:status:timer", params);
+    return status;
+}
 
 }

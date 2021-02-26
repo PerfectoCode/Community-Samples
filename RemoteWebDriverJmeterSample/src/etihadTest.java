@@ -73,12 +73,7 @@ public class etihadTest {
 	        dcaps.setCapability("deviceName", deviceId);
 	        System.out.println("Device ID Provided = " + deviceId);
 	      //  dcaps.setCapability("password", password);
-	        dcaps.setCapability(WindTunnelUtils.WIND_TUNNEL_PERSONA_CAPABILITY, WindTunnelUtils.GEORGIA);
-	        
-	        dcaps.setCapability("windTunnelLocationAddress", "Bangalore, India");
-	        //Overriding Persona background application for demo purpose
-	        dcaps.setCapability("windTunnelBackgroundRunningApps", "YouTube,Messages,Maps,Calculator,Calendar,Google Play Store" );
-	        dcaps.setCapability("windTunnelOrientation", "portrait");
+
 	        
 	        dcaps.setCapability("scriptName", "EtihadPerformance");
 	        capabilities.set(dcaps);
@@ -116,6 +111,38 @@ public class etihadTest {
 	        driver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	        log.info(driver.get().getCapabilities().toString());
 	        Library lib = new Library(driver.get(), runVitals);
+	        
+	           //Set End User conditions
+            //Throttle Network and Capture Traffic - Har capture only for Android since Etihad IOS app expects trusted certifcate
+            if(platform.get().equalsIgnoreCase("Android")) {
+	            Map<String, Object> pars = new HashMap<>();
+	            pars.put("profile", "4g_lte_good");
+	            pars.put("generateHarFile", "true");
+	            driver.get().executeScript("mobile:vnetwork:start", pars); 
+            }
+            else {
+	            Map<String, Object> pars = new HashMap<>();
+	            pars.put("profile", "4g_lte_good");
+	            driver.get().executeScript("mobile:vnetwork:start", pars); 
+            }
+            
+            //Set location
+			Map<String, Object> params = new HashMap<>();
+			params.put("address", "Bangalore, India");
+			driver.get().executeScript("mobile:location:set", params); 
+            
+			//Run background application
+			String backGroundApps = "YouTube,Messages,Maps,Calculator,Calendar";
+			 String[] bApps = backGroundApps.split(",");
+			 for(String i: bApps) {
+			    try {
+					Map<String, Object> params1 = new HashMap<>();
+					params1.put("name", i);
+					driver.get().executeScript("mobile:application:open", params1);
+				} catch (Exception e) {}		
+			 }
+
+			 
 	        lib.vitalsStart();
 
 	}
@@ -130,7 +157,6 @@ public class etihadTest {
         	Library lib = new Library(driver.get(), runVitals);
             lib.vitalsStop();
             // Retrieve the URL of the Wind Tunnel Report, can be saved to your execution summary and used to download the report at a later point
-            reportURL = (String) (driver.get().getCapabilities().getCapability(WindTunnelUtils.WIND_TUNNEL_REPORT_URL_CAPABILITY));
             log.info("WindTunnel Report URL:\n\t" + reportURL);
             String executionID = (String)(driver.get().getCapabilities().getCapability("executionId"));
             log.info("ExecutioID Report URL:\n\t" + executionID);
@@ -244,11 +270,13 @@ public class etihadTest {
            
            System.out.println("'Measured UX time for Search Flight time in " + platform.get() + " device is: " + SearchFlight);
          
-            if(platform.get().equalsIgnoreCase("Android")) {
-	            Map<String, Object> pars1 = new HashMap<>();
-	            driver.get().executeScript("mobile:vnetwork:stop", pars1); 
-            }
-        
+           //stop Network Virtualization
+	        Map<String, Object> pars1 = new HashMap<>();
+	        driver.get().executeScript("mobile:vnetwork:stop", pars1); 
+
+	        //stop vitals
+			Map<String, Object> params3 = new HashMap<>();
+			driver.get().executeScript("mobile:monitor:stop", params3); 
     }
     
 }

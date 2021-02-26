@@ -67,14 +67,6 @@ public class Actions
         //capabilities.setCapability("enableAppiumBehavior", "true");
         
         capabilities.setCapability("deviceName", lr.get_attrib_string( "PerfectoDevice"));
-
-       // capabilities.setCapability(WindTunnelUtils.WIND_TUNNEL_PERSONA_CAPABILITY, WindTunnelUtils.GEORGIA);
-        capabilities.setCapability("windTunnelPersona", "Georgia");
-        capabilities.setCapability("windTunnelLocationAddress", "Bangalore, India");
-        //Overriding Persona background application for demo purpose
-        capabilities.setCapability("windTunnelBackgroundRunningApps", "YouTube,Messages,Maps,Calculator,Calendar,Google Play Store" );
-        capabilities.setCapability("windTunnelOrientation", "portrait");
-
          	
         // Use the automationName capability to define the required framework - Appium (this is the default) or PerfectoMobile.
         //capabilities.setCapability("automationName", "Appium");
@@ -95,14 +87,41 @@ public class Actions
         
         try {
             reportiumClient.testStart("PerfectoUserExperience", new TestContext("tag2", "tag3"));
-             
-           //driver.manage().deleteAllCookies();
-                        
-            //switchToContext(driver, "WEBVIEW");
+           //Set End User conditions
+            //Throttle Network and Capture Traffic - Har capture only for Android since Etihad IOS app expects trusted certifcate
+            if(platformName.equalsIgnoreCase("Android")) {
+	            Map<String, Object> pars = new HashMap<>();
+	            pars.put("profile", "4g_lte_good");
+	            pars.put("generateHarFile", "true");
+	            driver.executeScript("mobile:vnetwork:start", pars); 
+            }
+            else {
+	            Map<String, Object> pars = new HashMap<>();
+	            pars.put("profile", "4g_lte_good");
+	            driver.executeScript("mobile:vnetwork:start", pars); 
+            }
             
-            //driver.get("http://expensetracker.perfectomobile.com/");
-           
-            //Thread.sleep(2000);
+            //Set location
+			Map<String, Object> params = new HashMap<>();
+			params.put("address", "Bangalore, India");
+			driver.executeScript("mobile:location:set", params); 
+			
+			//Device Vitals
+			 Map<String, Object> params2 = new HashMap<>();
+			 params2.put("sources", "Device");
+			 driver.executeScript("mobile:monitor:start", params2); 
+            
+			//Run background application
+			String backGroundApps = "YouTube,Messages,Maps,Calculator,Calendar";
+			 String[] bApps = backGroundApps.split(",");
+			 for(String i: bApps) {
+			    try {
+					Map<String, Object> params1 = new HashMap<>();
+					params1.put("name", i);
+					driver.executeScript("mobile:application:open", params1);
+				} catch (Exception e) {}		
+			 }
+
 
             //Launch Web application
             if(platformName.equalsIgnoreCase("iOS")) {
@@ -131,6 +150,8 @@ public class Actions
             reportTimer(driver, AppLaunchTime, 10000, "Checkpoint load time of App launch.", "AppLaunchTime");
             
             lr.set_transaction(platformName + "_AppLaunchTime", AppLaunchTime, lr.PASS);
+            
+            lr.think_time(5);
          
             Thread.sleep(2000);
 
@@ -158,19 +179,10 @@ public class Actions
             driver.findElementById("oneWayCalendarDepartDate").click();           
             
             driver.findElementByXPath("(//table[@class=\"CalendarMonth_table CalendarMonth_table_1\"])[4]/tbody/tr[2]/td[4]").click();
-
-            if(platformName.equalsIgnoreCase("Android")) {
-	            Map<String, Object> pars = new HashMap<>();
-	            pars.put("generateHarFile", "true");
-	            driver.executeScript("mobile:vnetwork:start", pars); 
-            }
             
-            
-            driver.findElementByXPath("//*[@id=\"flightsearch\"]/div/form/div[4]/div[2]/div/button").click();
-            
-            
-   
-	           TextValidation(driver, "wellness");
+            driver.findElementByXPath("//*[@id=\"flightsearch\"]/div/form/div[4]/div[2]/div/button").click(); 
+  
+	        TextValidation(driver, "wellness");
 	           
 	            // Wind Tunnel: Measure UX timer 1 - Able to retrieve UX Timer value
 	           long SearchFlight = timerGet(driver, "ux");
@@ -184,11 +196,14 @@ public class Actions
 	            //lr.set_transaction("Search Flight", SearchFlight, lr.PASS);
 	            
 	           	lr.set_transaction(platformName + "_SearchFlight", SearchFlight, lr.PASS);
-	                        
-	            if(platformName.equalsIgnoreCase("Android")) {
-		            Map<String, Object> pars1 = new HashMap<>();
-		            driver.executeScript("mobile:vnetwork:stop", pars1); 
-	            }
+	            
+	           	//Stop Network Virtualization
+		        Map<String, Object> pars1 = new HashMap<>();
+		        driver.executeScript("mobile:vnetwork:stop", pars1);
+		        
+		        //Stop Device Vitals
+		        Map<String, Object> params3 = new HashMap<>();
+				driver.executeScript("mobile:monitor:stop", params3); 
 
             reportiumClient.testStop(TestResultFactory.createSuccess());
         } catch (Exception e) {
