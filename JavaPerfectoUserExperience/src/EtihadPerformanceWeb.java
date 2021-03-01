@@ -33,27 +33,20 @@ public class EtihadPerformanceWeb {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		
-        System.out.println("Run started");
-        
-        //https://partners.app.perfectomobile.com/reporting/test/5feb74bf7002a473497a158c - full har
-        //https://partners.app.perfectomobile.com/reporting/test/5feb78371c300e6ad979e561 - only launch
-        
-        String platformName = "Android";
-        
+        System.out.println("Run started");        
+        String platformName = "Android";        
         String browserName = "mobileOS";
         DesiredCapabilities capabilities = new DesiredCapabilities(browserName, "", Platform.ANY);
         String host = "partners.perfectomobile.com";
         
         capabilities.setCapability("takesScreenshot", true);
-
-        capabilities.setCapability("securityToken", "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJLc1BUWU1zZHBSZ21LXzk4OGZwaUx6cWsxdWpZMnduZG5SQU50ejgyVHBNIn0.eyJqdGkiOiJkMzRlOTk3MS1iYmU0LTQ5ZjgtYjM5Yi0xMzA2ZjM2ZjcxNzIiLCJleHAiOjAsIm5iZiI6MCwiaWF0IjoxNTc0NDQyNzU0LCJpc3MiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3BhcnRuZXJzLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Im9mZmxpbmUtdG9rZW4tZ2VuZXJhdG9yIiwic3ViIjoiMzkxOTkzYzMtZGI0Ny00YTYxLWEyMDItMjk5MjY5NDNhM2E3IiwidHlwIjoiT2ZmbGluZSIsImF6cCI6Im9mZmxpbmUtdG9rZW4tZ2VuZXJhdG9yIiwibm9uY2UiOiI1ODVkODVmZi1lZTY5LTQyNTAtODQ5Ni01ODlhYjkwNWI5NTciLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI5MTVjOThmMi00MzE0LTQ5MzktYmIyNS1kZmQ2NGExMjAwYzQiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19fQ.Uhx8rV6WCp4us4eKagQ5kGSLUnTmOei9NJzlTo1Tn0-fJaCttsrjL8auQ6ZmQ6UUzCpdPYiLbSzLkP9cA4NFZFbwMwPc0ixkr4Oznpi1EWoLSradurZurAimk30Bpnm3jSq1Gn3CVWZGI3msfT2Fjeg2wXXrT7u37peM1C8k3zUMnKHKAFSIr74XFZW6rqI5kpSZCsccBmuKLl0A_QFISK4c2xYVeFMnF5-5Q8hA0TRk-wmwh3Rl8-60tF21coiBu8BV24f44v2e2ajg-y6cXrp2B5NyT_bnd8qOhhlg6ByY6cDrtgYET4wOYblfS9ARKEsPUoSIhj6Vn2We0_oLnw");
+        capabilities.setCapability("securityToken", <EnterTokenString>);
          
         // Call this method if you want the script to share the devices with the Perfecto Lab plugin.
         //PerfectoLabUtils.setExecutionIdCapability(capabilities, host);
         
         capabilities.setCapability("useAppiumForWeb", "true");
         //capabilities.setCapability("enableAppiumBehavior", "true");
-        
         capabilities.setCapability("deviceName", "932AY05WL7");
         // capabilities.setCapability("deviceName", "F39C49EB5D722D6DBD14CC4366FF6E44084EC96D");
          	
@@ -61,8 +54,6 @@ public class EtihadPerformanceWeb {
         //capabilities.setCapability("automationName", "Appium");
 
         driver = new RemoteWebDriver(new URL("https://" + host + "/nexperience/perfectomobile/wd/hub"), capabilities);
-  
-        // IOSDriver driver = new IOSDriver(new URL("https://" + host + "/nexperience/perfectomobile/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         
         // Reporting client. For more details, see http://developers.perfectomobile.com/display/PD/Reporting
