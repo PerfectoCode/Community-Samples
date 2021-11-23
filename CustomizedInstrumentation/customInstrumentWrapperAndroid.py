@@ -20,6 +20,8 @@ def get_args():
                         required=False)
     parser.add_argument('-is', '--instrument_sensor', action='store_true',
                         help='Enable Sensor Instrumentation = camera, fingerprint, activity',  required=False)
+    parser.add_argument('-iscr', '--instrument_secured_screen', action='store_true', help='Enable Secured Screen Instrumentation',
+                                required=False)
     parser.add_argument('-os', '--osVersion', type=str, help='android OS version', required=True)
     parser.add_argument('-nsy', '--notSync', action='store_true', help='not synchronized', required=False)
     parser.add_argument('-cu', '--certificateUser', help='certificate user', required=False)
@@ -54,8 +56,8 @@ def main():
     params = get_args()
     print("********* script parameters *********")
     print(params)
-    if not params.instrument_hybrid and not params.instrument_sensor:
-        print("Either Hybrid (-ih), Sensor (-is) or Both Flags Must Be Selected")
+    if not params.instrument_hybrid and not params.instrument_sensor and not params.instrument_secured_screen:
+        print("Either Hybrid (-ih), Sensor (-is), Secured-screen (-iscr) or all Flags Must Be Selected")
         sys.exit(1)
 
     print("")
