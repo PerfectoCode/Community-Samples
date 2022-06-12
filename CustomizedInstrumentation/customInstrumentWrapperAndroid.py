@@ -92,9 +92,6 @@ def main():
     print("********* Download Instrumentation Script *********")
     try:
         response = requests.get("https://instrumentation-entry-us-east-1.aws-prod.perfectomobile.com/instrumentation/api/v1/getInstScriptAndroid", headers=hdr)
-        # response = requests.get("https://instrumentation-entry-us-east-1.aws-dev.perfectomobile.com/instrumentation/api/v1/getInstScriptAndroid", headers=hdr)
-        # response = requests.get("http://localhost:8080/instrumentation/api/v1/getInstScriptAndroid", headers=hdr);
-        # response = urllib.request.urlretrieve("https://instrumentation-entry-us-east-1.aws-dev.perfectomobile.com/instrumentation/api/v1/getInstScript", 'customInstrumentAndroidD.py')
     except urllib.error.HTTPError:
         print("Failed to Download Instrumentation Script! (HTTP Error)")
         sys.exit(1)
