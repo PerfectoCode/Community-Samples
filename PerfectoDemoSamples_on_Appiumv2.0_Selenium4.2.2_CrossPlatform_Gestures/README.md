@@ -1,5 +1,5 @@
 Perfecto with Appium v2.0 & Selenium v4.x : Demo Framework.
-Author : Raghavendra Kundaragi : 
+Author : Raghavendra K : 
 
 	Kindly refer respective sample test example for below categories which are have respective suffix names as mentioned below :
 		- Android             : Native(_AN.java), Hybrid(_AH.java), Web apps (_AW.java).
