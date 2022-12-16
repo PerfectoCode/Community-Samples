@@ -30,13 +30,7 @@ Author : Raghavendra K :
 				- iOS Only
 					- iOS Only, using XCUITest
 				
-				- Flutter driver only
-				- Safaridriver Only
-				- Geckodriver Only
-				- MacDriver Only
-				- Mac2Driver Only
-				- You.i Engine Only
-				- WinAppDriver Only
+				- Other Driver has been supportted on appium, which are out of scope.
 				
 		3. Perfecto Capabilities : securityToken, sensorInstrument, autoInstrument, iOSResign, automationVersion, appiumVersion, etc
 			documentation link : https://help.perfecto.io/perfecto-help/content/perfecto/automation-testing/supported_appium_capabilities.htm#Appium 
