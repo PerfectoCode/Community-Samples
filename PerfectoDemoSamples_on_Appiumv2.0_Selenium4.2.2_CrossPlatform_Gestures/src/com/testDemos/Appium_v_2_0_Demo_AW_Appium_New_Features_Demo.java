@@ -87,7 +87,7 @@ public class Appium_v_2_0_Demo_AW_Appium_New_Features_Demo {
 		uiAutomator2Options.setAppPackage("com.google.android.apps.maps"); //com.google.android.apps.maps, com.vodqareactnative
 		//uiAutomator2Options.setAppActivity("app.perfecto.com.expencemanager.ui.splash.SplashActivity");
 		
-		perfectoOptions.put("securityToken", "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhMzY3MTc2My05NmQwLTRmMzktYjcwZS0yNjFlNjlmZjM1NzYifQ.eyJpYXQiOjE2MjM4NzQ0MDgsImp0aSI6IjEwNWQzMTFjLWQ5NjUtNDZlZS1iZTNhLWVkYWZiOTI2ZjkwYiIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvcGFydG5lcnMtcGVyZmVjdG9tb2JpbGUtY29tIiwiYXVkIjoiaHR0cHM6Ly9hdXRoLnBlcmZlY3RvbW9iaWxlLmNvbS9hdXRoL3JlYWxtcy9wYXJ0bmVycy1wZXJmZWN0b21vYmlsZS1jb20iLCJzdWIiOiJjNzIxMTRjOS0xNjM5LTQ5NTEtYTE2Zi1iNjEzNzUwMDc0Y2IiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoib2ZmbGluZS10b2tlbi1nZW5lcmF0b3IiLCJub25jZSI6IjUzNTRlMTIwLTBiODQtNDQyNS04YTdlLTRmODdjZDFhODJjMCIsInNlc3Npb25fc3RhdGUiOiJkYjE1YzhkZi1iMjg5LTQzZTctOWI5Yy1mNDFjNGNkMTY2NjIiLCJzY29wZSI6Im9wZW5pZCBvZmZsaW5lX2FjY2VzcyJ9.lcb5GcL-ZYA6bboBuUuAFanN_IYBnygMfXzaUwnJZdk");
+		perfectoOptions.put("securityToken", "<securityToken>");
 		//perfectoOptions.put("deviceName", "R38M604TNBZ");
 		//perfectoOptions.put("deviceSessionId", "d3de1ed9-cfce-424d-93d1-4cd28e8970c5");
 		//perfectoOptions.put("app", "PRIVATE:ComposeMaterialCatalog_2.0.1.apk");
@@ -415,7 +415,7 @@ public class Appium_v_2_0_Demo_AW_Appium_New_Features_Demo {
 		//uiAutomator2Options.setAppPackage("io.perfecto.expense.tracker.hybrid");
 		//uiAutomator2Options.setAppActivity("app.perfecto.com.expencemanager.ui.splash.SplashActivity");
 		
-		perfectoOptions.put("securityToken", "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhMzY3MTc2My05NmQwLTRmMzktYjcwZS0yNjFlNjlmZjM1NzYifQ.eyJpYXQiOjE2MjM4NzQ0MDgsImp0aSI6IjEwNWQzMTFjLWQ5NjUtNDZlZS1iZTNhLWVkYWZiOTI2ZjkwYiIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvcGFydG5lcnMtcGVyZmVjdG9tb2JpbGUtY29tIiwiYXVkIjoiaHR0cHM6Ly9hdXRoLnBlcmZlY3RvbW9iaWxlLmNvbS9hdXRoL3JlYWxtcy9wYXJ0bmVycy1wZXJmZWN0b21vYmlsZS1jb20iLCJzdWIiOiJjNzIxMTRjOS0xNjM5LTQ5NTEtYTE2Zi1iNjEzNzUwMDc0Y2IiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoib2ZmbGluZS10b2tlbi1nZW5lcmF0b3IiLCJub25jZSI6IjUzNTRlMTIwLTBiODQtNDQyNS04YTdlLTRmODdjZDFhODJjMCIsInNlc3Npb25fc3RhdGUiOiJkYjE1YzhkZi1iMjg5LTQzZTctOWI5Yy1mNDFjNGNkMTY2NjIiLCJzY29wZSI6Im9wZW5pZCBvZmZsaW5lX2FjY2VzcyJ9.lcb5GcL-ZYA6bboBuUuAFanN_IYBnygMfXzaUwnJZdk");
+		perfectoOptions.put("securityToken", "<securityToken>");
 		//perfectoOptions.put("deviceName", "R38M604TNBZ");
 		//perfectoOptions.put("deviceSessionId", "d3de1ed9-cfce-424d-93d1-4cd28e8970c5");
 		//perfectoOptions.put("app", "PUBLIC:raghav/v1.0/ExpenseHybridAppVer1.apk");
