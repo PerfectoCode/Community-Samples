@@ -1,6 +1,7 @@
 Perfecto with Appium v2.0 & Selenium v4.x : Demo Framework.
 Author : Raghavendra K :  
 
+	Usage of samples : in all code snippeted, kindly replace cloudName from "demo" or "partners" to your cloudName and "<SecurityToken>" to your security Token.
 	Kindly refer respective sample test example for below categories which are have respective suffix names as mentioned below :
 		- Android             : Native(_AN.java), Hybrid(_AH.java), Web apps (_AW.java).
 		- Android Emulator 	: Native(_AN_Emulator.java)
