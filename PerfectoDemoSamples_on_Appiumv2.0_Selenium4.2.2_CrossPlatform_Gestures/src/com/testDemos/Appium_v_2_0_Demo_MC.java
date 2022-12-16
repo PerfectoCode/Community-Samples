@@ -68,7 +68,7 @@ public class Appium_v_2_0_Demo_MC {
 		perfectoOptions.put("platformVersion", "macOS Monterey");
 		perfectoOptions.put("location", "NA-US-BOS");
 		perfectoOptions.put("resolution", "1024x768");
-		perfectoOptions.put("securityToken", "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4YmI4YmZmZS1kMzBjLTQ2MjctYmMxMS0zNTYyMmY1ZDkyMGYifQ.eyJpYXQiOjE2Njk2NTg0MjcsImp0aSI6IjI4MTljMDg3LTI5NmEtNGVmNS04NmNiLWE1MGFmYzBjM2VkYiIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvZGVtby1wZXJmZWN0b21vYmlsZS1jb20iLCJhdWQiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL2RlbW8tcGVyZmVjdG9tb2JpbGUtY29tIiwic3ViIjoiNzZhOTRmYjgtNzU0OS00ZDVjLTk1ZDctZTAzMjZlNDM3ODczIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6Im9mZmxpbmUtdG9rZW4tZ2VuZXJhdG9yIiwibm9uY2UiOiI3MTYxY2U0MS01YmZmLTQ1NWEtOGE0Ni1jNDgzNWI5NDRjMjIiLCJzZXNzaW9uX3N0YXRlIjoiOWU5NGVjNDQtZmViYi00ZTYzLWIyMjEtZTlhMTI5ZmI5NDVlIiwic2NvcGUiOiJvcGVuaWQgb2ZmbGluZV9hY2Nlc3MifQ.JYvSRJBvlly5C78kK5x0LTEvN2t-dmxQ9J017_tAYoQ");
+		perfectoOptions.put("securityToken", "<SecurityToken>");
 		perfectoOptions.put("scriptName", "Selenium_v4.2.2 Mac Chrome Test");
 		browserOptions.setCapability("perfecto:options", perfectoOptions);
 		
@@ -191,7 +191,7 @@ public class Appium_v_2_0_Demo_MC {
 		capabilities.setCapability("perfecto:resolution", "800x600"); // Perfecto support different resolutions.
 		//perfectoCaps.put("perfecto:model", "Galaxy S.*");  // perfecto:model //iPhone-X
 		//perfectoCaps.put("perfecto:deviceSessionId", "1f9a89f7-2848-4d66-9a76-0abcae96e8b9");
-		capabilities.setCapability("perfecto:securityToken", "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4YmI4YmZmZS1kMzBjLTQ2MjctYmMxMS0zNTYyMmY1ZDkyMGYifQ.eyJpYXQiOjE2Njk2NTg0MjcsImp0aSI6IjI4MTljMDg3LTI5NmEtNGVmNS04NmNiLWE1MGFmYzBjM2VkYiIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvZGVtby1wZXJmZWN0b21vYmlsZS1jb20iLCJhdWQiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL2RlbW8tcGVyZmVjdG9tb2JpbGUtY29tIiwic3ViIjoiNzZhOTRmYjgtNzU0OS00ZDVjLTk1ZDctZTAzMjZlNDM3ODczIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6Im9mZmxpbmUtdG9rZW4tZ2VuZXJhdG9yIiwibm9uY2UiOiI3MTYxY2U0MS01YmZmLTQ1NWEtOGE0Ni1jNDgzNWI5NDRjMjIiLCJzZXNzaW9uX3N0YXRlIjoiOWU5NGVjNDQtZmViYi00ZTYzLWIyMjEtZTlhMTI5ZmI5NDVlIiwic2NvcGUiOiJvcGVuaWQgb2ZmbGluZV9hY2Nlc3MifQ.JYvSRJBvlly5C78kK5x0LTEvN2t-dmxQ9J017_tAYoQ");  // perfecto:securityToken
+		capabilities.setCapability("perfecto:securityToken", "<securityToken>");  // perfecto:securityToken
 		
 		// automationVersion OR appiumVersion is mandatory to use Appium 2.0 on Perfecto Platform
 		//capabilities.setCapability("perfecto:appiumVersion", "1.22.3"); // (appium v2.0 beta)1.22.3=="latest", "1.20.2", or "1.18.3" // perfecto:appiumVersion
