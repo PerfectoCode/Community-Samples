@@ -70,7 +70,7 @@ def main():
     response=""
     print("********* Download Instrumentation Script *********")
     try:
-        response = requests.get("https://instrumentation-entry-us-east-1.aws-prod.perfectomobile.com/instrumentation/api/v1/getInstScript?universal=true", headers=hdr)
+        response = requests.get("https://instrumentation-entry-primary-us-east-1.aws-prod.perfectomobile.com/instrumentation/api/v1/getInstScript?universal=true", headers=hdr)
     except urllib.error.HTTPError:
         print("Failed to Download Instrumentation Script! (HTTP Error)")
         sys.exit(1)
