@@ -86,6 +86,7 @@ public class AppiumTest {
         	Map<String, Object> params = new HashMap<>();
         	params.put("repositoryFile", "PRIVATE:cc_640.jpg");
         	params.put("identifier", "Victor.RealTimeFilter");
+		params.put("adjustment", "50");
         	Object res = driver.executeScript("mobile:image.injection:start", params);
 
 			// Visual checkpoint to verify that card is displayed
