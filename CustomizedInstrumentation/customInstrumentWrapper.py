@@ -80,10 +80,10 @@ def main():
         sys.exit(1)
     time.sleep(1)
 
-    with open('customInstrument.py', 'wb') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'customInstrument.py'), 'wb') as f:
         f.write(response.content)
 
-    if os.path.getsize('customInstrument.py') == 0:
+    if os.path.getsize(os.path.join(os.path.dirname(__file__), 'customInstrument.py')) == 0:
         print("Failed to Download Instrumentation Script! (Download Error)")
         sys.exit(1)
 

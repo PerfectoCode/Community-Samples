@@ -101,10 +101,10 @@ def main():
         sys.exit(1)
     time.sleep(1)
 
-    with open('customInstrumentAndroidD.py', 'wb') as f:
+    with open(os.path.join(os.path.dirname(__file__), 'customInstrumentAndroidD.py'), 'wb') as f:
         f.write(response.content)
 
-    if os.path.getsize('customInstrumentAndroidD.py') == 0:
+    if os.path.getsize(os.path.join(os.path.dirname(__file__), 'customInstrumentAndroidD.py')) == 0:
         print("Failed to Download Instrumentation Script! (Download Error)")
         sys.exit(1)
 
