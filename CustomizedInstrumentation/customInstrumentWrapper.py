@@ -14,7 +14,7 @@ def get_args():
     parser.add_argument('-c', '--certificate_name', type=str, help='Name of the Certificate to be Used', required=True)
     parser.add_argument('-t', '--token', type=str, help='Text File Containing a Valid Security Token', required=True)
     parser.add_argument('-u', '--url', type=str, help='Cloud URL', required=True)
-    parser.add_argument('-v', '--version', type=str, help='Instrumentation Version', required=True)
+    parser.add_argument('-v', '--version', type=str, help='Instrumentation Version', required=False)
     parser.add_argument('-ent', '--entitlements_file', type=str, help='(Optional) Entitlements File', required=False)
     parser.add_argument('-ih', '--instrument_hybrid', action='store_true', help='Enable Hybrid Instrumentation',
                         required=False)
