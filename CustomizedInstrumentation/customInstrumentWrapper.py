@@ -20,18 +20,11 @@ def get_args():
                         required=False)
     parser.add_argument('-is', '--instrument_sensor', action='store_true', help='Enable Sensor Instrumentation',
                         required=False)
+    parser.add_argument('-crp', '--custom_resign_paths', type=str, help='(Optional) Plist file containing Custom Resign Path definitions', required=False)
     args = parser.parse_args()
     return args
 
-def getChecksum(fname):
-    hash_sha = hashlib.sha256()
-    with open(fname, "rb") as f:
-        for chunk in iter(lambda: f.read(4096), b""):
-            hash_sha.update(chunk)
-    return hash_sha.hexdigest()
-
 def main():
-    # sys.exit(0)
     params = get_args()
     print("********* script parameters *********")
     print(params)
@@ -57,7 +50,6 @@ def main():
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
         'Perfecto-Authorization': security_token,
         'Realm': params.url
-        # 'Authorization': security_token
     }
     try:
         os.remove('customInstrument.pyc')
